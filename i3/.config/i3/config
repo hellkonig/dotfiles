@@ -198,6 +198,16 @@ gaps outer 30
 bindsym 115 exec xbacklight -dec 10
 bindsym 114 exec xbacklight -inc 10
 
+# bind volume controls
+bindsym XF86AudioRaiseVolume exec pamixer --increase 5
+bindsym XF86AudioMute exec pamixer --toggle-mute
+bindsym XF86AudioLowerVolume exec pamixer --decrease 5
+
+# bind brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+
+
 # stuff to exec on startup?
 exec "feh --bg-center ~/Pictures/walls/rocks-wash.jpg"
 bindsym Mod1+Escape exec i3lock -i ~/Pictures/walls/winter-room-wash-lock.png

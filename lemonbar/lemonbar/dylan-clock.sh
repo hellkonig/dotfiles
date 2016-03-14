@@ -1,5 +1,6 @@
 #!/bin/sh
 # Dylan's Lemonbar Clock
+# Very heavily modified by APIUM
 
 battery () {
     battery="$(</sys/class/power_supply/BAT0/capacity)"
@@ -73,11 +74,13 @@ wifi(){
 }
 
 sound(){
+
     amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq
+
 }
 
 while :; do
-    echo "%{l}$(wifi)    |    Volume: $(sound)% %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)    $(batttime) Hours     %{r}"
+    echo "%{l}$(wifi)    |    Volume: $(sound)% %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)   |     $(batttime) Hours     %{r}"
 # try to get it to hide of mpv fullscreen
     if [ -z "$WINDOWID" ] ; then
     WINDOWID=$(xdotool search --name bar)
@@ -89,4 +92,4 @@ while :; do
     sleep 2s
 done |
 
-lemonbar -d -b -g "1500x75+850+30" -f "roboto:size=8" -o 0 -f "fontawesome:size=8" -o 0 -B "#FCFCFC" -F "#2E2E33" & lemonbar -g 2800x80 -B{#AARRGGBB} -b
+lemonbar -d -b -g "1200x75+1000+30" -f "roboto:size=8" -o 0 -f "fontawesome:size=8" -o 0 -B "#FCFCFC" -F "#2E2E33" & lemonbar -g 2800x80 -B{#AAFFFFFF} -b

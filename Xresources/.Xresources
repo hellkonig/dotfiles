@@ -7,3 +7,52 @@ Xft.dpi:                192
 !color
 URxvt*background:       #E3D0C3
 URxvt*foreground:       #36454f 
+
+!URxvt*color0:           #000000
+!URxvt*color1:           #d70000
+!URxvt*color2:           #5fd700
+!URxvt*color3:           #ffdf00
+!URxvt*color4:           #005faf
+!URxvt*color5:           #870087
+!URxvt*color6:           #00afd7
+!URxvt*color7:           #c0c0c0
+!URxvt*color8:           #808080
+!URxvt*color9:           #ff0000
+!URxvt*color10:          #00af00
+!URxvt*color11:          #ffaf00
+!URxvt*color12:          #005fd7
+!URxvt*color13:          #8700d7
+!URxvt*color14:          #0087d7
+!URxvt*color15:          #ffffff
+
+! new colors
+! ! black
+ *.color0:       #efefef
+ *.color8:       #b3b3b3
+
+! ! red
+ *.color1:       #ef6b7b
+ *.color9:       #ed5466
+
+! ! green - blue
+ *.color2:       #5f87af
+ *.color10:      #5fafaf
+
+! ! yellow - turn orange
+ *.color3:       #ff875f
+ *.color11:      #ff8700
+
+! ! blue
+ *.color4:       #0087af
+ *.color12:      #005faf
+
+! ! magenta -orange
+ *.color5:       #d7875f
+ *.color13:      #d75f5f
+! ! cyan -bluey cyan
+ *.color6:       #0087af
+ *.color14:      #57b2b0
+
+! ! white
+ *.color7:       #707070
+ *.color15:      #ffffff
