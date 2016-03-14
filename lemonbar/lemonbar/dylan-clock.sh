@@ -14,7 +14,7 @@ battery () {
             battery="${battery}%  "
         ;;
 
-        2[0-6]|3[0-9]|4[0-9]|50)
+        2[6-9]|3[0-9]|4[0-9]|50)
             battery="${battery}%  "
         ;;
 
@@ -33,13 +33,60 @@ battery () {
     printf "%s" "$battery"
 }
 
+batttime(){
+    calc(){ printf "%.2f\n" `echo $@ |bc -l`;}
+    charge(){ cat /sys/class/power_supply/BAT0/charge_now;}
+    current(){ cat /sys/class/power_supply/BAT0/current_now;}
+    full(){ cat /sys/class/power_supply/BAT0/charge_full;}
+    charging="$(</sys/class/power_supply/BAT0/status)"
+
+    # echo $(current) / $(charge) | bc -l
+    if [ "$charging" == "Charging" ]
+        then
+            calc "($(full) - $(charge)) / $(current)"
+        else
+            calc $(charge) / $(current)
+    fi 
+}
+
+# aim is to read the time over a 10s period, then average it out over that 
+# period and only then output the time remaining.
+# I have no idea how to do this so this will remain a copy of above until
+# I can use bash...
+battime-ave(){
+    calc(){ printf "%.2f\n" `echo $@ |bc -l`;}
+    charge(){ cat /sys/class/power_supply/BAT0/charge_now;}
+    current(){ cat /sys/class/power_supply/BAT0/current_now;}
+    full(){ cat /sys/class/power_supply/BAT0/charge_full;}
+    charging="$(</sys/class/power_supply/BAT0/status)"
+
+    if [ "$charging" == "Charging" ]
+        then
+            calc "($(full) - $(charge)) / $(current)"
+        else
+            calc $(charge) / $(current)
+    fi 
+}
+
 wifi(){
     ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "   Connected" || echo "   Disconnected"    
 }
 
+sound(){
+    amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq
+}
+
 while :; do
-    echo "%{l}$(wifi) %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)     %{r}"
+    echo "%{l}$(wifi)    |    Volume: $(sound)% %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)    $(batttime) Hours     %{r}"
+# try to get it to hide of mpv fullscreen
+    if [ -z "$WINDOWID" ] ; then
+    WINDOWID=$(xdotool search --name bar)
+    if [ ! -z "$WINDOWID" ] ; then
+        xprop -id $WINDOWID -f _NET_WM_STATE 32a -set _NET_WM_STATE _NET_WM_STATE_STICKY,_NET_WM_STATE_BELOW
+        xprop -id $WINDOWID -f _NET_WM_WINDOW_TYPE 32a -set _NET_WM_WINDOW_TYPE _NET_WM_WINDOW_TYPE_NORMAL
+        fi
+    fi
     sleep 2s
 done |
 
-lemonbar -d -b -g "1000x75+1100+30" -f "roboto:size=8" -f "fontawesome:size=8" -B "#FCFCFC" -F "#2E2E33" & lemonbar -g 2800x80 -B{#AARRGGBB} -b
+lemonbar -d -b -g "1500x75+850+30" -f "roboto:size=8" -o 0 -f "fontawesome:size=8" -o 0 -B "#FCFCFC" -F "#2E2E33" & lemonbar -g 2800x80 -B{#AARRGGBB} -b

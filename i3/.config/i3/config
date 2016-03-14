@@ -199,7 +199,7 @@ bindsym 115 exec xbacklight -dec 10
 bindsym 114 exec xbacklight -inc 10
 
 # stuff to exec on startup?
-exec "feh --bg-center ~/Pictures/rocks-wash.jpg"
-bindsym Mod1+Escape exec i3lock -i ~/Pictures/winter-room-wash-lock.png
+exec "feh --bg-center ~/Pictures/walls/rocks-wash.jpg"
+bindsym Mod1+Escape exec i3lock -i ~/Pictures/walls/winter-room-wash-lock.png
 exec "bash ~/lemonbar/dylan-clock.sh"
 exec "compton -c -b"
