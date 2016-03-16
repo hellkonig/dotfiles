@@ -80,7 +80,7 @@ sound(){
 }
 
 while :; do
-    echo "%{l}$(wifi)    |    Volume: $(sound)% %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)   |     $(batttime) Hours     %{r}"
+   echo "%{l}$(wifi) \uf1eb    |    Volume: $(sound)% %{c}$(date "+%a %d %b %l:%M %p")%{r}$(battery)   |     $(batttime) Hours     %{r}"
 # try to get it to hide of mpv fullscreen
     if [ -z "$WINDOWID" ] ; then
     WINDOWID=$(xdotool search --name bar)
