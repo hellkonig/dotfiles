@@ -9,7 +9,15 @@ It started as a migration from my Dell Latitude E6100 to a Dell XPS 13 2016. The
 The whole setup is managed by GNU Stow which is perfectly set up to manage dotfiles, I can't believe I dind't run into it sooner.
 I used this [explaination](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) as a guide. I would havily reccommend the GNU Stow method for dotfile management. 
 
+
+Firefox
 ![Firefox](http://i.imgur.com/TVxtzIi.png)
+
+Busy
 ![Busy](http://i.imgur.com/cFfxKLM.png)
+
+Single Vim Window
 ![Single Vim](http://i.imgur.com/1CdpXXT.png)
+
+Clean
 ![Clean](http://i.imgur.com/w6jOC09.png)
