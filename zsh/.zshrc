@@ -1,8 +1,11 @@
 # .zshrc
 #fpath=( "$HOME/.zfunctions" $fpath )
+#fpath=( "$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-sindresorhus-SLASH-pure.git/pure.zsh" $fpath )
+#fpath=( "$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-sindresorhus-SLASH-pure.git/async.zsh" $fpath )
 # antigen-- kinda a vundle/vim for zsh
 source ~/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 # antigen bundle git
 #source ~/.zfunctions/async

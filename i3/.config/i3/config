@@ -128,11 +128,12 @@ bindsym Mod1+Shift+8 move container to workspace 8 irc
 bindsym Mod1+Shift+9 move container to workspace 9 mail
 bindsym Mod1+Shift+0 move container to workspace 10 music
 
+# I've turned this off when not using i3-bar, it's far too confusing and annoying. 
 # force a window on a named workspace
-assign [class="chromium"] 1 www
-assign [class="cmus"] 10 music
-assign [class="Thunar"] 2 thunar
-assign [class="Firefox"] 1 www
+#assign [class="chromium"] 1 www
+#assign [class="cmus"] 10 music
+#assign [class="Thunar"] 2 thunar
+#assign [class="Firefox"] 1 www
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload
