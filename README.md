@@ -1,4 +1,4 @@
-# apiums dotfiles
+# apium's dotfiles
 
 This is a collection of my dotfiles as of 13.03.16.
 
