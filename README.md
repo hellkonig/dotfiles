@@ -9,6 +9,8 @@ It started as a migration from my Dell Latitude E6100 to a Dell XPS 13 2016. The
 
 The whole setup is managed by GNU Stow which is perfectly set up to manage dotfiles, I can't believe I didn't run into it sooner.
 I used this [explaination](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html) as a guide. I would havily reccommend the GNU Stow method for dotfile management. 
+ 
+This is a branch for my desktop. New images to come. 
 
 # images
 

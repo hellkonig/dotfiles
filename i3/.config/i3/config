@@ -210,7 +210,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
 
 # stuff to exec on startup?
-exec "feh --bg-center ~/Pictures/walls/rocks-wash.jpg"
+exec "feh --bg-center ~/Pictures/walls/trees.jpg"
 bindsym Mod1+Escape exec i3lock -i ~/Pictures/walls/winter-room-wash-lock.png
 exec "bash ~/lemonbar/dylan-clock.sh"
 exec "compton -c -b"
