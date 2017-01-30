@@ -128,6 +128,8 @@
 
 /* NAVBAR/URLBAR {{{ */
 
+#nav-bar { display: none !important; }
+
     #nav-bar {
 #background: var(--black) !important;
         background: #E3D0C3 !important;

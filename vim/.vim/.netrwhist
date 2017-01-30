@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/apium/dotfiles/i3/.config'
 let g:netrw_dirhist_2='/home/apium/dotfiles/i3/.config/i3'
+let g:netrw_dirhist_3='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_4='/usr/local/bin'
+let g:netrw_dirhist_5='/usr/local'
+let g:netrw_dirhist_6='/usr/local/bin'
