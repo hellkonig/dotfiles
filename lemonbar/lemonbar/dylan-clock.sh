@@ -92,4 +92,4 @@ while :; do
     sleep 2s
 done |
 
-lemonbar -d -b -g "1200x75+1000+30" -f "roboto:size=8" -o 0 -f "fontawesome:size=8" -o 0 -B "#FCFCFC" -F "#2E2E33" & lemonbar -g 2800x80 -B{#AAFFFFFF} -b
+lemonbar -d -b -g "1200x75+1000+30" -f "roboto:size=8" -o 0 -f "fontawesome:size=8" -o 0 -B "#FCFCFC" -F "#2E2E2E" & lemonbar -g 2800x80 -B{#AAFFFFFF} -b
