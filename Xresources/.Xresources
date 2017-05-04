@@ -1,8 +1,8 @@
-URxvt*font:             xft:Terminus:size=10
+URxvt*font:             xft:Terminus:size=8
 URxvt*scrollBar:        false
 URxvt*depth:            32
 
-Xft.dpi:                192
+Xft.dpi:                112
 
 !color
 URxvt*background:       #E3D0C3
@@ -43,8 +43,10 @@ URxvt*foreground:       #36454f
  *.color11:      #ff8700
 
 ! ! blue
- *.color4:       #0087af
- *.color12:      #005faf
+! *.color4:       #0087af
+ *.color4:       #ffffff
+! *.color12:      #005faf
+ *.color12:	 #020105
 
 ! ! magenta -orange
  *.color5:       #d7875f

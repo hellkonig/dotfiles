@@ -1,0 +1,956 @@
+1493621101596	Sync.Service	INFO	Loading Weave 1.47.0
+1493621101598	Sync.Engine.Clients	DEBUG	Engine initialized
+1493621101598	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1493621101601	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1493621101603	Sync.Engine.Forms	DEBUG	Engine initialized
+1493621101605	Sync.Engine.History	DEBUG	Engine initialized
+1493621101607	Sync.Engine.Passwords	DEBUG	Engine initialized
+1493621101608	Sync.Engine.Prefs	DEBUG	Engine initialized
+1493621101610	Sync.Engine.Tabs	DEBUG	Engine initialized
+1493621101610	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493621101613	Sync.Engine.Addons	DEBUG	Engine initialized
+1493621101613	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+1493621101616	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621101616	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.no_username
+1493621101616	Sync.Status	DEBUG	Status.service: success.status_ok => service.client_not_configured
+1493621101616	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1493621101616	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1493621101654	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1493621101655	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1493621101655	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1493621101656	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1493621101657	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1493621101659	Sync.Tracker.Clients	WARN	Changed IDs file clients contains non-object value.
+1493621101697	Sync.Tracker.Bookmarks	WARN	Changed IDs file bookmarks contains non-object value.
+1493621101703	Sync.Tracker.Forms	WARN	Changed IDs file forms contains non-object value.
+1493621101704	Sync.Tracker.History	WARN	Changed IDs file history contains non-object value.
+1493621101705	Sync.Tracker.Passwords	WARN	Changed IDs file passwords contains non-object value.
+1493621101706	Sync.Tracker.Addons	WARN	Changed IDs file addons contains non-object value.
+1493621104385	FirefoxAccounts	DEBUG	FxAccountsWebChannel message received: fxaccounts:loaded
+1493621104385	FirefoxAccounts	WARN	Unrecognized FxAccountsWebChannel command: fxaccounts:loaded
+1493621110103	FirefoxAccounts	DEBUG	FxAccountsWebChannel message received: fxaccounts:can_link_account
+1493621110103	FirefoxAccounts	DEBUG	FxAccountsWebChannel response: {"command":"fxaccounts:can_link_account","messageId":1493621110089,"data":{"ok":true}}
+1493621111401	FirefoxAccounts	DEBUG	FxAccountsWebChannel message received: fxaccounts:login
+1493621111402	FirefoxAccounts	DEBUG	setSignedInUser - aborting any existing flows
+1493621111402	FirefoxAccounts	TRACE	StorageManager finalizing
+1493621111402	FirefoxAccounts	TRACE	StorageManager finalized
+1493621111403	FirefoxAccounts	TRACE	initializing new storage manager
+1493621111403	FirefoxAccounts	WARN	Unknown FxA field name in user data, treating as in-memory: customizeSync
+1493621111403	FirefoxAccounts	WARN	Unknown FxA field name in user data, treating as in-memory: declinedSyncEngines
+1493621111403	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified"]
+1493621111403	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified"]
+1493621111406	FirefoxAccounts	TRACE	finished write of json user data - took: 2
+1493621111406	FirefoxAccounts	DEBUG	writing secure storage: ["keyFetchToken","unwrapBKey"]
+1493621111406	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621111408	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621111408	FirefoxAccounts	TRACE	initializing of new storage manager done
+1493621111409	FirefoxAccounts	DEBUG	Notifying observers of fxaccounts:onlogin
+1493621111409	Sync.BrowserIDManager	DEBUG	observed fxaccounts:onlogin
+1493621111410	Sync.BrowserIDManager	INFO	Username changed. Removing stored credentials.
+1493621111410	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1493621111410	FirefoxAccounts	DEBUG	already verified
+1493621111412	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1493621111412	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1493621111413	FirefoxAccounts	DEBUG	already verified
+1493621111413	Sync.BrowserIDManager	INFO	Fetching new keys
+1493621111413	FirefoxAccounts	DEBUG	fetchKeys: true
+1493621111421	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1493621111421	FirefoxAccounts	DEBUG	getOAuthToken enter
+1493621111422	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1493621111422	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1493621111422	FirefoxAccounts	DEBUG	enter getAssertion()
+1493621111425	FirefoxAccounts	DEBUG	got keyPair
+1493621111425	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1493621111681	Hawk	DEBUG	(Response) /account/keys: code: 200 - Status text: OK
+1493621111681	Sync.RESTResponse	TRACE	Processing response headers.
+1493621111682	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -682
+1493621111683	FirefoxAccounts	DEBUG	Keys Obtained: kA=true, kB=true
+1493621111683	FirefoxAccounts	DEBUG	_updateAccountData with items: ["kA","kB","keyFetchToken","unwrapBKey"]
+1493621111683	FirefoxAccounts	DEBUG	Notifying observers of fxaccounts:onverified
+1493621111685	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1493621111685	FirefoxAccounts	DEBUG	enter getAssertion()
+1493621111686	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified"]
+1493621111686	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified"]
+1493621111704	FirefoxAccounts	DEBUG	got keyPair
+1493621111705	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1493621111726	FirefoxAccounts	TRACE	finished write of json user data - took: 40
+1493621111726	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621111726	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621111729	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621111979	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1493621111979	Sync.RESTResponse	TRACE	Processing response headers.
+1493621111979	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -979
+1493621111980	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1493621111980	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1493621111980	FirefoxAccounts	DEBUG	getAssertionFromCert
+1493621111981	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified"]
+1493621111981	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified"]
+1493621111981	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1493621111982	Sync.BrowserIDManager	DEBUG	Getting a token
+1493621111982	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1493621111984	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1493621111984	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621111984	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621111987	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621112070	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1493621112070	Sync.RESTResponse	TRACE	Processing response headers.
+1493621112070	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1070
+1493621112070	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1493621112070	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1493621112071	FirefoxAccounts	DEBUG	getAssertionFromCert
+1493621112071	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified"]
+1493621112071	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified"]
+1493621112072	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1493621112074	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1493621112074	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621112074	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621112077	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621112675	Common.TokenServerClient	DEBUG	Got token response: 200
+1493621112675	Sync.RESTResponse	TRACE	Processing response headers.
+1493621112676	Common.TokenServerClient	DEBUG	Successful token response
+1493621112676	Sync.BrowserIDManager	DEBUG	Successfully got a sync token
+1493621112677	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1493621112677	Sync.BrowserIDManager	INFO	Background fetch for key bundle done
+1493621112677	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => success.login
+1493621112677	Sync.Status	DEBUG	Status.service: service.client_not_configured => success.status_ok
+1493621112677	Sync.BrowserIDManager	INFO	Doing initial sync actions
+1493621112678	browserwindow.syncui	DEBUG	observed: weave:service:setup-complete
+1493621112694	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621112694	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1493621112694	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1493621112695	Sync.Tracker.History	INFO	Adding Places observer.
+1493621112698	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621112699	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621112702	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621112702	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:12
+1493621112702	Sync.Service	DEBUG	In sync: should login.
+1493621112703	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1493621112703	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621112703	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621112703	Sync.Service	INFO	Logging in the user.
+1493621112704	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621112704	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621112705	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493621112705	Sync.Service	INFO	User logged in successfully - verifying login.
+1493621112705	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1493621112705	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1493621112705	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621112793	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1493621112794	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621112794	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621112797	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1493621112797	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621112797	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621112801	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621113385	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621113385	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621113385	Sync.Service	DEBUG	Fetching global metadata record
+1493621113385	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113386	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621113542	FirefoxAccounts	DEBUG	notifying profile changed for user 55a29a4949c244c59aece4f7efbd14e0
+1493621113544	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493621113544	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493621113598	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113598	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113599	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1489644375.28
+1493621113599	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113599	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621113811	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113811	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621113811	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621113811	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621113811	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621113811	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"addons":1493598891.03,"tabs":1493620452.28,"clients":1493620300.74,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"bookmarks":1493595849.65,"prefs":1493595892.11,"history":1493620453.69}
+1493621113811	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1493621113811	Sync.Service	INFO	collection keys reports that a key update is needed.
+1493621113812	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621114038	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621114038	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621114038	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1493621114039	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1489644251.08.
+1493621114039	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1493621114039	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1493621114040	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1493621114040	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1493621114040	Sync.CollectionKeyManager	INFO	Bumping last modified to 1489644251.08
+1493621114040	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1493621114040	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493621114040	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621114040	browserwindow.syncui	DEBUG	observed: weave:service:login:finish
+1493621114041	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493621114041	browserwindow.syncui	DEBUG	onActivityStart with numActive: 0
+1493621114041	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621114045	Sync.Status	INFO	Resetting Status.
+1493621114045	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621114046	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621114047	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621114047	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621114049	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621114049	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621114049	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493621114263	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621114263	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621114264	Sync.Service	DEBUG	Fetching global metadata record
+1493621114264	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621114264	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621114264	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621114264	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"addons":1493598891.03,"tabs":1493620452.28,"clients":1493620300.74,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"bookmarks":1493595849.65,"prefs":1493595892.11,"history":1493620453.69}
+1493621114264	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493621114264	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493621114265	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1493621114265	Sync.Engine.Clients	INFO	1 outgoing items pre-reconciliation
+1493621114266	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621114482	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621114482	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621114482	Sync.Engine.Clients	INFO	Records: 4 applied, 4 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621114485	Sync.Engine.Clients	INFO	Uploading all of 1 records
+1493621114485	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621114486	Sync.Collection	DEBUG	POST Length: 485
+1493621114738	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621114738	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621114739	Sync.Engine.Prefs	DEBUG	Resetting prefs last sync time
+1493621114739	Sync.Engine.Passwords	DEBUG	Resetting passwords last sync time
+1493621114740	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493621114740	Sync.Engine.Bookmarks	DEBUG	Resetting bookmarks last sync time
+1493621114740	Sync.Engine.Addons	DEBUG	Resetting addons last sync time
+1493621114741	Sync.Engine.Forms	DEBUG	Resetting forms last sync time
+1493621114741	Sync.Engine.History	DEBUG	Resetting history last sync time
+1493621114741	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493621114742	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493621114743	Sync.Engine.Prefs	DEBUG	First sync, uploading all items
+1493621114743	Sync.Engine.Prefs	INFO	1 outgoing items pre-reconciliation
+1493621114744	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621114975	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/prefs?full=1
+1493621114975	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/prefs?full=1
+1493621114976	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493621114976	Sync.Engine.Passwords	DEBUG	First sync, uploading all items
+1493621114977	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493621114978	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621115265	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1493621115609	Sync.Store.Passwords	DEBUG	Adding login for https://github.com
+1493621115610	Sync.Store.Passwords	DEBUG	Adding login for https://accounts.google.com
+1493621115612	Sync.Store.Passwords	DEBUG	Adding login for https://sso-cas.rmit.edu.au
+1493621115613	Sync.Store.Passwords	DEBUG	Adding login for https://www.gumtree.com.au
+1493621115615	Sync.Store.Passwords	DEBUG	Adding login for https://my.gov.au
+1493621115616	Sync.Store.Passwords	DEBUG	Adding login for https://passport.aliexpress.com
+1493621115617	Sync.Store.Passwords	DEBUG	Adding login for https://www.netacad.com
+1493621115618	Sync.Store.Passwords	DEBUG	Adding login for https://play.spotify.com
+1493621115619	Sync.Store.Passwords	DEBUG	Adding login for https://www.paypal.com
+1493621115620	Sync.Store.Passwords	DEBUG	Adding login for https://www.evernote.com
+1493621115622	Sync.Store.Passwords	DEBUG	Adding login for https://www.ozbargain.com.au
+1493621115623	Sync.Store.Passwords	DEBUG	Adding login for https://accounts.google.com
+1493621115625	Sync.Store.Passwords	DEBUG	Adding login for https://www.cashrewards.com.au
+1493621115626	Sync.Store.Passwords	DEBUG	Adding login for https://www.myanonamouse.net
+1493621115628	Sync.Store.Passwords	DEBUG	Adding login for https://www.udemy.com
+1493621115629	Sync.Store.Passwords	DEBUG	Adding login for https://www.ticketmaster.com.au
+1493621115630	Sync.Store.Passwords	DEBUG	Adding login for https://www.facebook.com
+1493621115631	Sync.Store.Passwords	DEBUG	Adding login for https://www.aldimobile.com.au
+1493621115632	Sync.Store.Passwords	DEBUG	Adding login for https://www.reddit.com
+1493621115634	Sync.Store.Passwords	DEBUG	Adding login for https://apollo.rip
+1493621115635	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:21
+1493621115636	Sync.Store.Passwords	DEBUG	Adding login for https://128.199.222.139:10000
+1493621115637	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:44321
+1493621115639	Sync.Store.Passwords	DEBUG	Adding login for https://what.cd
+1493621115640	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca
+1493621115643	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.2:8989
+1493621115644	Sync.Store.Passwords	DEBUG	Adding login for https://cas.camhigh.vic.edu.au
+1493621115645	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:441
+1493621115646	Sync.Store.Passwords	DEBUG	Adding login for http://176.9.62.142:443
+1493621115647	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.43:9091
+1493621115649	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:22
+1493621115650	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:442
+1493621115652	Sync.Store.Passwords	DEBUG	Adding login for https://toast.whatbox.ca:443
+1493621115653	Sync.Store.Passwords	DEBUG	Adding login for https://camhigh.vic.jdlf.com.au
+1493621115654	Sync.Store.Passwords	DEBUG	Adding login for http://176.9.62.142:80
+1493621115655	Sync.Store.Passwords	DEBUG	Adding login for https://morethan.tv
+1493621115657	Sync.Store.Passwords	DEBUG	Adding login for https://www.morethan.tv
+1493621115658	Sync.Store.Passwords	DEBUG	Adding login for https://discordapp.com
+1493621115659	Sync.Store.Passwords	DEBUG	Adding login for https://accounts.google.com
+1493621115662	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.2:8081
+1493621115663	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.1.1:5050
+1493621115665	Sync.Store.Passwords	DEBUG	Adding login for https://tehconnection.eu
+1493621115666	Sync.Store.Passwords	DEBUG	Adding login for https://morethan.tv
+1493621115668	Sync.Store.Passwords	DEBUG	Adding login for https://cloud.digitalocean.com
+1493621115670	Sync.Store.Passwords	DEBUG	Adding login for https://mydesktop.rmit.edu.au
+1493621115671	Sync.Store.Passwords	DEBUG	Adding login for https://www.massdrop.com
+1493621115672	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.1.1:8081
+1493621115674	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.2:5050
+1493621115675	Sync.Store.Passwords	DEBUG	Adding login for https://www.aldimobile.com.au
+1493621115677	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.1.254
+1493621115694	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/passwords?full=1
+1493621115694	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/passwords?full=1
+1493621115695	Sync.Store.Passwords	DEBUG	Adding login for https://www.humblebundle.com
+1493621115696	Sync.Store.Passwords	DEBUG	Adding login for https://www.netflix.com
+1493621115697	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.2
+1493621115699	Sync.Store.Passwords	DEBUG	Adding login for https://login.gog.com
+1493621115700	Sync.Store.Passwords	DEBUG	Adding login for https://signin.ebay.com.au
+1493621115702	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.1.1
+1493621115703	Sync.Store.Passwords	DEBUG	Adding login for https://passport.alibaba.com
+1493621115705	Sync.Store.Passwords	DEBUG	Adding login for https://rmitlink.rmit.edu.au
+1493621115706	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.2:9117
+1493621115709	Sync.Store.Passwords	DEBUG	Adding login for https://www.vessel.com
+1493621115710	Sync.Store.Passwords	DEBUG	Adding login for http://plus.ultimate-guitar.com
+1493621115711	Sync.Store.Passwords	DEBUG	Adding login for https://www.ozbargain.com.au
+1493621115713	Sync.Store.Passwords	DEBUG	Adding login for http://192.168.0.1
+1493621115714	Sync.Store.Passwords	DEBUG	Adding login for https://once.deputy.com
+1493621115715	Sync.Engine.Passwords	INFO	Records: 64 applied, 64 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621115716	Sync.Engine.Tabs	DEBUG	First sync, uploading all items
+1493621115716	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493621115717	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621115932	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium's Firefox on tux-xps
+1493621115934	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium’s Firefox on slegestor
+1493621115939	Sync.Store.Tabs	DEBUG	Adding remote tabs from APIUM's Firefox on LAPTOP-2VPN06TQ
+1493621115939	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621115939	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621115940	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493621115944	Sync.Engine.Tabs	INFO	Uploading all of 1 records
+1493621115944	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621115945	Sync.Collection	DEBUG	POST Length: 420
+1493621115978	Sync.Tracker.Passwords	DEBUG	Saving changed IDs to passwords
+1493621116157	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621116157	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621116160	Sync.Engine.Bookmarks	DEBUG	First sync, uploading all items
+1493621116167	Sync.Store.Bookmarks	DEBUG	No node for GUID mobile; returning no children.
+1493621116168	Sync.Engine.Bookmarks	INFO	13 outgoing items pre-reconciliation
+1493621116168	Sync.Engine.Bookmarks	DEBUG	Bookmarks backup starting.
+1493621116181	Sync.Engine.Bookmarks	DEBUG	Bookmarks backup done.
+1493621116182	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621116412	Sync.Store.Bookmarks	DEBUG	No node for GUID mobile; returning no children.
+1493621116415	Sync.Engine.Bookmarks	WARN	DATA LOSS: Both local and remote changes to record: menu
+1493621116415	Sync.Store.Bookmarks	DEBUG	Applying record menu
+1493621116415	Sync.Store.Bookmarks	DEBUG	Processing special node: menu
+1493621116416	Sync.Engine.Bookmarks	DEBUG	mobile mapped to undefined
+1493621116416	Sync.Store.Bookmarks	DEBUG	Applying record mobile
+1493621116416	Sync.Store.Bookmarks	DEBUG	Processing special node: mobile
+1493621116417	Sync.Engine.Bookmarks	WARN	DATA LOSS: Both local and remote changes to record: toolbar
+1493621116417	Sync.Store.Bookmarks	DEBUG	Applying record toolbar
+1493621116417	Sync.Store.Bookmarks	DEBUG	Processing special node: toolbar
+1493621116418	Sync.Engine.Bookmarks	WARN	DATA LOSS: Both local and remote changes to record: unfiled
+1493621116418	Sync.Store.Bookmarks	DEBUG	Applying record unfiled
+1493621116418	Sync.Store.Bookmarks	DEBUG	Processing special node: unfiled
+1493621116418	Sync.Engine.Bookmarks	DEBUG	q97YcDYnRuvW mapped to H9TIzL0P_eAc
+1493621116419	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: H9TIzL0P_eAc -> q97YcDYnRuvW
+1493621116419	Sync.Store.Bookmarks	DEBUG	Changing GUID H9TIzL0P_eAc to q97YcDYnRuvW
+1493621116419	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.419; modified=true; exists=true
+1493621116420	Sync.Engine.Bookmarks	WARN	DATA LOSS: Both local and remote changes to record: q97YcDYnRuvW
+1493621116420	Sync.Store.Bookmarks	DEBUG	Applying record q97YcDYnRuvW
+1493621116420	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116420	Sync.Store.Bookmarks	DEBUG	Record q97YcDYnRuvW is not an orphan.
+1493621116421	Sync.Store.Bookmarks	DEBUG	Reparenting orphans  to 7
+1493621116421	Sync.Engine.Bookmarks	DEBUG	AKmkYxW5lT5y mapped to undefined
+1493621116421	Sync.Store.Bookmarks	DEBUG	Applying record AKmkYxW5lT5y
+1493621116421	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116421	Sync.Store.Bookmarks	DEBUG	Record AKmkYxW5lT5y is not an orphan.
+1493621116422	Sync.Store.Bookmarks	DEBUG	created bookmark 16 under 2 as Making a Kali Bootable USB Drive | Kali Linux http://docs.kali.org/downloading/kali-linux-live-usb-install
+1493621116427	Sync.Engine.Bookmarks	DEBUG	HkmJsrK7x-Np mapped to undefined
+1493621116427	Sync.Store.Bookmarks	DEBUG	Applying record HkmJsrK7x-Np
+1493621116427	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116427	Sync.Store.Bookmarks	DEBUG	Record HkmJsrK7x-Np is not an orphan.
+1493621116428	Sync.Store.Bookmarks	DEBUG	created bookmark 20 under 2 as Sawyer Squeeze water filter system for hiking, camping, emergency http://www.ebay.com.au/itm/Sawyer-Squeeze-water-filter-system-for-hiking-camping-emergency-/201687969763?hash=item2ef58a2fe3:g:XycAAOSwUKxYffPj
+1493621116431	Sync.Engine.Bookmarks	DEBUG	cQJiVQPHpren mapped to undefined
+1493621116431	Sync.Store.Bookmarks	DEBUG	Applying record cQJiVQPHpren
+1493621116431	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116431	Sync.Store.Bookmarks	DEBUG	Record cQJiVQPHpren is not an orphan.
+1493621116431	Sync.Store.Bookmarks	DEBUG	created bookmark 24 under 2 as Amazon.com: IMUSA USA R200-10 Aluminum Mug, Silver: Kitchen & Dining https://www.amazon.com/IMUSA-USA-R200-10-Aluminum-Silver/dp/B009SBB7HM/ref=sr_1_fkmr0_1?s=kitchen&ie=UTF8&qid=1469551997&sr=1-1-fkmr0&keywords=imusa+10cm+with+lid
+1493621116435	Sync.Engine.Bookmarks	DEBUG	pIkZCPdlEvT5 mapped to undefined
+1493621116435	Sync.Store.Bookmarks	DEBUG	Applying record pIkZCPdlEvT5
+1493621116435	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116435	Sync.Store.Bookmarks	DEBUG	Record pIkZCPdlEvT5 is not an orphan.
+1493621116435	Sync.Store.Bookmarks	DEBUG	created bookmark 27 under 2 as BRS-3000T Big Power 2700W Titanium Alloy Outdoor Burner Camping Gas Stove - Grey | eBay http://www.ebay.com.au/itm/BRS-3000T-Big-Power-2700W-Titanium-Alloy-Outdoor-Burner-Camping-Gas-Stove-Grey-/132056237272?hash=item1ebf2a44d8:g:yDgAAOSw44BYb47h
+1493621116438	Sync.Engine.Bookmarks	DEBUG	ORVldYjcXrLs mapped to QdpXxamyEhx_
+1493621116438	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: QdpXxamyEhx_ -> ORVldYjcXrLs
+1493621116438	Sync.Store.Bookmarks	DEBUG	Changing GUID QdpXxamyEhx_ to ORVldYjcXrLs
+1493621116438	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.438; modified=true; exists=true
+1493621116440	Sync.Engine.Bookmarks	DEBUG	3392WT2PoSxx mapped to undefined
+1493621116440	Sync.Store.Bookmarks	DEBUG	Applying record 3392WT2PoSxx
+1493621116440	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116440	Sync.Store.Bookmarks	DEBUG	Record 3392WT2PoSxx is not an orphan.
+1493621116440	Sync.Store.Bookmarks	DEBUG	created bookmark 30 under 2 as https://tabs.ultimate-guitar.com/m/misc_cartoons/rick_and_morty_-_goodbye_moonmen_ver5_crd.htm https://tabs.ultimate-guitar.com/m/misc_cartoons/rick_and_morty_-_goodbye_moonmen_ver5_crd.htm
+1493621116443	Sync.Engine.Bookmarks	DEBUG	iVvWUtPCYvur mapped to undefined
+1493621116444	Sync.Store.Bookmarks	DEBUG	Applying record iVvWUtPCYvur
+1493621116444	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116444	Sync.Store.Bookmarks	DEBUG	Record iVvWUtPCYvur is not an orphan.
+1493621116444	Sync.Store.Bookmarks	DEBUG	created bookmark 34 under 2 as Toshiki Kadomatsu - Sea Is A Lady [Full Album] - YouTube https://www.youtube.com/watch?v=LDFLEQq1jCw
+1493621116447	Sync.Engine.Bookmarks	DEBUG	7gun_5Wo6-5- mapped to undefined
+1493621116447	Sync.Store.Bookmarks	DEBUG	Applying record 7gun_5Wo6-5-
+1493621116447	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116447	Sync.Store.Bookmarks	DEBUG	Record 7gun_5Wo6-5- is not an orphan.
+1493621116447	Sync.Store.Bookmarks	DEBUG	created bookmark 38 under 2 as Learn 90% of Python in 90 Minutes https://www.slideshare.net/MattHarrison4/learn-90
+1493621116450	Sync.Engine.Bookmarks	DEBUG	Qw7GP50Q-GDd mapped to undefined
+1493621116450	Sync.Store.Bookmarks	DEBUG	Applying record Qw7GP50Q-GDd
+1493621116450	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116450	Sync.Store.Bookmarks	DEBUG	Record Qw7GP50Q-GDd is not an orphan.
+1493621116450	Sync.Store.Bookmarks	DEBUG	created bookmark 42 under 2 as # New 2pc Monitor Speaker Stand Safety Glass Floor Studio Aluminum Portable Blac | eBay http://www.ebay.com.au/itm/New-2pc-Monitor-Speaker-Stand-Safety-Glass-Floor-Studio-Aluminum-Portable-Blac/172303073334?_trksid=p2047675.c100005.m1851&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D2%26asc%3D20140106155344%26meid%3D62d3d924b4e5460bb623bdc59dd9be6d%26pid%3D100005%26rk%3D4%26rkt%3D6%26sd%3D201551785296
+1493621116453	Sync.Engine.Bookmarks	DEBUG	REf_5I4dTDXZ mapped to undefined
+1493621116453	Sync.Store.Bookmarks	DEBUG	Applying record REf_5I4dTDXZ
+1493621116453	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116453	Sync.Store.Bookmarks	DEBUG	Record REf_5I4dTDXZ is not an orphan.
+1493621116453	Sync.Store.Bookmarks	DEBUG	created bookmark 46 under 2 as Kelty Cosmic Down 20 Sleeping Bag - Men's - REI.com https://www.rei.com/product/896029/kelty-cosmic-down-20-sleeping-bag-mens
+1493621116456	Sync.Engine.Bookmarks	DEBUG	SFP43kzxbfoL mapped to undefined
+1493621116456	Sync.Store.Bookmarks	DEBUG	Applying record SFP43kzxbfoL
+1493621116456	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116456	Sync.Store.Bookmarks	DEBUG	Record SFP43kzxbfoL is not an orphan.
+1493621116456	Sync.Store.Bookmarks	DEBUG	created bookmark 49 under 2 as SEA TO SUMMIT ULTRALIGHT REGULAR SLEEPING MAT : Backpacking Light https://backpackinglight.com.au/store/sea-to-summit-ultralight-regular-sleeping-mat/dp/15117
+1493621116459	Sync.Engine.Bookmarks	DEBUG	V0ahxHb0hft2 mapped to undefined
+1493621116459	Sync.Store.Bookmarks	DEBUG	Applying record V0ahxHb0hft2
+1493621116459	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116459	Sync.Store.Bookmarks	DEBUG	Record V0ahxHb0hft2 is not an orphan.
+1493621116459	Sync.Store.Bookmarks	DEBUG	created bookmark 52 under 2 as I've compiled a list of Ultracheap and Ultralight equipment for those just starting out, what do you think? : Ultralight https://www.reddit.com/r/Ultralight/comments/4iz7re/ive_compiled_a_list_of_ultracheap_and_ultralight/?st=j1ozz0o5&sh=c62c3d1d
+1493621116462	Sync.Engine.Bookmarks	DEBUG	fGC_Cd6oRMjr mapped to undefined
+1493621116462	Sync.Store.Bookmarks	DEBUG	Applying record fGC_Cd6oRMjr
+1493621116462	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116462	Sync.Store.Bookmarks	DEBUG	Record fGC_Cd6oRMjr is not an orphan.
+1493621116462	Sync.Store.Bookmarks	DEBUG	created bookmark 55 under 2 as BRS Ultralight Camping Gas Stove Outdoor Burner Cooking Stove 25g BRS-3000T | eBay http://www.ebay.com.au/itm/BRS-Ultralight-Camping-Gas-Stove-Outdoor-Burner-Cooking-Stove-25g-BRS-3000T/261596613395
+1493621116466	Sync.Engine.Bookmarks	DEBUG	odmY-KWcnhRG mapped to undefined
+1493621116466	Sync.Store.Bookmarks	DEBUG	Applying record odmY-KWcnhRG
+1493621116466	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116466	Sync.Store.Bookmarks	DEBUG	Record odmY-KWcnhRG is not an orphan.
+1493621116466	Sync.Store.Bookmarks	DEBUG	created bookmark 58 under 5 as TypeRacer - Test your typing speed and learn to type faster. Free typing game and competition. Way more fun than a typing tutor! http://play.typeracer.com/
+1493621116467	Sync.Engine.Bookmarks	DEBUG	pGFvl2B46_Jw mapped to undefined
+1493621116467	Sync.Store.Bookmarks	DEBUG	Applying record pGFvl2B46_Jw
+1493621116467	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116467	Sync.Store.Bookmarks	DEBUG	Record pGFvl2B46_Jw is not an orphan.
+1493621116468	Sync.Store.Bookmarks	DEBUG	created bookmark 59 under 2 as Primus Bottle Cartridge 2207 - 220g - Rays Outdoors Australia http://www.raysoutdoors.com.au/Product/Primus-Bottle-Cartridge-2207-220g/400453
+1493621116470	Sync.Engine.Bookmarks	DEBUG	5agcori6dZIU mapped to undefined
+1493621116470	Sync.Store.Bookmarks	DEBUG	Applying record 5agcori6dZIU
+1493621116470	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116470	Sync.Store.Bookmarks	DEBUG	Record 5agcori6dZIU is not an orphan.
+1493621116471	Sync.Store.Bookmarks	DEBUG	created bookmark 62 under 5 as Desktop notifications - ArchWiki https://wiki.archlinux.org/index.php/Desktop_notifications
+1493621116478	Sync.Engine.Bookmarks	DEBUG	Q7dvzl0USE6J mapped to undefined
+1493621116478	Sync.Store.Bookmarks	DEBUG	Applying record Q7dvzl0USE6J
+1493621116478	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116478	Sync.Store.Bookmarks	DEBUG	Record Q7dvzl0USE6J is not an orphan.
+1493621116478	Sync.Store.Bookmarks	DEBUG	created bookmark 71 under 2 as Lens Panasonic 25 mm f/1.7 mm black lens | Lenses | Gumtree Australia Melbourne City - Carlton | 1137193417 https://www.gumtree.com.au/s-ad/carlton/lenses/lens-panasonic-25-mm-f-1-7-mm-black-lens/1137193417
+1493621116613	Sync.Engine.Bookmarks	DEBUG	dB5Xc6IKH7-D mapped to undefined
+1493621116613	Sync.Store.Bookmarks	DEBUG	Applying record dB5Xc6IKH7-D
+1493621116613	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116613	Sync.Store.Bookmarks	DEBUG	Record dB5Xc6IKH7-D is not an orphan.
+1493621116614	Sync.Store.Bookmarks	DEBUG	created bookmark 72 under 5 as Wanhao Duplicator i3 - WanhaoUSA Authorized Distributor – Ultimate 3D Printing Store https://ultimate3dprintingstore.com/products/duplicator-i3-steel-frame?variant=2872958980
+1493621116615	Sync.Engine.Bookmarks	DEBUG	WaEWRzVv_AZM mapped to 3cytMB6MlBfn
+1493621116615	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: 3cytMB6MlBfn -> WaEWRzVv_AZM
+1493621116616	Sync.Store.Bookmarks	DEBUG	Changing GUID 3cytMB6MlBfn to WaEWRzVv_AZM
+1493621116616	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.616; modified=true; exists=true
+1493621116617	Sync.Engine.Bookmarks	DEBUG	iHtN9CYK6f8m mapped to undefined
+1493621116617	Sync.Store.Bookmarks	DEBUG	Applying record iHtN9CYK6f8m
+1493621116617	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116617	Sync.Store.Bookmarks	DEBUG	Record iHtN9CYK6f8m is not an orphan.
+1493621116618	Sync.Store.Bookmarks	DEBUG	created bookmark 73 under 2 as Better Batt - Batteries and Chargers - 400 Day Money Back Guarantee http://www.betterbatt.com.au/
+1493621116623	Sync.Engine.Bookmarks	DEBUG	0ctw71_qu17_ mapped to undefined
+1493621116623	Sync.Store.Bookmarks	DEBUG	Applying record 0ctw71_qu17_
+1493621116623	Sync.Store.Bookmarks	DEBUG	Local parent is mobile
+1493621116623	Sync.Store.Bookmarks	DEBUG	Record 0ctw71_qu17_ is not an orphan.
+1493621116624	Sync.Store.Bookmarks	DEBUG	created bookmark 78 under 77 as Firefox: About your browser about:firefox
+1493621116625	Sync.Engine.Bookmarks	DEBUG	2DkZb-MIAhyi mapped to K9X2pl80tVSn
+1493621116625	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: K9X2pl80tVSn -> 2DkZb-MIAhyi
+1493621116625	Sync.Store.Bookmarks	DEBUG	Changing GUID K9X2pl80tVSn to 2DkZb-MIAhyi
+1493621116625	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.625; modified=true; exists=true
+1493621116626	Sync.Engine.Bookmarks	DEBUG	9kaz2-H2pK9r mapped to undefined
+1493621116626	Sync.Store.Bookmarks	DEBUG	Applying record 9kaz2-H2pK9r
+1493621116626	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116627	Sync.Store.Bookmarks	DEBUG	Record 9kaz2-H2pK9r is not an orphan.
+1493621116627	Sync.Store.Bookmarks	DEBUG	created bookmark 79 under 5 as Openbox - ArchWiki https://wiki.archlinux.org/index.php/Openbox#Volume_Control
+1493621116628	Sync.Engine.Bookmarks	DEBUG	MO8r3P09AlPd mapped to undefined
+1493621116628	Sync.Store.Bookmarks	DEBUG	Applying record MO8r3P09AlPd
+1493621116628	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116628	Sync.Store.Bookmarks	DEBUG	Record MO8r3P09AlPd is not an orphan.
+1493621116629	Sync.Store.Bookmarks	DEBUG	created bookmark 80 under 2 as $2.5 Keys http://www.reddit.com/r/adultgifs+voluptuous+anal+amateurarchives+TwinGirls+asstastic+bigasses+boobbounce+TittyDrop+boobgifs+cumsluts+legalteens+tights+booty+TheUnderboob+tanlines+sweatermeat+stockings+Stacked+squirting+shewantstofuck+palegirls+Orgasms+O_Faces+nsfwoutfits+nsfwhardcore+nsfw2+jilling+latinas+legsup+legs+hugenaturals+iWantToFuckHer+Gravure+HappyEmbarrassedGirls+HighResNSFW+GirlswithGlasses+GirlsinStripedSocks+GirlsinLaceFishnets+funsized+Fisting+facesitting+bubblebutts+burstingout+bustybabes+buttplug+cfnf+onoff+changingrooms+collegeamateurs+collegensfw+pussy+facedownassup+nsfw_nsfw_gifs+gwcumsluts+suctiondildos+dildos+insertions
+1493621116630	Sync.Engine.Bookmarks	DEBUG	Mvfk3IX0goBe mapped to undefined
+1493621116630	Sync.Store.Bookmarks	DEBUG	Applying record Mvfk3IX0goBe
+1493621116630	Sync.Store.Bookmarks	DEBUG	Local parent is mobile
+1493621116630	Sync.Store.Bookmarks	DEBUG	Record Mvfk3IX0goBe is not an orphan.
+1493621116630	Sync.Store.Bookmarks	DEBUG	created bookmark 81 under 77 as Firefox: Customize with add-ons https://addons.mozilla.org/android/
+1493621116632	Sync.Engine.Bookmarks	DEBUG	NRMWTY9CRO9G mapped to undefined
+1493621116632	Sync.Store.Bookmarks	DEBUG	Applying record NRMWTY9CRO9G
+1493621116632	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116632	Sync.Store.Bookmarks	DEBUG	Record NRMWTY9CRO9G is not an orphan.
+1493621116632	Sync.Store.Bookmarks	DEBUG	created bookmark 82 under 2 as Top 10 Linux Job Interview Questions - YouTube https://www.youtube.com/watch?v=l0QGLMwR-lY
+1493621116634	Sync.Engine.Bookmarks	DEBUG	RxDqLbz8fcEz mapped to IZC5gGVAZZC6
+1493621116634	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: IZC5gGVAZZC6 -> RxDqLbz8fcEz
+1493621116634	Sync.Store.Bookmarks	DEBUG	Changing GUID IZC5gGVAZZC6 to RxDqLbz8fcEz
+1493621116635	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.635; modified=true; exists=true
+1493621116636	Sync.Engine.Bookmarks	DEBUG	VMFpqcAu7966 mapped to undefined
+1493621116636	Sync.Store.Bookmarks	DEBUG	Applying record VMFpqcAu7966
+1493621116636	Sync.Store.Bookmarks	DEBUG	Local parent is mobile
+1493621116636	Sync.Store.Bookmarks	DEBUG	Record VMFpqcAu7966 is not an orphan.
+1493621116637	Sync.Store.Bookmarks	DEBUG	created bookmark 85 under 77 as Firefox Marketplace https://marketplace.firefox.com/
+1493621116638	Sync.Engine.Bookmarks	DEBUG	b8r-rw0qAVbM mapped to undefined
+1493621116638	Sync.Store.Bookmarks	DEBUG	Applying record b8r-rw0qAVbM
+1493621116638	Sync.Store.Bookmarks	DEBUG	Local parent is mobile
+1493621116638	Sync.Store.Bookmarks	DEBUG	Record b8r-rw0qAVbM is not an orphan.
+1493621116638	Sync.Store.Bookmarks	DEBUG	created bookmark 86 under 77 as Firefox: Support https://support.mozilla.org/products/mobile
+1493621116640	Sync.Engine.Bookmarks	DEBUG	gbU78Y73Hq6x mapped to undefined
+1493621116640	Sync.Store.Bookmarks	DEBUG	Applying record gbU78Y73Hq6x
+1493621116640	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116640	Sync.Store.Bookmarks	DEBUG	Record gbU78Y73Hq6x is not an orphan.
+1493621116640	Sync.Store.Bookmarks	DEBUG	created bookmark 87 under 5 as Web Scraping with BeautifulSoup http://www.pythonforbeginners.com/python-on-the-web/web-scraping-with-beautifulsoup
+1493621116646	Sync.Engine.Bookmarks	DEBUG	jSvIcZ4a8sQh mapped to undefined
+1493621116646	Sync.Store.Bookmarks	DEBUG	Applying record jSvIcZ4a8sQh
+1493621116646	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116646	Sync.Store.Bookmarks	DEBUG	Record jSvIcZ4a8sQh is not an orphan.
+1493621116647	Sync.Store.Bookmarks	DEBUG	created bookmark 98 under 2 as I'm Getting NBN Soon, Is It Better than ADSL2+ and Exactly How Fast Is It? - OzBargain Forums https://www.ozbargain.com.au/node/2880Lq
+1493621116648	Sync.Engine.Bookmarks	DEBUG	rmsnST0d31jG mapped to undefined
+1493621116648	Sync.Store.Bookmarks	DEBUG	Applying record rmsnST0d31jG
+1493621116648	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116648	Sync.Store.Bookmarks	DEBUG	Record rmsnST0d31jG is not an orphan.
+1493621116649	Sync.Store.Bookmarks	DEBUG	created bookmark 99 under 2 as This guy finding out his game has been greenlit : Steam https://www.reddit.com/r/Steam/comments/5q08hu/this_guy_finding_out_his_game_has_been_greenlit/?st=iycr9utr&sh=ed4ffd38aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:q
+1493621116650	Sync.Engine.Bookmarks	DEBUG	tMgnyNRo1rle mapped to undefined
+1493621116650	Sync.Store.Bookmarks	DEBUG	Applying record tMgnyNRo1rle
+1493621116650	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116650	Sync.Store.Bookmarks	DEBUG	Record tMgnyNRo1rle is not an orphan.
+1493621116650	Sync.Store.Bookmarks	DEBUG	created bookmark 100 under 2 as $2 Keys http://www.reddit.com/r/GlobalOffensiveTrade/comments/27qnvf/h_keys_w_2usd_215_cad_paypal_each/
+1493621116651	Sync.Engine.Bookmarks	DEBUG	txhwn4yK_QZp mapped to 2NbA5rN64xYv
+1493621116651	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: 2NbA5rN64xYv -> txhwn4yK_QZp
+1493621116651	Sync.Store.Bookmarks	DEBUG	Changing GUID 2NbA5rN64xYv to txhwn4yK_QZp
+1493621116652	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.652; modified=true; exists=true
+1493621116653	Sync.Engine.Bookmarks	DEBUG	xMZyqrcg2mSg mapped to OThEnUmlAGMy
+1493621116653	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: OThEnUmlAGMy -> xMZyqrcg2mSg
+1493621116653	Sync.Store.Bookmarks	DEBUG	Changing GUID OThEnUmlAGMy to xMZyqrcg2mSg
+1493621116653	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.653; modified=true; exists=true
+1493621116654	Sync.Engine.Bookmarks	DEBUG	yis-b_8LciVd mapped to undefined
+1493621116654	Sync.Store.Bookmarks	DEBUG	Applying record yis-b_8LciVd
+1493621116655	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116655	Sync.Store.Bookmarks	DEBUG	Record yis-b_8LciVd is not an orphan.
+1493621116655	Sync.Store.Bookmarks	DEBUG	created bookmark 101 under 2 as Restore Session about:sessionrestore
+1493621116658	Sync.Engine.Bookmarks	DEBUG	agPY9lEfxGll mapped to undefined
+1493621116658	Sync.Store.Bookmarks	DEBUG	Applying record agPY9lEfxGll
+1493621116658	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116658	Sync.Store.Bookmarks	DEBUG	Record agPY9lEfxGll is not an orphan.
+1493621116659	Sync.Store.Bookmarks	DEBUG	created bookmark 104 under 2 as z3bra.org - monochromatic blog http://blog.z3bra.org/2014/04/meeting-at-the-bar.html
+1493621116662	Sync.Engine.Bookmarks	DEBUG	1beiYCuoq1gU mapped to undefined
+1493621116662	Sync.Store.Bookmarks	DEBUG	Applying record 1beiYCuoq1gU
+1493621116662	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116662	Sync.Store.Bookmarks	DEBUG	Record 1beiYCuoq1gU is not an orphan.
+1493621116663	Sync.Store.Bookmarks	DEBUG	created bookmark 110 under 5 as Motorbike jack | Motorcycle & Scooter Accessories | Gumtree Australia Monash Area - Chadstone | 1134709870 http://www.gumtree.com.au/s-ad/chadstone/motorcycle-scooter-accessories/motorbike-jack/1134709870
+1493621116665	Sync.Engine.Bookmarks	DEBUG	csaOlvsRqgKv mapped to undefined
+1493621116665	Sync.Store.Bookmarks	DEBUG	Applying record csaOlvsRqgKv
+1493621116665	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116665	Sync.Store.Bookmarks	DEBUG	Record csaOlvsRqgKv is not an orphan.
+1493621116666	Sync.Store.Bookmarks	DEBUG	created bookmark 114 under 2 as Is there a command line C++ to PDF converter with syntax highlighting? - Stack Overflow http://stackoverflow.com/questions/2649373/is-there-a-command-line-c-to-pdf-converter-with-syntax-highlighting
+1493621116669	Sync.Engine.Bookmarks	DEBUG	llRxnrnp02PP mapped to undefined
+1493621116669	Sync.Store.Bookmarks	DEBUG	Applying record llRxnrnp02PP
+1493621116669	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116669	Sync.Store.Bookmarks	DEBUG	Record llRxnrnp02PP is not an orphan.
+1493621116669	Sync.Store.Bookmarks	DEBUG	created bookmark 119 under 2 as Planning and Time Management Guide https://www.dlsweb.rmit.edu.au/set/Courses/Content/SOET/AD005/EEET2280/Downloads.html
+1493621116673	Sync.Engine.Bookmarks	DEBUG	VRHTjRTfuf2I mapped to undefined
+1493621116673	Sync.Store.Bookmarks	DEBUG	Applying record VRHTjRTfuf2I
+1493621116673	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116673	Sync.Store.Bookmarks	DEBUG	Record VRHTjRTfuf2I is not an orphan.
+1493621116673	Sync.Store.Bookmarks	DEBUG	created bookmark 125 under 2 as The Freedom Machine Movie - YouTube https://www.youtube.com/watch?v=-xd6QflbZXk&feature=youtu.be
+1493621116817	Sync.Engine.Bookmarks	DEBUG	VSCk_cprmBAG mapped to undefined
+1493621116817	Sync.Store.Bookmarks	DEBUG	Applying record VSCk_cprmBAG
+1493621116817	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116818	Sync.Store.Bookmarks	DEBUG	Record VSCk_cprmBAG is not an orphan.
+1493621116818	Sync.Store.Bookmarks	DEBUG	created bookmark 126 under 2 as $2.4 Keys http://redditp.com/r/felching+adultgifs+asian_porn+jap_porn2+voluptuous+anal+amateurarchives+TwinGirls+asstastic+bigasses+porninfifteenseconds+boobbounce+TittyDrop+boobgifs+cumsluts+legalteens+tights+booty+TheUnderboob+tanlines+sweatermeat+stockings+Stacked+squirting+shewantstofuck+palegirls+Orgasms+O_Faces+nsfwoutfits+nsfwhardcore+nsfw2+jilling+latinas+legsup+legs+hugenaturals+iWantToFuckHer+Gravure+HappyEmbarrassedGirls+HighResNSFW+GirlswithGlasses+GirlsinStripedSocks+GirlsinLaceFishnets+funsized+Fisting+facesitting+bubblebutts+burstingout+bustybabes+buttplug+cfnf+onoff+changingrooms+collegeamateurs+collegensfw+pussy+facedownassup+nsfw_nsfw_gifs+gwcumsluts+suctiondildos+dildos+insertions
+1493621116820	Sync.Engine.Bookmarks	DEBUG	jVpM1N0IQuUw mapped to undefined
+1493621116820	Sync.Store.Bookmarks	DEBUG	Applying record jVpM1N0IQuUw
+1493621116820	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116820	Sync.Store.Bookmarks	DEBUG	Record jVpM1N0IQuUw is not an orphan.
+1493621116821	Sync.Store.Bookmarks	DEBUG	created bookmark 127 under 2 as Unsplash | High-Resolution Photos https://unsplash.com/
+1493621116826	Sync.Engine.Bookmarks	DEBUG	PeoaOcF5VJ29 mapped to undefined
+1493621116826	Sync.Store.Bookmarks	DEBUG	Applying record PeoaOcF5VJ29
+1493621116826	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116826	Sync.Store.Bookmarks	DEBUG	Record PeoaOcF5VJ29 is not an orphan.
+1493621116827	Sync.Store.Bookmarks	DEBUG	created bookmark 133 under 2 as [Openbox] My new laptop - Roboto all the things : unixporn https://www.reddit.com/r/unixporn/comments/47o7i0/openbox_my_new_laptop_roboto_all_the_things/
+1493621116833	Sync.Engine.Bookmarks	DEBUG	Q3aqziyq8VjE mapped to undefined
+1493621116833	Sync.Store.Bookmarks	DEBUG	Applying record Q3aqziyq8VjE
+1493621116833	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116833	Sync.Store.Bookmarks	DEBUG	Record Q3aqziyq8VjE is not an orphan.
+1493621116833	Sync.Store.Bookmarks	DEBUG	created bookmark 141 under 2 as Library Genesis: Scientfic Articles http://gen.lib.rus.ec/scimag/index.php
+1493621116838	Sync.Engine.Bookmarks	DEBUG	9iMh2fj2_hnx mapped to undefined
+1493621116838	Sync.Store.Bookmarks	DEBUG	Applying record 9iMh2fj2_hnx
+1493621116838	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116838	Sync.Store.Bookmarks	DEBUG	Record 9iMh2fj2_hnx is not an orphan.
+1493621116839	Sync.Store.Bookmarks	DEBUG	created bookmark 147 under 2 as SEIKO_7T62 - SEIKO_7T62.pdf https://www.seikowatches.com/support/ib/pdf/SEIKO_7T62.pdf
+1493621116842	Sync.Engine.Bookmarks	DEBUG	2elIbxcS2SXA mapped to undefined
+1493621116842	Sync.Store.Bookmarks	DEBUG	Applying record 2elIbxcS2SXA
+1493621116842	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116842	Sync.Store.Bookmarks	DEBUG	Record 2elIbxcS2SXA is not an orphan.
+1493621116843	Sync.Store.Bookmarks	DEBUG	created bookmark 154 under 2 as VIM Quick Reference Card http://tnerual.eriogerg.free.fr/vimqrc.html
+1493621116846	Sync.Engine.Bookmarks	DEBUG	5k9tHt73aPFB mapped to undefined
+1493621116846	Sync.Store.Bookmarks	DEBUG	Applying record 5k9tHt73aPFB
+1493621116846	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116846	Sync.Store.Bookmarks	DEBUG	Record 5k9tHt73aPFB is not an orphan.
+1493621116847	Sync.Store.Bookmarks	DEBUG	created bookmark 159 under 5 as Pricing  |  Firebase https://firebase.google.com/pricing/
+1493621116852	Sync.Engine.Bookmarks	DEBUG	9S9eUc6NkGuR mapped to undefined
+1493621116852	Sync.Store.Bookmarks	DEBUG	Applying record 9S9eUc6NkGuR
+1493621116852	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116852	Sync.Store.Bookmarks	DEBUG	Record 9S9eUc6NkGuR is not an orphan.
+1493621116853	Sync.Store.Bookmarks	DEBUG	created bookmark 171 under 2 as Honda VTR250 2009+ LED Tail Light with Integrated Indicators in Smoked Lens | eBay http://www.ebay.com.au/itm/Honda-VTR250-2009-LED-Tail-Light-with-Integrated-Indicators-in-Smoked-Lens-/361623023278?hash=item5432696eae:g:AigAAOSwzJ5XdOh3
+1493621116855	Sync.Engine.Bookmarks	DEBUG	IoM3BNdmbo9_ mapped to undefined
+1493621116855	Sync.Store.Bookmarks	DEBUG	Applying record IoM3BNdmbo9_
+1493621116855	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116855	Sync.Store.Bookmarks	DEBUG	Record IoM3BNdmbo9_ is not an orphan.
+1493621116856	Sync.Store.Bookmarks	DEBUG	created bookmark 174 under 2 as Recalbox - the micro retro gaming console http://www.recalbox.com/diyrecalbox
+1493621116860	Sync.Engine.Bookmarks	DEBUG	XoJmPD-gQlv1 mapped to undefined
+1493621116860	Sync.Store.Bookmarks	DEBUG	Applying record XoJmPD-gQlv1
+1493621116860	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116860	Sync.Store.Bookmarks	DEBUG	Record XoJmPD-gQlv1 is not an orphan.
+1493621116860	Sync.Store.Bookmarks	DEBUG	created bookmark 182 under 5 as ServerPilot | PHP and WordPress Hosting on DigitalOcean https://serverpilot.io/
+1493621116865	Sync.Engine.Bookmarks	DEBUG	cY2LEJO-QP7a mapped to undefined
+1493621116865	Sync.Store.Bookmarks	DEBUG	Applying record cY2LEJO-QP7a
+1493621116865	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116865	Sync.Store.Bookmarks	DEBUG	Record cY2LEJO-QP7a is not an orphan.
+1493621116865	Sync.Store.Bookmarks	DEBUG	created bookmark 189 under 5 as humphd/have-fun-with-machine-learning: An absolute beginner's guide to Machine Learning and Image Classification with Neural Networks https://github.com/humphd/have-fun-with-machine-learning
+1493621116870	Sync.Engine.Bookmarks	DEBUG	eEL0yT2eE5VK mapped to undefined
+1493621116870	Sync.Store.Bookmarks	DEBUG	Applying record eEL0yT2eE5VK
+1493621116870	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116870	Sync.Store.Bookmarks	DEBUG	Record eEL0yT2eE5VK is not an orphan.
+1493621116870	Sync.Store.Bookmarks	DEBUG	created bookmark 197 under 5 as Olympus Summer Rewards Promotion https://secure.promosite.com.au/OlympusSummerRewards/claim.aspx
+1493621116872	Sync.Engine.Bookmarks	DEBUG	jJH7jjutxcqP mapped to undefined
+1493621116872	Sync.Store.Bookmarks	DEBUG	Applying record jJH7jjutxcqP
+1493621116872	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116872	Sync.Store.Bookmarks	DEBUG	Record jJH7jjutxcqP is not an orphan.
+1493621116872	Sync.Store.Bookmarks	DEBUG	created bookmark 198 under 5 as Insta-Mold Custom Made Earplugs : Motorcycle Earplugs custom made from $75 https://www.earmold.com.au/insta-mold-custom-made-earplugs/motorcycle-custom-earplugs-from-75.htm
+1493621116873	Sync.Engine.Bookmarks	DEBUG	moaRVoaqP7Jb mapped to undefined
+1493621116873	Sync.Store.Bookmarks	DEBUG	Applying record moaRVoaqP7Jb
+1493621116874	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116874	Sync.Store.Bookmarks	DEBUG	Record moaRVoaqP7Jb is not an orphan.
+1493621116874	Sync.Store.Bookmarks	DEBUG	created bookmark 199 under 5 as Citrix Receiver https://mydesktop.rmit.edu.au/RMITRemote/
+1493621116875	Sync.Engine.Bookmarks	DEBUG	qb_eyeDJeJ4J mapped to undefined
+1493621116875	Sync.Store.Bookmarks	DEBUG	Applying record qb_eyeDJeJ4J
+1493621116875	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116875	Sync.Store.Bookmarks	DEBUG	Record qb_eyeDJeJ4J is not an orphan.
+1493621116876	Sync.Store.Bookmarks	DEBUG	created bookmark 200 under 2 as Rear Throw Over Luggage System - Third Gear http://thirdgear.com.au/rear-throw-over-luggage-system/
+1493621116878	Sync.Engine.Bookmarks	DEBUG	rpRLBzoBqKzf mapped to undefined
+1493621116878	Sync.Store.Bookmarks	DEBUG	Applying record rpRLBzoBqKzf
+1493621116878	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116878	Sync.Store.Bookmarks	DEBUG	Record rpRLBzoBqKzf is not an orphan.
+1493621116878	Sync.Store.Bookmarks	DEBUG	created bookmark 203 under 2 as https://www.youtube.com/watch?v=_0g79mTyjE0 https://www.youtube.com/watch?v=_0g79mTyjE0
+1493621116880	Sync.Engine.Bookmarks	DEBUG	83FNG4s3Z1VS mapped to undefined
+1493621116881	Sync.Store.Bookmarks	DEBUG	Applying record 83FNG4s3Z1VS
+1493621116881	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116881	Sync.Store.Bookmarks	DEBUG	Record 83FNG4s3Z1VS is not an orphan.
+1493621116881	Sync.Store.Bookmarks	DEBUG	created bookmark 206 under 5 as Pelican 3.7.1 — Pelican 3.7.1 documentation http://docs.getpelican.com/en/stable/
+1493621116883	Sync.Engine.Bookmarks	DEBUG	fwSzDg_je3ts mapped to undefined
+1493621116883	Sync.Store.Bookmarks	DEBUG	Applying record fwSzDg_je3ts
+1493621116883	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116883	Sync.Store.Bookmarks	DEBUG	Record fwSzDg_je3ts is not an orphan.
+1493621116884	Sync.Store.Bookmarks	DEBUG	created bookmark 209 under 5 as Welcome [Root Me : Hacking and Information Security learning platform] https://www.root-me.org/?lang=en
+1493621116888	Sync.Engine.Bookmarks	DEBUG	mF_NTLZQ8Ssz mapped to undefined
+1493621116888	Sync.Store.Bookmarks	DEBUG	Applying record mF_NTLZQ8Ssz
+1493621116888	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116888	Sync.Store.Bookmarks	DEBUG	Record mF_NTLZQ8Ssz is not an orphan.
+1493621116889	Sync.Store.Bookmarks	DEBUG	created bookmark 215 under 5 as Instafavicon | Quickly create a favicon for your website https://instafavicon.com/
+1493621116891	Sync.Engine.Bookmarks	DEBUG	RnJrhmzCyQfq mapped to undefined
+1493621116891	Sync.Store.Bookmarks	DEBUG	Applying record RnJrhmzCyQfq
+1493621116891	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116891	Sync.Store.Bookmarks	DEBUG	Record RnJrhmzCyQfq is not an orphan.
+1493621116892	Sync.Store.Bookmarks	DEBUG	created bookmark 218 under 5 as Prusa i3 - 3D Printer Full Kit - Longcat Labs Ltd - Replikeo http://www.replikeo.com/en/3d-printer-kits/9-prusa-i3-3d-printer-full-kit-.html#/25-filament_diameter-175mm/27-filament_type-abs/32-nozzle_diameter-04mm/38-prusa_i3_frame_material-steel_3mm
+1493621116893	Sync.Engine.Bookmarks	DEBUG	xKhS9QdO89oT mapped to undefined
+1493621116893	Sync.Store.Bookmarks	DEBUG	Applying record xKhS9QdO89oT
+1493621116893	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116893	Sync.Store.Bookmarks	DEBUG	Record xKhS9QdO89oT is not an orphan.
+1493621116893	Sync.Store.Bookmarks	DEBUG	created bookmark 219 under 2 as VIM Color Scheme Test - LaTeX - Sat Sep 26 16:32:24 2009 http://vimcolorschemetest.googlecode.com/svn/html/index-tex.html
+1493621116897	Sync.Engine.Bookmarks	DEBUG	xdKja1viZcnv mapped to undefined
+1493621116897	Sync.Store.Bookmarks	DEBUG	Applying record xdKja1viZcnv
+1493621116897	Sync.Store.Bookmarks	DEBUG	Local parent is unfiled
+1493621116897	Sync.Store.Bookmarks	DEBUG	Record xdKja1viZcnv is not an orphan.
+1493621116897	Sync.Store.Bookmarks	DEBUG	created bookmark 224 under 5 as DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: DOSBOX https://archive.org/details/win3_winrisk
+1493621116899	Sync.Engine.Bookmarks	DEBUG	BjnbZN00kHgZ mapped to undefined
+1493621116899	Sync.Store.Bookmarks	DEBUG	Applying record BjnbZN00kHgZ
+1493621116899	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116899	Sync.Store.Bookmarks	DEBUG	Record BjnbZN00kHgZ is not an orphan.
+1493621116899	Sync.Store.Bookmarks	DEBUG	created bookmark 225 under 2 as 2.3 keys http://redditp.com/r/felching+adultgifs+NSFW_Japan+voluptuous+anal+amateurarchives+TwinGirls+asstastic+bigasses+porninfifteenseconds+boobbounce+TittyDrop+boobgifs+cumsluts+legalteens+tights+booty+TheUnderboob+tanlines+sweatermeat+stockings+Stacked+squirting+shewantstofuck+palegirls+Orgasms+O_Faces+nsfwoutfits+nsfwhardcore+nsfw2+jilling+latinas+legsup+legs+hugenaturals+iWantToFuckHer+Gravure+HappyEmbarrassedGirls+HighResNSFW+GirlswithGlasses+GirlsinStripedSocks+GirlsinLaceFishnets+funsized+Fisting+facesitting+bubblebutts+burstingout+bustybabes+buttplug+cfnf+onoff+changingrooms+collegeamateurs+collegensfw+pussy+facedownassup+nsfw_nsfw_gifs+gwcumsluts+suctiondildos+dildos+insertions
+1493621116900	Sync.Engine.Bookmarks	DEBUG	16zRlcT47_Rg mapped to X9J6cGbc67hw
+1493621116901	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: X9J6cGbc67hw -> 16zRlcT47_Rg
+1493621116901	Sync.Store.Bookmarks	DEBUG	Changing GUID X9J6cGbc67hw to 16zRlcT47_Rg
+1493621116901	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.901; modified=true; exists=true
+1493621116902	Sync.Engine.Bookmarks	DEBUG	XA5ZB1yiHQOk mapped to Apzatco-m-ph
+1493621116902	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: Apzatco-m-ph -> XA5ZB1yiHQOk
+1493621116902	Sync.Store.Bookmarks	DEBUG	Changing GUID Apzatco-m-ph to XA5ZB1yiHQOk
+1493621116903	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.903; modified=true; exists=true
+1493621116904	Sync.Engine.Bookmarks	DEBUG	fbND0-h8BtRB mapped to OGBTZNAgxGWq
+1493621116904	Sync.Engine.Bookmarks	DEBUG	Switching local ID to incoming: OGBTZNAgxGWq -> fbND0-h8BtRB
+1493621116904	Sync.Store.Bookmarks	DEBUG	Changing GUID OGBTZNAgxGWq to fbND0-h8BtRB
+1493621116904	Sync.Engine.Bookmarks	DEBUG	Local item after duplication: age=1493621116.904; modified=true; exists=true
+1493621116905	Sync.Engine.Bookmarks	DEBUG	hC-_ENb38otv mapped to undefined
+1493621116905	Sync.Store.Bookmarks	DEBUG	Applying record hC-_ENb38otv
+1493621116905	Sync.Store.Bookmarks	DEBUG	Local parent is menu
+1493621116905	Sync.Store.Bookmarks	DEBUG	Record hC-_ENb38otv is not an orphan.
+1493621116905	Sync.Store.Bookmarks	DEBUG	created separator 226 under 2
+1493621116906	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?full=1&sort=index
+1493621116906	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?full=1&sort=index
+1493621116906	Sync.Engine.Bookmarks	INFO	Records: 64 applied, 64 successfully, 0 failed to apply, 0 newly failed to apply, 9 reconciled.
+1493621116924	Sync.Engine.Bookmarks	INFO	Uploading all of 4 records
+1493621116925	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621116927	Sync.Collection	DEBUG	POST Length: 2903
+1493621117168	Sync.Tracker.Bookmarks	DEBUG	Saving changed IDs to bookmarks
+1493621117187	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks
+1493621117187	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks
+1493621117188	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621117431	Sync.Collection	DEBUG	mesg: DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?ids=H9TIzL0P_eAc,QdpXxamyEhx_,3cytMB6MlBfn,K9X2pl80tVSn,IZC5gGVAZZC6,2NbA5rN64xYv,OThEnUmlAGMy,X9J6cGbc67hw,Apzatco-m-ph,OGBTZNAgxGWq
+1493621117431	Sync.Collection	DEBUG	DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?ids=H9TIzL0P_eAc,QdpXxamyEhx_,3cytMB6MlBfn,K9X2pl80tVSn,IZC5gGVAZZC6,2NbA5rN64xYv,OThEnUmlAGMy,X9â¦
+1493621117431	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493621117431	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493621117432	Sync.AddonsReconciler	DEBUG	No data seen in loaded file: addonsreconciler
+1493621117433	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: loop@mozilla.org
+1493621117433	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: loop@mozilla.org
+1493621117433	Sync.AddonsReconciler	INFO	Change recorded for loop@mozilla.org
+1493621117433	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 loop@mozilla.org
+1493621117434	Sync.Store.Addons	DEBUG	loop@mozilla.org not syncable: add-on not found in add-on repository.
+1493621117434	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: loop@mozilla.org
+1493621117434	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621117434	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621117434	Sync.AddonsReconciler	INFO	Change recorded for {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621117434	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621117434	Sync.Store.Addons	DEBUG	{972ce4c6-7e08-4474-a285-3208198ce6fd} not syncable: not installed in profile.
+1493621117434	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621117434	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: gmp-gmpopenh264
+1493621117434	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: gmp-gmpopenh264
+1493621117434	Sync.AddonsReconciler	INFO	Change recorded for gmp-gmpopenh264
+1493621117434	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 gmp-gmpopenh264
+1493621117434	Sync.Store.Addons	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1493621117434	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: gmp-gmpopenh264
+1493621117434	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621117435	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621117435	Sync.AddonsReconciler	INFO	Change recorded for {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621117435	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621117435	Sync.Store.Addons	DEBUG	{81483a79-4662-220f-c0b3-08db1c26b031} not syncable: type not in whitelist: plugin
+1493621117435	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621117435	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621117435	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621117435	Sync.AddonsReconciler	INFO	Change recorded for {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621117435	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621117435	Sync.Store.Addons	DEBUG	{d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb} not syncable: type not in whitelist: plugin
+1493621117435	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621117435	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621117435	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621117435	Sync.AddonsReconciler	INFO	Change recorded for {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621117435	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621117435	Sync.Store.Addons	DEBUG	{99185ea3-8e99-964f-fdce-619e7ce2aa19} not syncable: type not in whitelist: plugin
+1493621117435	Sync.Tracker.Addons	DEBUG	Ignoring change because add-on isn't syncable: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621117436	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621117438	Sync.Engine.Addons	DEBUG	First sync, uploading all items
+1493621117439	Sync.Store.Addons	DEBUG	loop@mozilla.org not syncable: add-on not found in add-on repository.
+1493621117439	Sync.Store.Addons	DEBUG	{972ce4c6-7e08-4474-a285-3208198ce6fd} not syncable: not installed in profile.
+1493621117439	Sync.Store.Addons	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1493621117439	Sync.Store.Addons	DEBUG	{81483a79-4662-220f-c0b3-08db1c26b031} not syncable: type not in whitelist: plugin
+1493621117439	Sync.Store.Addons	DEBUG	{d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb} not syncable: type not in whitelist: plugin
+1493621117439	Sync.Store.Addons	DEBUG	{99185ea3-8e99-964f-fdce-619e7ce2aa19} not syncable: type not in whitelist: plugin
+1493621117439	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1493621117440	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621117889	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621117889	Sync.AddonUtils	INFO	Trying to install add-on from search result: vimperator@mozdev.org
+1493621117889	Sync.AddonUtils	DEBUG	Obtaining install for vimperator@mozdev.org
+1493621117890	Sync.AddonUtils	INFO	Installing vimperator@mozdev.org
+1493621118439	Sync.Tracker.Addons	DEBUG	Saving changed IDs to addons
+1493621119537	Sync.AddonUtils	INFO	Setting syncGUID of Vimperator: ReMolBwq4TNd
+1493621119538	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to vimperator@mozdev.org
+1493621119538	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621119546	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to vimperator@mozdev.org
+1493621119546	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: vimperator@mozdev.org
+1493621119546	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: vimperator@mozdev.org
+1493621119546	Sync.AddonsReconciler	INFO	Change recorded for vimperator@mozdev.org
+1493621119546	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 vimperator@mozdev.org
+1493621119547	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621119549	Sync.Store.Addons	INFO	Add-on installed: vimperator@mozdev.org
+1493621119781	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621119781	Sync.AddonUtils	INFO	Trying to install add-on from search result: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621119781	Sync.AddonUtils	DEBUG	Obtaining install for {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621119781	Sync.AddonUtils	INFO	Installing {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120355	Sync.AddonUtils	INFO	Setting syncGUID of User Agent Switcher: {e57121e5-b1d5-4c62-8ec6-39ebc5894b21}
+1493621120356	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120356	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621120362	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120362	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120362	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120362	Sync.AddonsReconciler	INFO	Change recorded for {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120362	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120362	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621120365	Sync.Store.Addons	INFO	Add-on installed: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621120613	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621120613	Sync.AddonUtils	INFO	Trying to install add-on from search result: keefox@chris.tomlinson
+1493621120613	Sync.AddonUtils	DEBUG	Obtaining install for keefox@chris.tomlinson
+1493621120614	Sync.AddonUtils	INFO	Installing keefox@chris.tomlinson
+1493621121754	Sync.AddonUtils	INFO	Setting syncGUID of KeeFox: {6e5cd69c-2888-4651-8c0a-7e75d4fd9bef}
+1493621121755	Sync.AddonUtils	INFO	Marking add-on as disabled for install: KeeFox
+1493621121757	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to keefox@chris.tomlinson
+1493621121757	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621122100	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to keefox@chris.tomlinson
+1493621122100	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: keefox@chris.tomlinson
+1493621122100	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: keefox@chris.tomlinson
+1493621122100	Sync.AddonsReconciler	INFO	Change recorded for keefox@chris.tomlinson
+1493621122100	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 keefox@chris.tomlinson
+1493621122100	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621122111	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to keefox@chris.tomlinson
+1493621122111	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: keefox@chris.tomlinson
+1493621122111	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621122115	Sync.Store.Addons	INFO	Add-on installed: keefox@chris.tomlinson
+1493621122352	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621122353	Sync.AddonUtils	INFO	Trying to install add-on from search result: jid1-xUfzOsOFlzSOXg@jetpack
+1493621122353	Sync.AddonUtils	DEBUG	Obtaining install for jid1-xUfzOsOFlzSOXg@jetpack
+1493621122353	Sync.AddonUtils	INFO	Installing jid1-xUfzOsOFlzSOXg@jetpack
+1493621123680	Sync.AddonUtils	INFO	Setting syncGUID of Reddit Enhancement Suite: vTsisA5cMcfR
+1493621123684	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to jid1-xUfzOsOFlzSOXg@jetpack
+1493621123684	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621123742	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to jid1-xUfzOsOFlzSOXg@jetpack
+1493621123742	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: jid1-xUfzOsOFlzSOXg@jetpack
+1493621123742	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: jid1-xUfzOsOFlzSOXg@jetpack
+1493621123742	Sync.AddonsReconciler	INFO	Change recorded for jid1-xUfzOsOFlzSOXg@jetpack
+1493621123742	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 jid1-xUfzOsOFlzSOXg@jetpack
+1493621123742	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621123757	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to jid1-xUfzOsOFlzSOXg@jetpack
+1493621123757	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: jid1-xUfzOsOFlzSOXg@jetpack
+1493621123757	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621123761	Sync.Store.Addons	INFO	Add-on installed: jid1-xUfzOsOFlzSOXg@jetpack
+1493621123995	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621123996	Sync.AddonUtils	INFO	Trying to install add-on from search result: uBlock0@raymondhill.net
+1493621123996	Sync.AddonUtils	DEBUG	Obtaining install for uBlock0@raymondhill.net
+1493621123996	Sync.AddonUtils	INFO	Installing uBlock0@raymondhill.net
+1493621124620	Sync.AddonUtils	INFO	Setting syncGUID of uBlock Origin: vkUXSvAysP0r
+1493621124623	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to uBlock0@raymondhill.net
+1493621124623	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621124651	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to uBlock0@raymondhill.net
+1493621124651	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: uBlock0@raymondhill.net
+1493621124651	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: uBlock0@raymondhill.net
+1493621124651	Sync.AddonsReconciler	INFO	Change recorded for uBlock0@raymondhill.net
+1493621124651	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 uBlock0@raymondhill.net
+1493621124651	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621124669	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to uBlock0@raymondhill.net
+1493621124669	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: uBlock0@raymondhill.net
+1493621124669	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621124676	Sync.Store.Addons	INFO	Add-on installed: uBlock0@raymondhill.net
+1493621125052	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621125052	Sync.AddonUtils	INFO	Trying to install add-on from search result: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125052	Sync.AddonUtils	DEBUG	Obtaining install for {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125052	Sync.AddonUtils	INFO	Installing {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125842	Sync.AddonUtils	INFO	Setting syncGUID of New Tab Homepage: is0V8eJCjAmU
+1493621125844	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125844	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621125851	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125851	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125851	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125851	Sync.AddonsReconciler	INFO	Change recorded for {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125851	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125851	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621125863	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125863	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621125863	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621125867	Sync.Store.Addons	INFO	Add-on installed: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621126355	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621126356	Sync.AddonUtils	INFO	Trying to install add-on from search result: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126356	Sync.AddonUtils	DEBUG	Obtaining install for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126356	Sync.AddonUtils	INFO	Installing {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126948	Sync.AddonUtils	INFO	Setting syncGUID of DownThemAll!: fmOJ01W5OGtk
+1493621126948	Sync.AddonUtils	INFO	Marking add-on as disabled for install: DownThemAll!
+1493621126950	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126950	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621126959	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126959	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126959	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126959	Sync.AddonsReconciler	INFO	Change recorded for {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126959	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126959	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621126971	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126971	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621126971	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621126975	Sync.Store.Addons	INFO	Add-on installed: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621127217	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621127217	Sync.AddonUtils	INFO	Trying to install add-on from search result: extension@one-tab.com
+1493621127217	Sync.AddonUtils	DEBUG	Obtaining install for extension@one-tab.com
+1493621127218	Sync.AddonUtils	INFO	Installing extension@one-tab.com
+1493621128716	Sync.AddonUtils	INFO	Setting syncGUID of OneTab: bATsSioW11MN
+1493621128716	Sync.AddonUtils	INFO	Marking add-on as disabled for install: OneTab
+1493621128719	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to extension@one-tab.com
+1493621128719	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621128728	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to extension@one-tab.com
+1493621128728	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: extension@one-tab.com
+1493621128728	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: extension@one-tab.com
+1493621128728	Sync.AddonsReconciler	INFO	Change recorded for extension@one-tab.com
+1493621128728	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 extension@one-tab.com
+1493621128728	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621128738	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to extension@one-tab.com
+1493621128738	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: extension@one-tab.com
+1493621128740	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621128743	Sync.Store.Addons	INFO	Add-on installed: extension@one-tab.com
+1493621128979	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621128979	Sync.AddonUtils	INFO	Trying to install add-on from search result: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621128979	Sync.AddonUtils	DEBUG	Obtaining install for {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621128980	Sync.AddonUtils	INFO	Installing {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129565	Sync.AddonUtils	INFO	Setting syncGUID of Imagus: 6kSr9UT0nJiL
+1493621129569	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129569	Sync.AddonsReconciler	DEBUG	Ignoring onInstalling for restartless add-on.
+1493621129575	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalled to {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129575	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129575	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129575	Sync.AddonsReconciler	INFO	Change recorded for {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129575	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129576	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621129587	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129587	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129587	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621129592	Sync.Store.Addons	INFO	Add-on installed: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621129840	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621129840	Sync.AddonUtils	INFO	Trying to install add-on from search result: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621129840	Sync.AddonUtils	DEBUG	Obtaining install for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621129840	Sync.AddonUtils	INFO	Installing {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130437	Sync.AddonUtils	INFO	Setting syncGUID of Stylish: 5Y4zEjSZeIYV
+1493621130440	Sync.AddonsReconciler	DEBUG	Add-on change: onInstalling to {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130440	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621130447	Sync.AddonsReconciler	DEBUG	Add-on change: onInstallEnded to {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130447	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130447	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130447	Sync.AddonsReconciler	INFO	Change recorded for {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130447	Sync.Tracker.Addons	DEBUG	changeListener invoked: 1 {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130447	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621130450	Sync.Store.Addons	INFO	Add-on installed: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621130690	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621130690	Sync.AddonUtils	INFO	Trying to install add-on from search result: {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621130690	Sync.AddonUtils	DEBUG	Obtaining install for {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621130691	Sync.AddonUtils	INFO	Installing {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621130957	Sync.Store.Addons	WARN	Failed to apply incoming record {aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621130957	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1117:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621131188	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621131188	Sync.AddonUtils	INFO	Trying to install add-on from search result: jid1-BYcQOfYfmBMd9A@jetpack
+1493621131188	Sync.AddonUtils	DEBUG	Obtaining install for jid1-BYcQOfYfmBMd9A@jetpack
+1493621131189	Sync.AddonUtils	INFO	Installing jid1-BYcQOfYfmBMd9A@jetpack
+1493621131501	Sync.Store.Addons	WARN	Failed to apply incoming record VnWHwyAFLy1y
+1493621131501	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1117:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621131502	Sync.Engine.Addons	DEBUG	Switching local ID to incoming: YXRxMCOOEHTF -> p5vWe0WMOT7q
+1493621131503	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621131554	Sync.Engine.Addons	DEBUG	Local item after duplication: age=null; modified=false; exists=true
+1493621131555	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1
+1493621131555	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1
+1493621131555	Sync.Engine.Addons	DEBUG	Records that failed to apply: {aee3ac5d-6376-463d-a384-5bd1ff807e95},VnWHwyAFLy1y
+1493621131555	Sync.Engine.Addons	INFO	Records: 12 applied, 10 successfully, 2 failed to apply, 2 newly failed to apply, 2 reconciled.
+1493621131556	Sync.Status	DEBUG	Status for engine addons: error.engine.reason.apply_fail
+1493621131556	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1493621131556	Sync.ErrorHandler	DEBUG	addons failed to apply some records.
+1493621131556	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621131560	Sync.Engine.Addons	ERROR	null
+1493621131794	Sync.Collection	DEBUG	mesg: DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?ids=YXRxMCOOEHTF
+1493621131794	Sync.Collection	DEBUG	DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?ids=YXRxMCOOEHTF
+1493621131795	Sync.Engine.Forms	DEBUG	First sync, uploading all items
+1493621131796	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1493621131797	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621132503	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493621132504	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621132504	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:32
+1493621132504	Sync.Service	DEBUG	Exception: Could not acquire lock. Label: "service.js: sync". No traceback available
+1493621132504	Sync.Service	INFO	Cannot start sync: already syncing?
+1493621132652	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493621132652	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621132652	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:32
+1493621132652	Sync.Service	DEBUG	Exception: Could not acquire lock. Label: "service.js: sync". No traceback available
+1493621132652	Sync.Service	INFO	Cannot start sync: already syncing?
+1493621132796	Sync.Tracker.Forms	DEBUG	Saving changed IDs to forms
+1493621132915	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493621132915	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621132915	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:32
+1493621132915	Sync.Service	DEBUG	Exception: Could not acquire lock. Label: "service.js: sync". No traceback available
+1493621132915	Sync.Service	INFO	Cannot start sync: already syncing?
+1493621133160	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493621133160	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621133160	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:33
+1493621133160	Sync.Service	DEBUG	Exception: Could not acquire lock. Label: "service.js: sync". No traceback available
+1493621133160	Sync.Service	INFO	Cannot start sync: already syncing?
+1493621133282	Sync.Status	DEBUG	Status for engine forms: error.engine.reason.unknown_fail
+1493621133282	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1493621133282	Sync.ErrorHandler	DEBUG	forms failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < Res__request()@resource://services-sync/resource.js:408 < Res_get()@resource://services-sync/resource.js:432 < SyncEngine.prototype._processIncoming()@resource://services-sync/engines.js:1117 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1545 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493621133282	Sync.Engine.History	DEBUG	First sync, uploading all items
+1493621133283	Sync.Status	DEBUG	Status for engine history: error.engine.reason.unknown_fail
+1493621133283	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1493621133283	Sync.ErrorHandler	DEBUG	history failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < querySpinningly()@resource://services-common/async.js:212 < HistStore_getAllIDs()@resource://gre/modules/services-sync/engines/history.js:198 < SyncEngine.prototype._syncStartup()@resource://services-sync/engines.js:924 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1543 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493621133284	Sync.Synchronizer	INFO	Sync completed at 2017-05-01 16:45:33 after 19.24 secs.
+1493621133284	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493621133284	Sync.ErrorHandler	ERROR	Sync encountered an error

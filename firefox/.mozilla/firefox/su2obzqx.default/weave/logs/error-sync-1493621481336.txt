@@ -1,0 +1,594 @@
+1493621350065	Sync.Service	INFO	Loading Weave 1.47.0
+1493621350066	Sync.Engine.Clients	DEBUG	Engine initialized
+1493621350066	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1493621350069	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1493621350071	Sync.Engine.Forms	DEBUG	Engine initialized
+1493621350073	Sync.Engine.History	DEBUG	Engine initialized
+1493621350076	Sync.Engine.Passwords	DEBUG	Engine initialized
+1493621350077	Sync.Engine.Prefs	DEBUG	Engine initialized
+1493621350079	Sync.Engine.Tabs	DEBUG	Engine initialized
+1493621350079	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493621350082	Sync.Engine.Addons	DEBUG	Engine initialized
+1493621350083	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+1493621350086	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621350086	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621350086	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493621350086	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621350087	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1493621350087	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1493621350087	Sync.Tracker.History	INFO	Adding Places observer.
+1493621350091	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1493621350092	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621350093	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621350094	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621350094	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493621351567	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493621352467	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493621354096	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621354096	Sync.SyncScheduler	DEBUG	Next sync in 86904 ms.
+1493621441000	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621441001	Sync.Service	INFO	Starting sync at 2017-05-01 16:50:41
+1493621441001	Sync.Service	DEBUG	In sync: should login.
+1493621441001	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1493621441001	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621441001	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621441002	Sync.Service	INFO	Logging in the user.
+1493621441003	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1493621441003	FirefoxAccounts	DEBUG	already verified
+1493621441003	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621441004	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1493621441004	FirefoxAccounts	DEBUG	already verified
+1493621441004	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1493621441005	FirefoxAccounts	DEBUG	enter getAssertion()
+1493621441010	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621441010	FirefoxAccounts	DEBUG	got keyPair
+1493621441010	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1493621441679	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1493621441679	Sync.RESTResponse	TRACE	Processing response headers.
+1493621441679	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -679
+1493621441679	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1493621441679	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1493621441680	FirefoxAccounts	DEBUG	getAssertionFromCert
+1493621441680	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621441680	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621441681	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1493621441681	Sync.BrowserIDManager	DEBUG	Getting a token
+1493621441682	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1493621441685	FirefoxAccounts	TRACE	finished write of json user data - took: 5
+1493621441685	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621441685	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621441689	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621442381	Common.TokenServerClient	DEBUG	Got token response: 200
+1493621442381	Sync.RESTResponse	TRACE	Processing response headers.
+1493621442381	Common.TokenServerClient	DEBUG	Successful token response
+1493621442381	Sync.BrowserIDManager	DEBUG	Successfully got a sync token
+1493621442383	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1493621442383	Sync.BrowserIDManager	INFO	Background fetch for key bundle done
+1493621442383	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493621442383	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621442383	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493621442383	Sync.Service	INFO	User logged in successfully - verifying login.
+1493621442383	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1493621442384	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1493621442384	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621443053	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621443053	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621443054	Sync.Service	DEBUG	Fetching global metadata record
+1493621443054	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443054	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621443263	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443263	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443263	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1489644375.28
+1493621443263	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443264	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621443469	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443469	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621443470	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621443470	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621443470	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621443470	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"addons":1493621156.5,"tabs":1493621153.74,"clients":1493621153.25,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"bookmarks":1493621117.29,"prefs":1493595892.11,"history":1493620453.69}
+1493621443470	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1493621443470	Sync.Service	INFO	collection keys reports that a key update is needed.
+1493621443471	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621443684	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621443684	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621443684	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1493621443685	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1489644251.08.
+1493621443685	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1493621443685	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1493621443685	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1493621443686	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1493621443686	Sync.CollectionKeyManager	INFO	Bumping last modified to 1489644251.08
+1493621443686	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1493621443686	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493621443686	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621443686	browserwindow.syncui	DEBUG	observed: weave:service:login:finish
+1493621443687	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493621443687	browserwindow.syncui	DEBUG	onActivityStart with numActive: 0
+1493621443687	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621443688	Sync.Status	INFO	Resetting Status.
+1493621443688	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621443688	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621443691	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621443691	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621443693	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621443693	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621443899	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621443899	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621443899	Sync.Service	DEBUG	Fetching global metadata record
+1493621443899	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621443900	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621443900	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621443900	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"addons":1493621156.5,"tabs":1493621153.74,"clients":1493621153.25,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"bookmarks":1493621117.29,"prefs":1493595892.11,"history":1493620453.69}
+1493621443900	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493621443900	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493621443900	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1493621443900	Sync.Engine.Clients	INFO	1 outgoing items pre-reconciliation
+1493621443901	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621444111	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621444111	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621444112	Sync.Engine.Clients	INFO	Records: 4 applied, 4 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621444113	Sync.Engine.Clients	INFO	Uploading all of 1 records
+1493621444113	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621444114	Sync.Collection	DEBUG	POST Length: 485
+1493621444362	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621444362	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621444363	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493621444364	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493621444365	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1493621444365	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621444366	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493621444366	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621444367	Sync.Engine.Tabs	DEBUG	First sync, uploading all items
+1493621444367	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493621444368	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621444577	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium's Firefox on tux-xps
+1493621444581	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium’s Firefox on slegestor
+1493621444582	Sync.Store.Tabs	DEBUG	Adding remote tabs from APIUM's Firefox on LAPTOP-2VPN06TQ
+1493621444582	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621444582	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621444583	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493621444586	Sync.Engine.Tabs	INFO	Uploading all of 1 records
+1493621444586	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621444586	Sync.Collection	DEBUG	POST Length: 632
+1493621444802	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621444802	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621444806	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1493621444808	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621444809	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493621444809	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493621444815	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: loop@mozilla.org
+1493621444815	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621444815	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: keefox@chris.tomlinson
+1493621444815	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: jid1-xUfzOsOFlzSOXg@jetpack
+1493621444815	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: uBlock0@raymondhill.net
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: extension@one-tab.com
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621444816	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621444817	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: vimperator@mozdev.org
+1493621444817	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: gmp-gmpopenh264
+1493621444817	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621444817	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621444817	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621444818	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621444821	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1493621444822	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621444825	Sync.Engine.Addons	ERROR	null
+1493621444900	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1493621445366	Sync.Tracker.Passwords	DEBUG	Saving changed IDs to passwords
+1493621445727	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621445727	Sync.AddonUtils	INFO	Trying to install add-on from search result: jid1-BYcQOfYfmBMd9A@jetpack
+1493621445727	Sync.AddonUtils	DEBUG	Obtaining install for jid1-BYcQOfYfmBMd9A@jetpack
+1493621445727	Sync.AddonUtils	INFO	Installing jid1-BYcQOfYfmBMd9A@jetpack
+1493621445806	Sync.Tracker.Bookmarks	DEBUG	Saving changed IDs to bookmarks
+1493621445821	Sync.Tracker.Addons	DEBUG	Saving changed IDs to addons
+1493621446400	Sync.Store.Addons	WARN	Failed to apply incoming record VnWHwyAFLy1y
+1493621446400	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621446627	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621446628	Sync.AddonUtils	INFO	Trying to install add-on from search result: {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621446628	Sync.AddonUtils	DEBUG	Obtaining install for {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621446628	Sync.AddonUtils	INFO	Installing {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621446862	Sync.Store.Addons	WARN	Failed to apply incoming record {aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621446862	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621446863	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids=VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621446863	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids=VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621446863	Sync.Engine.Addons	DEBUG	Records that failed to apply: VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621446864	Sync.Engine.Addons	INFO	Records: 2 applied, 0 successfully, 2 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621446865	Sync.Engine.Forms	DEBUG	First sync, uploading all items
+1493621446879	Sync.Engine.Forms	INFO	500 outgoing items pre-reconciliation
+1493621446880	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621446883	Sync.Engine.Addons	ERROR	null
+1493621447880	Sync.Tracker.Forms	DEBUG	Saving changed IDs to forms
+1493621448201	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +NEcb2tMRDizpHIy -> dNThOSNPR7eJUx3T
+1493621448232	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.232; modified=true; exists=true
+1493621448233	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 4Wip4PW8QUG9otO1 -> dLsyuIuRRQaw6Tbr
+1493621448243	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.243; modified=true; exists=true
+1493621448245	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sU4BjNJ9SVaGUjMB -> dIzCufU0R4ybDIPv
+1493621448259	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.259; modified=true; exists=true
+1493621448261	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: E0Qmnly7QZSGoeOO -> dguyFozCSqW4boWg
+1493621448270	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.27; modified=true; exists=true
+1493621448271	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 0nL12oW/Qje7tg4Y -> dAh2ga9aT22y8QJw
+1493621448286	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.286; modified=true; exists=true
+1493621448287	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 4Vp7NvMQTN+Cbr/N -> cXWuU0RwR5iA6ixD
+1493621448296	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.296; modified=true; exists=true
+1493621448297	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ZRgsdI4tSeeTtd3V -> cSw+H0Y3SGa+r1v9
+1493621448319	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.319; modified=true; exists=true
+1493621448320	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lNbbCpICQByfYASd -> cSvHxgZSTPS847kg
+1493621448329	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.329; modified=true; exists=true
+1493621448331	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hE2HEddcRQarpahT -> cRJCJzNCS8GfT3LO
+1493621448347	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.347; modified=true; exists=true
+1493621448348	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: //2TOdk1QNuGcLX4 -> cPgmSGGMRViEtxHR
+1493621448357	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.357; modified=true; exists=true
+1493621448359	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6xBVV0u/Ri+bNkKT -> coEbHAfsQYajdjdl
+1493621448367	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.367; modified=true; exists=true
+1493621448368	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zjFvPDGrRxqOI1nF -> cNXyYxuHTn6rxGDx
+1493621448383	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.383; modified=true; exists=true
+1493621448384	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jRILjt5kSrWkqzsx -> cLXU6YOLQh206DFy
+1493621448393	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.393; modified=true; exists=true
+1493621448396	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ///VnsjvTR+PpCor -> cHvfdssvQBKqHBfu
+1493621448405	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.405; modified=true; exists=true
+1493621448406	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 3WtrrRorQ0OOiGwx -> ceDrGWrSRAmdIY+W
+1493621448415	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.415; modified=true; exists=true
+1493621448417	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: pRlh1iM2R+SLBWj0 -> cCK10eQlROONs/+B
+1493621448431	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.431; modified=true; exists=true
+1493621448432	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: F/TxuefoQwyW06iD -> c9mZYYpnSje7+tKg
+1493621448441	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.441; modified=true; exists=true
+1493621448442	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yVZg9b9MQR28qhu7 -> c2dHK44wS9mO0xcW
+1493621448459	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.459; modified=true; exists=true
+1493621448460	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ErMMRvBeSgqBZVmC -> c1b5IHyrTvmZQM75
+1493621448469	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.469; modified=true; exists=true
+1493621448471	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ZLfmqob0Tou37anG -> bYPOSbplQuyuHysC
+1493621448479	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.479; modified=true; exists=true
+1493621448480	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wsax5tHCRn2uy3kS -> bXwbGXsZSjSHNExy
+1493621448490	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.49; modified=true; exists=true
+1493621448491	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: gXfBCbscR3CMFbQO -> bUy7/jTRRCutLBds
+1493621448500	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.5; modified=true; exists=true
+1493621448502	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Sa0wpJUmRXS5wREq -> buDMaf6zTn+K8m0V
+1493621448517	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.517; modified=true; exists=true
+1493621448518	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OiJbzANOS/qZ1pXj -> bOoCKcOYSQ2WziFs
+1493621448533	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.533; modified=true; exists=true
+1493621448534	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ScFohD2OSRS8D2e5 -> bo86OqVhRoqVcUuS
+1493621448543	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.543; modified=true; exists=true
+1493621448544	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HcRG6MrqTMOGZV3y -> bHDCzIDiQuemz3HO
+1493621448554	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.554; modified=true; exists=true
+1493621448555	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8dbsvlUkRAyHL2Sj -> bgK8mygLRTCb2p6i
+1493621448564	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.564; modified=true; exists=true
+1493621448565	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qx0c2hEJT6qbTiJW -> auEwCvHFTfGUmz+G
+1493621448574	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.574; modified=true; exists=true
+1493621448575	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OX+wNl13T9ivMJyZ -> asvpFZ+4R6iLnkZ5
+1493621448584	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.584; modified=true; exists=true
+1493621448585	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lM8Q4AJ1RcGy9XmL -> aOKjtllaRAGw90q3
+1493621448600	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.6; modified=true; exists=true
+1493621448603	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: iwBD9oAjSBWBudBG -> aJisA84sSAm3/pkr
+1493621448619	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.619; modified=true; exists=true
+1493621448620	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: r1OIREltQO+0UFwb -> ahe5RJzWQauksC33
+1493621448629	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.629; modified=true; exists=true
+1493621448630	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: uCH1sQnuQ6GpW7W9 -> aEGRbCDoQAa4lmvd
+1493621448638	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.638; modified=true; exists=true
+1493621448639	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: PKm2+d/BRkaB0QaZ -> aAvGjmq9RHukd8MD
+1493621448654	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.654; modified=true; exists=true
+1493621448655	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TQ3+SEhuSOqFCYTA -> X4z3S6zhTE2hFG/u
+1493621448664	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.664; modified=true; exists=true
+1493621448665	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OHdCAdQsSRmBF+r4 -> X0S0EXukSvu12alo
+1493621448674	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.674; modified=true; exists=true
+1493621448675	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Nlf2FW6FR7m9BCcM -> WzB/hJszRKu3HDCj
+1493621448683	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.683; modified=true; exists=true
+1493621448683	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: NyQw+qvXSFCzm0RN -> Wup4g3BhRemAbRl9
+1493621448692	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.692; modified=true; exists=true
+1493621448693	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: i7FzqRNDSpOz7xlz -> WPZtrjOfTBGZKkZU
+1493621448702	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.702; modified=true; exists=true
+1493621448703	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: pXXNRbpIRk21L/Z6 -> WOlEL/6rTgODcDC3
+1493621448719	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.719; modified=true; exists=true
+1493621448720	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sDv7vfIOSsed1iR9 -> WMYR4VyUSN+2At1M
+1493621448728	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.728; modified=true; exists=true
+1493621448729	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 3DDO4ELuTO6nmeYt -> WHiTj3V4RIGBs/Wo
+1493621448738	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.738; modified=true; exists=true
+1493621448739	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2xfQMXNGRaycgqgL -> W0ADUldRTTas9WC2
+1493621448754	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.754; modified=true; exists=true
+1493621448755	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: H1+R2XH/RcqZbDyT -> VzQyEF7vTQCQ3DnG
+1493621448770	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.77; modified=true; exists=true
+1493621448771	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VEBEbFrmSMyAubo1 -> VZfCnuq6Tsemby/5
+1493621448785	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.785; modified=true; exists=true
+1493621448786	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Qf8ZSBHYRCqtD6Sc -> VuRxcR3nSMKI5J0i
+1493621448794	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.794; modified=true; exists=true
+1493621448795	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 91UryL/LS82atjh8 -> Vro3XPKWQBu4ij8Z
+1493621448810	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.81; modified=true; exists=true
+1493621448812	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wi0nKwWCSImd2OyJ -> Vn5PrXOzS5W7ibHm
+1493621448830	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.83; modified=true; exists=true
+1493621448832	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HVA/F3C9Qx+P4dQp -> VMVluXIjQOaF4K5a
+1493621448846	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.846; modified=true; exists=true
+1493621448847	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9q+1CEQ9QoKP1N3v -> Vk28bUvQRba0Ndkp
+1493621448861	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.861; modified=true; exists=true
+1493621448865	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +KrTT3kRR0e3eddX -> Vifu44x3QiaZMFuJ
+1493621448885	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.885; modified=true; exists=true
+1493621448886	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: z+/Ua2rhQFWGOMDK -> Vgd2NzpiREaPNDNY
+1493621448901	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.901; modified=true; exists=true
+1493621448902	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sfTB5hRBRai5bwqS -> VFrz24jnRU6Iw3ek
+1493621448912	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.912; modified=true; exists=true
+1493621448913	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: oO/eb+5tTgm7jrG/ -> VeQWov4PSe+qd6tw
+1493621448929	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.929; modified=true; exists=true
+1493621448930	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: inSdvMf3RYiDPnCE -> V9+VHbx6SVi/8vQS
+1493621448945	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.944; modified=true; exists=true
+1493621448946	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: rmofRWKoQDC2jKZh -> V6Cwy/2uQ2uo1ChP
+1493621448961	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.961; modified=true; exists=true
+1493621448962	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kugq66pUSAe3QHsu -> V1XbWlR6T9WzQ8HW
+1493621448977	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.977; modified=true; exists=true
+1493621448978	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sWJ+JmnWRD6yzgOc -> V0nCbSB+TEuZJb6U
+1493621448987	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.987; modified=true; exists=true
+1493621448989	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kOa0uuu/QGi/wyKi -> UxkEbOatStejL375
+1493621448998	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621448.998; modified=true; exists=true
+1493621449000	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2mGKViAOSnWf3i9l -> UvRr4v+kTrC0rAO5
+1493621449009	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.009; modified=true; exists=true
+1493621449010	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: XeLOFg6eSIK5Rn7Z -> UPrCnqvSS6Scafkd
+1493621449025	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.025; modified=true; exists=true
+1493621449026	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1eXkflhvTTyehSxd -> UlQx0kAXTS2BopYc
+1493621449035	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.035; modified=true; exists=true
+1493621449036	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: PLuPEulpSLi9UDMu -> UliApEFlRK+o7a03
+1493621449051	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.051; modified=true; exists=true
+1493621449053	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: xT8GGGwhSWmlgUY+ -> UjjvafgYQn+eaknw
+1493621449061	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.061; modified=true; exists=true
+1493621449062	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 3lXJa2/OSWGw4EM1 -> UIYF9UfbTJORNm3e
+1493621449072	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.072; modified=true; exists=true
+1493621449073	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 08yTtLfMRtejNozG -> UHyPCQW/Sci5d4AZ
+1493621449088	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.088; modified=true; exists=true
+1493621449089	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mHsE4HcvS5asHNLZ -> UEz3RrDiRP6tVxY6
+1493621449098	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.098; modified=true; exists=true
+1493621449099	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: L620I4/rT+ic22zr -> UeMkVUOGRKyZBcRG
+1493621449107	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.107; modified=true; exists=true
+1493621449108	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mCUGtf0kTreOHmBK -> Ud9Fe9XURUOZGdIa
+1493621449117	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.117; modified=true; exists=true
+1493621449118	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hBsqppE0Qh6MBwQM -> TUP6NxraRLKVoAbO
+1493621449128	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.128; modified=true; exists=true
+1493621449129	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: GaFcgZMMTa+ZWVNF -> TQzY+bolTCm5KQfi
+1493621449137	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.137; modified=true; exists=true
+1493621449138	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: MFmPGtSdSGGhsTrG -> TqxMKHtASkqF0wV+
+1493621449147	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.147; modified=true; exists=true
+1493621449148	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: b7nRXVwjT62GRdGW -> Tq8qEoeUT3OQsbTP
+1493621449163	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.163; modified=true; exists=true
+1493621449164	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: //k+N2yWQsSB78zH -> Tnrc+oYTSDy8Eygz
+1493621449174	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.173; modified=true; exists=true
+1493621449175	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: xKSgL9IhQmKOTULx -> TjlAQPiaQjWDTmy9
+1493621449184	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.184; modified=true; exists=true
+1493621449185	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TRLjKX+CRuCn2FDs -> TDQ7mpknRKeZqP/K
+1493621449199	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.199; modified=true; exists=true
+1493621449200	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wFcJoR5kTGCVAvI4 -> TaOmftIbSgG3/w3h
+1493621449209	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.209; modified=true; exists=true
+1493621449210	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zu82gJ5wTxugLWY1 -> T26GmYJUR++2vxno
+1493621449226	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.226; modified=true; exists=true
+1493621449227	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Szm0WS6ARmWUHic7 -> T0iSq4x2QJ64zYDW
+1493621449236	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.236; modified=true; exists=true
+1493621449240	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aXgE+5rtT0edXRdG -> SzmJ5HCoRk2P0yDR
+1493621449249	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.249; modified=true; exists=true
+1493621449250	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 39qiJJ8SR2C7BTkC -> SYaIYi7kRLWP+yXE
+1493621449259	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.259; modified=true; exists=true
+1493621449260	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WINoNeJtQcaeljTZ -> Sw67agkwQVu6ALo6
+1493621449275	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.275; modified=true; exists=true
+1493621449276	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2t1wQgqVQgahXs89 -> SVx/l+HcR7WWSFfs
+1493621449285	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.285; modified=true; exists=true
+1493621449286	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YeW+xHmwRGWFKUX6 -> SvA8MZkURxqpcJGn
+1493621449301	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.301; modified=true; exists=true
+1493621449302	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: esXCrSzcTwiW9GFj -> SnvYSnlfTvynSXwh
+1493621449311	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.311; modified=true; exists=true
+1493621449312	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: /N8nB02VQZ6BZ27a -> ShvdtgriSBKeDNUH
+1493621449321	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.321; modified=true; exists=true
+1493621449322	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: N5qLbdM3Qq6vNA15 -> S8+l8rQoT1WFufEs
+1493621449331	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.331; modified=true; exists=true
+1493621449333	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: DzwubIncR+OVcsCd -> S1+dVEg9S4SCxUFR
+1493621449348	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.348; modified=true; exists=true
+1493621449349	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: MTSUjK1qREuP8ej5 -> RY82/WpCR8qEg+UR
+1493621449359	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.359; modified=true; exists=true
+1493621449360	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CLWKkG1ySEWwmBkM -> RuOH+Ld1ScWGGqj9
+1493621449369	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.369; modified=true; exists=true
+1493621449370	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BO7YV6/7Qhmx9alw -> RTokbsPbSR6R7gR7
+1493621449390	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.39; modified=true; exists=true
+1493621449391	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2X3fSiT0SFKU+IFt -> Rq3uzY7nTfqJjwCH
+1493621449413	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.413; modified=true; exists=true
+1493621449414	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: eXiEAdowQC6K5BuO -> Ri4IGjUSR6CB6Do9
+1493621449422	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.422; modified=true; exists=true
+1493621449423	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: eOOvzqyFRc2/GvSy -> RHWOIqjoS/Kiit+J
+1493621449438	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.438; modified=true; exists=true
+1493621449439	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +jcP5Fv4RzCVKQjo -> RGhVTA2YSr6wB8XJ
+1493621449449	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.449; modified=true; exists=true
+1493621449450	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6Qv0RlbqRjGVYHZ9 -> RB55cFtNRX+mi7cm
+1493621449464	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.464; modified=true; exists=true
+1493621449465	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: KT7He0V0RHWFzU/T -> QY7xEbzeQ82Unz0z
+1493621449480	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.48; modified=true; exists=true
+1493621449481	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: IhRD7Ct6Rvu9GhTf -> Qo8ux895SnGJKwZD
+1493621449496	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.496; modified=true; exists=true
+1493621449497	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1XGPtp1FTV+hhHWx -> QMujGvqcQ3mF59ul
+1493621449517	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.517; modified=true; exists=true
+1493621449518	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 05kKrIdJRMKk3RHu -> QlpShC6kSxm4hEYF
+1493621449532	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.532; modified=true; exists=true
+1493621449533	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: QxPtCntGQj6jO8Pp -> QKW6TaW/TIC1hm2S
+1493621449548	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.548; modified=true; exists=true
+1493621449549	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HkoC1zeES0awTTfP -> QAZ3K4YcSFW/QD72
+1493621449564	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621449.564; modified=true; exists=true
+1493621449801	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?full=1
+1493621449801	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?full=1
+1493621449826	Sync.Engine.Forms	INFO	Records: 232 applied, 232 successfully, 0 failed to apply, 0 newly failed to apply, 500 reconciled.
+1493621449827	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621449926	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493621450079	Sync.Collection	DEBUG	mesg: DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?ids=+NEcb2tMRDizpHIy,4Wip4PW8QUG9otO1,sU4BjNJ9SVaGUjMB,E0Qmnly7QZSGoeOO,0nL12oW/Qje7tg4Y,4Vp7NvMQTN+Cbr/N,ZRgsdI4tSeeTtd3V,lNbbCpICQByfYASd,hE2HEddcRQarpahT,//2TOdk1QNuGcLX4,6xBVV0u/Ri+bNkKT,zjFvPDGrRxqOI1nF,jRILjt5kSrWkqzsx,///VnsjvTR+PpCor,3WtrrRorQ0OOiGwx,pRlh1iM2R+SLBWj0,F/TxuefoQwyW06iD,yVZg9b9MQR28qhu7,ErMMRvBeSgqBZVmC,ZLfmqob0Tou37anG,wsax5tHCRn2uy3kS,gXfBCbscR3CMFbQO,Sa0wpJUmRXS5wREq,OiJbzANOS/qZ1pXj,ScFohD2OSRS8D2e5,HcRG6MrqTMOGZV3y,8dbsvlUkRAyHL2Sj,qx0c2hEJT6qbTiJW,OX+wNl13T9ivMJyZ,lM8Q4AJ1RcGy9XmL,iwBD9oAjSBWBudBG,r1OIREltQO+0UFwb,uCH1sQnuQ6GpW7W9,PKm2+d/BRkaB0QaZ,TQ3+SEhuSOqFCYTA,OHdCAdQsSRmBF+r4,Nlf2FW6FR7m9BCcM,NyQw+qvXSFCzm0RN,i7FzqRNDSpOz7xlz,pXXNRbpIRk21L/Z6,sDv7vfIOSsed1iR9,3DDO4ELuTO6nmeYt,2xfQMXNGRaycgqgL,H1+R2XH/RcqZbDyT,VEBEbFrmSMyAubo1,Qf8ZSBHYRCqtD6Sc,91UryL/LS82atjh8,wi0nKwWCSImd2OyJ,HVA/F3C9Qx+P4dQp,9q+1CEQ9QoKP1N3v,+KrTT3kRR0e3eddX,z+/Ua2rhQFWGOMDK,sfTB5hRBRai5bwqS,oO/eb+5tTgm7jrG/,inSdvMf3RYiDPnCE,rmofRWKoQDC2jKZh,kugq66pUSAe3QHsu,sWJ+JmnWRD6yzgOc,kOa0uuu/QGi/wyKi,2mGKViAOSnWf3i9l,XeLOFg6eSIK5Rn7Z,1eXkflhvTTyehSxd,PLuPEulpSLi9UDMu,xT8GGGwhSWmlgUY+,3lXJa2/OSWGw4EM1,08yTtLfMRtejNozG,mHsE4HcvS5asHNLZ,L620I4/rT+ic22zr,mCUGtf0kTreOHmBK,hBsqppE0Qh6MBwQM,GaFcgZMMTa+ZWVNF,MFmPGtSdSGGhsTrG,b7nRXVwjT62GRdGW,//k+N2yWQsSB78zH,xKSgL9IhQmKOTULx,TRLjKX+CRuCn2FDs,wFcJoR5kTGCVAvI4,zu82gJ5wTxugLWY1,Szm0WS6ARmWUHic7,aXgE+5rtT0edXRdG,39qiJJ8SR2C7BTkC,WINoNeJtQcaeljTZ,2t1wQgqVQgahXs89,YeW+xHmwRGWFKUX6,esXCrSzcTwiW9GFj,/N8nB02VQZ6BZ27a,N5qLbdM3Qq6vNA15,DzwubIncR+OVcsCd,MTSUjK1qREuP8ej5,CLWKkG1ySEWwmBkM,BO7YV6/7Qhmx9alw,2X3fSiT0SFKU+IFt,eXiEAdowQC6K5BuO,eOOvzqyFRc2/GvSy,+jcP5Fv4RzCVKQjo,6Qv0RlbqRjGVYHZ9,KT7He0V0RHWFzU/T,IhRD7Ct6Rvu9GhTf,1XGPtp1FTV+hhHWx,05kKrIdJRMKk3RHu
+1493621450080	Sync.Collection	DEBUG	DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?ids=+NEcb2tMRDizpHIy,4Wip4PW8QUG9otO1,sU4BjNJ9SVaGUjMB,E0Qmnly7QZSGoeOO,0nL12oW/Qje7tg4Y,4Vp7NvMQTN+Câ¦
+1493621450080	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621450325	Sync.Collection	DEBUG	mesg: DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?ids=QxPtCntGQj6jO8Pp,HkoC1zeES0awTTfP
+1493621450325	Sync.Collection	DEBUG	DELETE success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?ids=QxPtCntGQj6jO8Pp,HkoC1zeES0awTTfP
+1493621450326	Sync.Engine.History	DEBUG	First sync, uploading all items
+1493621450328	Sync.Engine.History	INFO	8 outgoing items pre-reconciliation
+1493621450329	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621451328	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493621453646	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621455908	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621460903	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&limit=5000
+1493621460903	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&limit=5000
+1493621460967	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621462137	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?sort=index&limit=5000
+1493621462137	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?sort=index&limit=5000
+1493621462408	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621463275	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621463281	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621463282	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621463507	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=WP5vS8tOxxYF,lpeDIHsRjzR3,e1bReswv9RJ8,-niWZYXBrSeb,H5c8cWCeJs1R,lDBY419J1pIl,SdAkZ8c7rVeq,auTtU-jfz4Xb,g56KI1F0f3Fe,hvTE68vBkfy9,jPEXJdTMdfn0,XL0xiosCwJvT,jI7mCKBVbfOQ,badSOkeVmIvJ,oM4_181Iz8O6,1XvV5p54Xkja,psdFFX-qPNcY,NSrHbw9F_-vU,sE-yg2aayAcm,C2K4J3c1u_Vg,eTN6X43_ltoG,247r9GBNFbR3,NIrZDvFD7mQ7,Y4xuVS4MhH4Z,1wfoHdtD7hf8,qI9glevXeey7,-qrFTK7v5VUv,dbi1kvvVeP4r,yGIvCBY_V7vv,1GruLEjR-_rJ,UtRylmuVAHID,WOnX4dwvTKPE,1zXeZIVN2llD,4ic6y3Ia89Wg,wnvYtu1EPALG,q6W3tM0XY0nF,UITcW0xN1daY,xg50WDpUJ4w3,qvdveZIAXZWz,3dTSn0WIWxU_,5NpXG5fkAOuY,G2verXFmAJ27,EM1t_XS8pel6,vQNDH8TnfKq1,ef5XNMCSMYu-,6gSkE6QiSL6L,fC9C_HHBllkn,0h80MB8PPONM,UwTKKfX0KgHH,d8Iujdu6jXc8
+1493621463508	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=WP5vS8tOxxYF,lpeDIHsRjzR3,e1bReswv9RJ8,-niWZYXBrSeb,H5c8cWCeJs1R,lDBY419J1pIl,SdAkZ8c7rVeq,â¦
+1493621463512	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621464264	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=1rDp8-kIKKqS,GL6WfkE_yuLu,Ja-ODvoqIXDY,Mh_n_bEBkib0,U6PPIVe8S9b7,ZUi_jaejFhzh,FYnWXY9CyiQn,X_BfrlIFLFxS,ww6ZbcIBEsZz,x_1OQQyuKS4u,z1HawPus5ZyX,glc1e-F43AVI,-Lh6qGnX9yVg,J-AYTS04P10L,kEypyJnSkU_N,mbO-ajc_xpjS,4xgorLiQf9WP,7c1B9a9E_f2z,OGZV18R-HoD9,qbYfMlzds8GU,QvLuZnR76NOP,g611WvB76m9z,7IB8PJX6Dk63,cce4mTP2rbTc,2e7Tmd8W36B8,exN5SNvhMXrn,ibXZ7Yj3uaE9,fW8hg6HnELTV,jNRylNBFncML,DKYOK0yG2Q8f,EBSx8N61B6Ku,koTSxFVjB_ax,E7VwIA7CL_g3,HNwwqa9jkIPc,o7Nvr_3chh2D,zGZH4IkzKbxK,UIBLQ_lDaktM,B25S_8_jTbkq,sNC77J1wT3x7,TOeMy0CKUFzK,cJz0qGO4i08h,5ERL1WLiLf_w,7rKT5pQcmoDM,aMyXOIaGFTQ-,BswxNA4o7raS,bv2Bu2LEf10z,dlAkP6qti9mg,EoA3vskwOtfJ,fJsAegiM7Tt0,HrhnGupqlPAf
+1493621464264	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=1rDp8-kIKKqS,GL6WfkE_yuLu,Ja-ODvoqIXDY,Mh_n_bEBkib0,U6PPIVe8S9b7,ZUi_jaejFhzh,FYnWXY9CyiQn,â¦
+1493621464267	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621464845	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=iIS8gjmC0YpN,nSaRJbxncg7t,P227_1CeHJuM,q9Sv8422JdgW,rZdBMl63nc7g,vR7Qc3Oh2y4o,WO2nWVlkrJUe,XDzEHX4-mGBD,Z7nlV6wb_YTM,zrmM8gkmZGnm,_3W9iSOs3keu,b2w-5WLCDak3,NssOgmHL_km1,974z25It-CD3,7W-7O4isFaHP,o8eWBoNRiQ73,ZC4QTBpmoQuf,rqqj8eiurJij,cowpSzP36rI7,xJ1nvL67aS63,0r7_aBubm6lQ,0rG8-HIyL2jr,5RHrCAHhzECR,aTIyNh8aMKHo,ElG999GaRVjh,N0XI87MaSlxD,98jd7WnrFrzB,cUf3j7L3vMYe,6rueGDk8mbv0,N8NAC9C5Mfau,5Fjt8T7qpisu,tBlvxgMw5MYu,6unet_o7h7Ww,gL12s2fIPkCp,SOZz0pp7-Jyf,0d5XgfSv4bbc,ydz5YTzCkIah,-mX3b154qHgc,0ozhYzMoQASC,0Sug_v6odRUD,0xnKOtUZ71fs,2VMsW6_D6nVi,49HTvB22VHad,5ZED-STIJVEO,6crxaoPV1IZT,8FYZggX-0ii1,9ypLSO6EJlKB,aR1I_MkuqhZh,azJXgdBvpzIs,be3SjivfAn6-
+1493621464845	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=iIS8gjmC0YpN,nSaRJbxncg7t,P227_1CeHJuM,q9Sv8422JdgW,rZdBMl63nc7g,vR7Qc3Oh2y4o,WO2nWVlkrJUe,â¦
+1493621464849	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621465413	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Cw7vYaAeI3Ib,DIoKjJ9I0BUn,EHvuIwNxVMJI,fk6WtN3aJRxH,flBqOjlNF5cP,G3MR9miQhyW_,Hl9q6UCvhJuD,iFGVE4fjVFMU,jLhxkRlfxy9H,jwGSXUw1_DtF,KjVWK2nyAaJR,KlWJYlnVj7FZ,lKEHlROiQPUk,m9C1dS1hMBI5,MI4o0_KGpLLk,Nm7FfP_eMM8A,Obrc_6B-sv40,P3YkXEHGgqzh,p5bY3-ROo4HV,P8nO_tQW2bA5,POdqPlVU3MfN,QR_d1-RC9ePb,R8nmPpTG2P6x,rcOiCqtEN1c-,rpothpBS_4RE,sWH_x3bL7uQm,TEFquQIXnYy1,TIDh2a4cGblV,tZIJSlwRlioi,UwHPp7uErVVL,vXwJL4bpbhbv,Xrr6HAxt4ueY,XU1tKd0CkXe8,_hRN83VIypno,_K1cWNsun3Ib,_QYKfOj8VhAU,_uPorYyAFaEf,9rK9iHnwbdOA,kEhbvYM4Ux_x,sLSFSzmsEHet,7M_xre6Wf9Ne,Dv0kQXXjvzze,hoCqESZRHrPN,MxawHW5_N2ik,NGsdfP01Hg5z,BzeV8pW8w0zA,TAzjZLJDTCKp,81CTZLe-_Idm,ASswRPzDMnb9,P6n8A0wMDLNV
+1493621465413	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Cw7vYaAeI3Ib,DIoKjJ9I0BUn,EHvuIwNxVMJI,fk6WtN3aJRxH,flBqOjlNF5cP,G3MR9miQhyW_,Hl9q6UCvhJuD,â¦
+1493621465417	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621465883	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621465995	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=wklrSPRGbu3u,xbbQLyo5NE7X,Nx3Ff6fbpvuC,pOjRn-xXRB8e,rjW8tTk2VWvP,2RtY3_qzxvAm,7P_LuR9rM_R1,A2ep7m3AmHKf,fL32tgGKoEc0,IBkbRyVFf2DX,SJUhXimndwub,TmXCmugeYU_B,b_NYpWLJSxN1,Mjt_lsnpQ96i,IN59zFEMeug-,v7VFExisHTkt,ZHWGkJ_Do93C,95fsW56kFwIT,iXhsxChavf7O,snqH6phjb3qk,lrlhbLA7LzhC,bGh7M-IgrjKc,siQpQZWO8L-S,cvjgQxKnCEwU,Dw2w4Hz81mgR,eQIg-1zwbWTK,GPyf6XuNQeYO,IaEAKVZOZgzK,Mfq8uo6Piz9n,ro9ijjIt2tV0,Tjmo46w47e5y,wsCqHPd855BM,yB5bCScUJaGr,YyZP3tWXAtKV,0PUVQdeXesDO,lO8VKRe4qXTK,RbiZBw5GedJu,Zk274A7WfgSJ,coYcXUmD6w1J,Yu-VC8-wtSQ9,2xFVx3X65GCf,FwsarIXKe-1Q,HnpAHis5zCG8,tmnyyLLuyt0m,-BKb1qY9CLvA,vlE0H39jBhN4,fPIP8Lnpoizg,Qp4q407N30mB,gH_lLVGg2VXW,7Fqud20uVTzE
+1493621465995	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=wklrSPRGbu3u,xbbQLyo5NE7X,Nx3Ff6fbpvuC,pOjRn-xXRB8e,rjW8tTk2VWvP,2RtY3_qzxvAm,7P_LuR9rM_R1,â¦
+1493621465999	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621466510	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=H7iMb5g21u_g,sY6RlIKrmDUd,SeSRrupVFjT3,4yh-gFPLh7-v,DFCRIP-wGb3n,Jt-Ttn4nsGwg,Kmek3mC1jPR8,mL8Ki--1TN0V,o6BnCyHH8FYJ,qV-Ce7Az5gr4,ZyIPLMazrLqv,1H4LgL1RdYBl,3cVkFhPh0XON,QzzP_XIS4rEF,S877eoOB7Qdw,0ShRN3A1e8tV,4Wg3_hKEmBjN,CTgnB8Gq5NSw,n7DiIsDEoDod,Pn-ay_wQZf20,CC9GlzaLoWDt,DF9xS_5iO4x4,NKXmd6CEVo-T,tYfLW5CX92Hl,CYmaqzGNwoKg,gGrio4Pck9cj,oZKKPa-jj-3l,fhjdf7Xo6tC5,13xu5lVI2F8Y,9eGOsDL4aqZJ,aZGGZ3LsO2BE,QHl7lVHnfFI_,RCHX-EexX5lI,SeFkJAmcnkBe,WZFGOne31yay,ZNZnnZ9aSbLv,j77NAXJhIS7y,2VSjdNscusb8,47AKWqSp5SVv,CDDF93r_5Ggh,Gh4wk7hGeqQn,JmVpKv1TRcom,OG7ZvKvOZ2R3,PyXdtP_hvO28,S5kOPu0UHdiU,Sz4Q6EZXpfaq,a0Yxqx5-QqTe,CJteP2SFzU7L,KgawZlDcb6D1,MLojnwPrR9HN
+1493621466510	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=H7iMb5g21u_g,sY6RlIKrmDUd,SeSRrupVFjT3,4yh-gFPLh7-v,DFCRIP-wGb3n,Jt-Ttn4nsGwg,Kmek3mC1jPR8,â¦
+1493621466513	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621466824	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=thIpd-_4H5aZ,bzIUGhd0Kmb-,gNlnwJMUerAR,gSbFM3VrcWAE,ONmjBf9KCzPb,DmOowZYdCmz_,kHNVuSKN0ICf,yiQEYDudx6VX,Pw1LResl3Yq_,0TpZeNsPt1JF,0Xqp-w6AkxxG,11XYlG0i-JU7,3bHCwreJ98S4,3ccgDdBPwQ7l,3fTmp_fYK5VH,3kGUHnt1gmRy,3RbZW5XLzS2E,4eWLGn2DSifE,4fnWYTIBAIO1,4FtSdy4Z6L55,4JymdHn83QSx,4pyMZdyvmlNB,5GuGhEc-8jZQ,5m4Qite_TqZt,5nfxOXHtPjfI,5tXQSeMy-zB-,638Ow1Fvab42,6Lcb0cpw_Igq,6MY8QOWcOr2W,6SIuc8rJTM3X,8nMcx_9k3BkX,9hZRAfwcHXAf,9JGVyOR2hd-t,9Qw70ZaWE7LQ,9xo2En-3F-k5,ak7txyZaYF1j,AkKRV68nea-5,ALM1F5QMRKw7,AReAyIRFMw1U,awfH8uot4PnQ,AYHZEt_11iOh,bDFTggiEegY-,bjhNWRSHV026,BqlOif9W8Dl6,bwXUfrrtmYmJ,bYRGKfgfsa02,c5B1ClEEUDY-,Chv6D9gBBWKJ,cOaHjVHaxU3a,CzQxhnok7PnK
+1493621466824	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=thIpd-_4H5aZ,bzIUGhd0Kmb-,gNlnwJMUerAR,gSbFM3VrcWAE,ONmjBf9KCzPb,DmOowZYdCmz_,kHNVuSKN0ICf,â¦
+1493621466827	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621467151	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=d2QjqUYCokp4,d7EqBTWvkHXK,DeywSKqkm8KD,DMGUCgwXKivo,DO97sT-majqf,DRhr7U-AeD8n,e1XDNOFyDbi6,e5It6Y6_7Syu,EaAW1-CvYh0l,EBsh5kEVCPBZ,EC46yLUrb564,EcasTQYk4lpb,eF6Ti0W52NVv,efnCVi32Fr1_,EHFTJGSZ5w_M,Ej-EGp7NhEJv,EKChGMfJ0ctD,EktlqlYYnj6o,eMAx_xoNxCFI,ENds1SL5gCGJ,ESPlZ6LL2-Dv,eUgGP4TkCUhX,eum-SOG7C63y,f6p7WvvhM3nU,F6WaglArEQXF,fMfTeLYvKZvl,fMmhh0a7RZFz,Fq6f7tLM8_9p,FTq8Ozm8pUJU,fw8kZYmq1JkG,FXD7pcJwm1jD,FZEtDNZGrEs4,g39SsYXO7slD,G6pGLkIbZ9x6,GEYTrrwWPJ0B,GGPHIYlKlc3q,GtjxI9tbaqCQ,gYdmDHXSVC_f,hENo3XOIUa4z,HJKl1XNWcpgm,I5imzwMCFsDg,i8_UuFwoiY5F,IIS5X2YmL5ty,ijU0r6YD4Raq,ITFBmgB27lgS,J-7voeCVmdkG,jb-MZY_JXpYH,jh-sQQ8Pz7Zt,JHX6Avt0JaZr,jjd3ZVZZWB9e
+1493621467151	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=d2QjqUYCokp4,d7EqBTWvkHXK,DeywSKqkm8KD,DMGUCgwXKivo,DO97sT-majqf,DRhr7U-AeD8n,e1XDNOFyDbi6,â¦
+1493621467154	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621467550	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=jlV-q6LC-zX8,JS6_AtyoTJex,jWHiWTKsg7lH,jwWTwmsnHBqR,K0UXw0JZDVNq,k9kgemvqFSld,kJMwMgRaiMp9,ksWi0Lyvbw_d,KTaWkhYXKk02,L3HoD6Ks3cYL,L5VuUmPvRVEH,LD0Cbc8bHdmp,Le3X77Bw7aAx,LegV5EKMYHO6,lQX-6REIGYPG,lTqP1dUvUWAo,LTzHaBKf7vd1,luCRIpkdaI31,Lvkvm37zsRLN,LWUrPVdwDBT7,m28BucuZYlKj,M2w4Zcy_OHIm,M4Bzj_K7-W99,Mf-nIaT3jWh_,mmC0t5ysBn_A,mZkviVsjh4IR,n2dpJuGmMYuk,N4iWSm94OOsc,N77Y8Ko_fFyJ,nbOhKIW0K43V,nVP4yYFt6Ppj,O1V4w8Q4z1vy,O2jD1sTbQC4a,oeTGa1b86veB,OEYqfHzijJpL,OFy0lzN-L6l2,Ojyplx0L69Ib,oO1d7CmJzCPZ,OpZrvUdnF8mG,oQ1CMneu8gFv,owiYqzDdk1Wn,pecayuCdDX60,phHFZiDun9UB,pjyKYVJJDDg-,PTvGzwKLNvdq,Q-KIlSl42Jw0,Q25-wp4hdYi5,qcB1HnEH_wty,qcCdiOomh9ZB,QecDTrzAIUHq
+1493621467550	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=jlV-q6LC-zX8,JS6_AtyoTJex,jWHiWTKsg7lH,jwWTwmsnHBqR,K0UXw0JZDVNq,k9kgemvqFSld,kJMwMgRaiMp9,â¦
+1493621467553	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621467868	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=QG0pu_Aasxes,QLe1Cb_onXzI,QMlPhqVl14Cm,QUmOnXaGheuj,qyy3LtMuFXCN,r3JRGSCkIjDB,rakmj-u9ePlO,RcfNr-mY6YOP,rDFxXjPzW54U,RMRu8rl5DhXH,rQ52Gpyv7o-8,Rwbk0s6xm0BS,Ry9aF7I9rErm,s5bWm5HNL6kF,sDBagdBk_JUk,SDfdQlOIZnef,Sktzdax7-d5i,Sqtuoy2LpJ0f,SXSDTl-G5-Zb,szrfV48ENJ14,SZT2l6MCrybk,TboMcs30ro7n,tCGttioQ9X2v,TGwW6Sancn1P,TI598zJ5riqY,ToMDTSnqjnVj,t_lbr-_hONnU,UkaNlJnkAa83,uRPRqRUu9lu1,V6KKIxoxjBii,VAUO5AnrXs36,vnm5x0v_hqsG,Vt36b4hPwpJL,VvQAgj3iHhvk,VvwQDU-h3SJG,W8zXUjLrUAMs,waXRQbkndEoQ,WCcmXZkY4iSy,wE3xmBgpuvUS,WGsGawAoOecU,Wi9ySS-6Rr5-,wl9Pp59YXNJD,wrC7Yqwi30T4,XbkvGnhXUdel,Xh0IjbVrmKXM,xhNwO_Ys-nYl,xJcGnb-vJyhM,xJqp7hhGyOx1,xl6DDEEK-H36,xnVnNU31tO3j
+1493621467868	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=QG0pu_Aasxes,QLe1Cb_onXzI,QMlPhqVl14Cm,QUmOnXaGheuj,qyy3LtMuFXCN,r3JRGSCkIjDB,rakmj-u9ePlO,â¦
+1493621467871	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621468388	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=XrQx3QYMngqP,XRzp-A2DGm8b,y23UDmDOuCX2,y5_pTALGW0-d,y7oZHzZarB26,yggttSlZr-nt,YgZ5fArCYENK,ykOWfEgRSVjr,yoWwRRpLlHDF,yR-f_rPkbbTb,yz0F4n9Fxw20,Z3kjaxdjXbF_,Z6ozDK6-vuhk,Zb0vRC5cbgws,zg8WMIAUws7P,ZJ-A1Z5Rw2Nq,Zp190iUdODj8,zVHkSriU3t5f,_sYciPPDgZaj,0I_RzXQ3hSMk,2p8Ob42HwFnF,9NCOXyMjhaQx,CPH-FXEbH-Ij,FE36Dx7ECvtP,gk-Xvod4Mb4X,Km4ddbzRo1Bp,NnMQBMdJSjpE,PF1s1j2y3NoU,QGZWJmXOk1Iq,ryYCJ9GOpU6i,s3DZ13Ixy4AP,WEIeg5MkGv8m,XEcn5bSY3pko,3l40IQRGhmIa,8G2SDRJBtKMt,aQ67Qrt6_Suy,Gxds0dV0RjYx,HarQ5R6dq19Y,IZiU55I3dhFP,kA8B1eqymwop,oKvG3Uud3LDZ,ORrnN8YlTEUo,ujSkQINn75H0,_ARs3--32rgY,0IqWYyB0GtJ5,31fPMHfsnbYA,383KvbXbfRQS,Abd8hTgR9rco,b7zlc3TjZdLj,Fi-YCXtn_F3N
+1493621468389	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=XrQx3QYMngqP,XRzp-A2DGm8b,y23UDmDOuCX2,y5_pTALGW0-d,y7oZHzZarB26,yggttSlZr-nt,YgZ5fArCYENK,â¦
+1493621468391	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621468708	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Ku-Yb0L2M1EB,n5BaBi3P6bY7,Nvj1RVOHqXMK,qmSjJ23DXfwp,snafdxq7wl5W,v_bXiZ2S6Jrm,Y15Yi1N5GfiF,YkAXXhscxWsE,5Sq8177YXzvy,-6v49KK1mR0T,8bajg45CwBGZ,bOg3GCBCpkgK,BwMHSpcZMPav,fauPRxCmA5Nz,iMeGNaOGKmFw,jV6H0UmhctOt,n7Sn6yfbUJcl,Qvr4ecMK-gqX,s5Km53rsSWZz,t2Ps82jjq7oF,TBgAMj8nCLZz,vRleXFTGEQXn,x-idUZ6qFFQp,zHqWY7UvKcjh,zu39IFf8f7VD,09LMNrN5oyG6,9-LoQNIqEi6N,E14mir13lJfF,fV2PxH4ElRmE,G0sWG0V95jJJ,G52egngnwUZC,iidcN3DLV1eU,IYMQVanV0Wr-,lSktsKXMyxL6,nXsbVbzWkF3g,QvSadEfO8UJA,rEBRrS-KibaV,SZguR6G6Zgey,UiLAS-nenTpA,v5MARKgZvA1Z,xJgSm9EZxMwh,_S0KBPDByOcZ,nteZ9O77jcaG,2g3yiZOXQdsc,7-FOlq83EJIP,7XeAUr429VQ_,9MQNSYGrXgDv,a8K2W4MI1b1X,azvfstWjTg0C,bbBDMoETlYmJ
+1493621468708	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Ku-Yb0L2M1EB,n5BaBi3P6bY7,Nvj1RVOHqXMK,qmSjJ23DXfwp,snafdxq7wl5W,v_bXiZ2S6Jrm,Y15Yi1N5GfiF,â¦
+1493621468711	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621469034	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=BHMoyrBQuzhI,bK5zUeLZutmW,BvqGozQRyHX7,c-yhQmUX1hDq,DpJXZyZ7fAmA,EE2y9yKs2bR8,G9OBaBUsesVx,h9klSV5v6mgY,hemCgAc6r725,Hzwvjh-V4Twp,IbGsr_rh5rwv,L11OPSaxpuRE,OoMw6_XSiejS,qprUnQMQbTx-,shptYQ_ONuIw,UeY5spylZ12i,uFt3PPs4j_1C,w6acQV94LXQZ,XAUTh1FS3Ifu,XQqpSqZKPtiM,xv2atwJMInkA,YdvSXjjpiq8G,z5vmnuUGvwII,1e9v3GBiWun4,2dyyh6tAOzld,8_JsV7w9GfXM,EpP07I80m8rg,gOIc681Tp8JU,kqyateHJcMlf,mGOuUZWVG8sc,TW1gz75dGyAE,u-jGHHkQJ2mI,bwqJ7T59elc8,e9zgV5CAMdfd,EbQh5PQsQyvg,eXoLdvxwK4nQ,Gjl8kIBr_dwL,IV1kHsgdcOv3,KjM3CbdONNtN,L04oKWldLXgt,L7tQCeS2buUr,mYnayowv4i9C,m_ur5qjV74rk,ocxU0gieAgTG,ThcoLoHCPjff,_lE8MUFSTaBg,C0Spmm5RWAsS,JJCfrMVgFBSi,lJWSciAJQ-zi,9wIPXSh5zXRB
+1493621469034	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=BHMoyrBQuzhI,bK5zUeLZutmW,BvqGozQRyHX7,c-yhQmUX1hDq,DpJXZyZ7fAmA,EE2y9yKs2bR8,G9OBaBUsesVx,â¦
+1493621469036	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621469359	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=aibJ_19d-fFl,ASKjRRZ-Ts8o,bzREv2XvFj_W,gJ_ufnE0UPrw,gNs51FZc8B89,hCyAaNnwlRnD,kE6-Wx9HcOO1,MFKulkLm9ZIy,mubPvhj_AX82,mX_ghIjppfB6,tLzoCR-w2HXP,tur7FEcp4t02,U4K4Qv-kOzrb,VJUFWdWSNBlX,Xncd-GpjUGQz,yqu3TEMwdVbw,ZyT_wgnccgPb,_WBvXVoqx3Qq,rtWXyYCevGM6,-V16ChMaQJGx,0UFLbtQqIO0P,9Wh0JHgwUP7W,BO58Ohh5-FXq,C2o6xma1ArL8,owpg_RjAyarK,x3pVJq0oujHP,RgRgNpRV43Nn,1EOW4nr8qQvS,1t4SRO5LKtCB,5M2JC6LRbPDu,A7NSHS4osTRe,AjgMd4giiYih,aMX1bETKPNpc,bO8AKQpshqZZ,BWeVvtXlI83N,Cab8qUprhIhr,dE_v0NU2pNWz,FZBsifOgF9ge,gpxhBay9ntgW,lWbiqQoTjcBj,mnBRWbUVNlBy,MPDqTJBTThFc,Pbzx0nlmTZlH,Q7dpdJAoivVe,qPhrkOquAqJu,RUR4iZWOstwc,RYqmF7jnuz8E,s9NgkEaaXSIe,Saj-i1FjMQOz,_S9MGRwC1pr7
+1493621469360	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=aibJ_19d-fFl,ASKjRRZ-Ts8o,bzREv2XvFj_W,gJ_ufnE0UPrw,gNs51FZc8B89,hCyAaNnwlRnD,kE6-Wx9HcOO1,â¦
+1493621469362	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621469690	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=02f6PWBdmQSm,0K6_GWwBL-fc,1UawLiTCZ0X0,hhbvOOmW2o9-,j-C7N6o0rIfk,Jef6UtaA_e4y,o3ycWfpy87_P,OH1YXFC1s0Ql,S9ORn70qEO_5,siRmwmWGehET,3V-6_3XfvRBZ,f4Z1CjGDyE87,Gke8znFxpgXQ,Y898ukeDYoXh,2AhzhN23P78K,4ZB6jUb3L7U6,5Ry418lvUD3B,6DzIrPXkMGvN,6lmx-xsuuXYu,8LbYcf0mCh8h,BF7LpevwxxV2,G7DcZLjXgAy2,hPnL3ide--Z_,jIX4BitQk2JS,JLib0KVZoqKv,k4FGtmx5gL0k,LighGI2nLWB7,mkk7Xvas25Ns,nizDAJZBk0xj,p0gLcGQnOGnl,qx07tllfrOQp,rrJNI4boBOLb,RZoZrcmEvw9R,SuHuIQaXg-n2,VbCroMwNc-kh,vfw2GZ00zxLc,vRApgt1R-Bxr,X_A6IoaO6tY9,I8r6Mk34h5w3,QWTpcnL-Pqi7,0Gq5KCDYZ1YA,5hrL-tk1Izdb,5OS5pUrmmC6Q,6elftAp64aXJ,6rNyqfw6l_lI,7IlZA51dZjOK,8JBS8eGEwPri,9IYuQV-t_2zl,bkTtC9KL7nuB,eGuWy5KkD5n6
+1493621469690	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=02f6PWBdmQSm,0K6_GWwBL-fc,1UawLiTCZ0X0,hhbvOOmW2o9-,j-C7N6o0rIfk,Jef6UtaA_e4y,o3ycWfpy87_P,â¦
+1493621469693	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621469998	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=fUi9FA-YEzdq,i87Et3DlttQX,kdNOkTpkISHs,l44oDZguDQbr,N0YhbKzmELCJ,Nwhxp_68wZAM,qYLHCNM_VKN5,RWLIyXV0MI19,TGDHC2mrjFrE,uEvW07_8oZoc,uIHE-2_m2XoW,UYhHa6hVaBhl,XU-LG9iC6PzM,ykk71r19SEf_,Z51uLzNfBmc3,1hPYjosptqM6,3fphS6gMM9bV,3h-6cmegjHYi,3NB44VbNNUhK,4thHuOsZ5KCw,5sJWm9hTRvjU,5xPjX3XktawN,6oy7XUHjLmgG,8FH2uriKowa5,9bQMZhkguDUY,bYKaQTtrjd7T,CplKYg6lLXdr,cQfAe44jV4ox,DzER1FAnuDYW,Euz77yWCL1Yz,FfrZEpHbZQ_T,HEUqSJ9TdsdR,hSrqfcbCQ6UT,jofYRC0fGq2G,jwz3SiknIiKG,Klgkj3ean7NX,krgi4cttyUJe,LBkEbMhZJ1YN,Mixn-G9UchtE,MJgcJP_6ybOM,n5E26s5XVutK,NBZxzod2iYVi,o9oiUVRQL7--,PbOzqs2FxQ7T,PsnL4zmddrI2,QCEGqe_XTbTG,QX0nSwaIx_9B,r8FBVfloRYmZ,tf8Q50R0HF2P,WbRLvVQH9mpt
+1493621469998	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=fUi9FA-YEzdq,i87Et3DlttQX,kdNOkTpkISHs,l44oDZguDQbr,N0YhbKzmELCJ,Nwhxp_68wZAM,qYLHCNM_VKN5,â¦
+1493621470000	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621470245	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493621470309	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=x_1v147qaF5a,yb0fFRE3xj2d,YkCNXm5e1IXQ,ZQZ1iXzMd3tO,_66vw6Tt55we,NAKjrucZddYb,Re96duY6ylYY,vpnd4zBTQwxz,5Sw6oQ4yPVoK,A4dxFPctXyJb,AE6NIrbZl8GA,frbrXDEMHRHK,g2-tmybI0jSw,HycPEBOinyeB,KGUPXRAG8tt1,LT3sXrR0yN6-,OmxE_yBWV5Hr,Oqght-VxMwev,q9wOkYdiJkU0,rn-KYCHPi3cq,t3wo79JmcuBu,VhfXROMxpiJM,x7536IxHswls,xeUweO5BaGws,BI9cnN5qsVFw,EoHSu84KpuQ2,ZghvvxDYKidB,xQof82LaX_RW,2L23347Heu3e,2RWVvvdvrQcn,4EbtxY-GP3pi,4r-bm_bzfsLq,6nL2bYIrRdhQ,7BAj-tUulKFj,7kzXV4JuBcFM,8UGfqqx9btAf,B2Vu4zJVjvUZ,dF5U1q6vWWLZ,dqp0RugKXGdy,KTRm2bgJQms-,KW3-FByjSaL-,kW_lkQorFiLT,NkDBf3YJJna2,oRi0hsXm_wzg,Pxm8jwYqvcwB,sQ2xwTb7Eusm,UaxHOIuXNu59,uHDvgUyGuygu,VBUCb_fxPD0X,wCdrmeB_KRvk
+1493621470309	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=x_1v147qaF5a,yb0fFRE3xj2d,YkCNXm5e1IXQ,ZQZ1iXzMd3tO,_66vw6Tt55we,NAKjrucZddYb,Re96duY6ylYY,â¦
+1493621470311	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621470647	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=wV-1Th5pjd4Q,y7ERRx4E8Wdy,_4VVAnNRoz2d,V0Gu7XQSG1Aq,42dP4nfoQ3_G,BmQ2tPBLR8Zu,FojfvLvuWEyW,hytYB2hSNFsq,obb2TMtFDaMY,-lV8ARtL_qcO,QAIERcjUVqtW,tgjzAL5uFdgw,iNr7fAAwNhDG,PTDE8BtGN8gK,M7pfxKCAO-Bf,uWgTAcM5KQND,wLd0mFZln6Gz,JpGlxqzGYX91,l4_31hqt1dEK,5ajUq1TCE6rY,Dhj2wRca6szl,E70A-w_-eVOY,hE5iRW6MEP3q,2_mriIdzqo8d,rupX5jGb9-lK,6BhlMPQjB9e8,AKjvLNVY8Ot9,UlzgC1zK3ppf,7WGKHAmTRBrB,M_FQ85644eeG,-V4Wg1w_BRGq,O32sBtQprMts,Zr-ZepKFYCy0,iTH7_PQAhgoV,NJ0yTwK3dk0v,sMMU04l5aPXa,th-gNudG2zAZ,zW4nQ8qcmsdZ,_M_lKbTonqmu,g9J6Q8SveIpG,9s3EBbH0D55-,flsx3ZBwYu4A,GbEJCMt2ZfTj,Cc2RKmyPFqe3,--Mm_CVKJa1D,-08lCxGzZfB3,-4QbY7hY8T3D,-6qUy4etMNXV,-8SCOt_L0_pC,-91ILFLDyobf
+1493621470647	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=wV-1Th5pjd4Q,y7ERRx4E8Wdy,_4VVAnNRoz2d,V0Gu7XQSG1Aq,42dP4nfoQ3_G,BmQ2tPBLR8Zu,FojfvLvuWEyW,â¦
+1493621470649	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621470963	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=-aa7sLwjN5UG,-AdAXsr_3d2F,-AgQs1z7hUp-,-aXnCb66Rd-2,-BGPIMtV3qZu,-BguSOb-Dmod,-cSxem1CrlKt,-CVB_fByAM5V,-CxG-SGjdNG_,-EA3SG1ArWJH,-eNSszzoGutA,-f1_L3diJVGD,-F8hsDx4Z04O,-fLWQlV19jc3,-fUDr3yjMsrO,-g85VhF3G9pj,-GjK_7YEzosG,-gO0b6-QBkkT,-HiKL7RuFz0t,-hYzC6CrOLtG,-jC16D9wK71F,-Kd3COh21fD0,-KEh2SefgyG9,-KmM5LcEbuJW,-l-hJzvUIBMh,-mK5FIZ6-6OO,-MPxycgy_ZVi,-mRCIgWHqHPT,-MzTv20wjK8J,-N-bpODm3sOP,-Ni9AyYOhSfg,-nxqt6V6mtRo,-NyRHb-0cTB6,-PaVyFI9mpUD,-pfTcMcsbIqj,-qFOZcRIU-jy,-RdDqxJYSW-P,-RO3zWOldkev,-RQODc3hR1BP,-SlqFqhEL71f,-tgjx5mjDd8S,-tjiFSvgpipb,-u7yCF6nkqUk,-uHoOdEdDo51,-UtfVcHBhtW4,-VnEPz_M9d6Q,-V_-tapftt4c,-w7sHxOqOObJ,-WkIbNgQlxSj,-y77Pso8qoJh
+1493621470963	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=-aa7sLwjN5UG,-AdAXsr_3d2F,-AgQs1z7hUp-,-aXnCb66Rd-2,-BGPIMtV3qZu,-BguSOb-Dmod,-cSxem1CrlKt,â¦
+1493621470965	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621471274	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=-Y9bu-RjqfD1,-ylpgZTd5FZt,-YqIV9yU-VTi,-ZOfaP_foErY,04fJ_Hjdk-Zo,04jcdTUIQ0VN,04txQm8yE0Hv,053H6AQEfiJE,05cBBrDDCWXh,05CrUhvJCegR,05wA6ufYW_6X,06z4I3Oc2B5O,076kSWfBoJZF,07eLw0Goj1iu,08mZ0xHpEdax,0aGJ1D0ss1TP,0ahlvybtymmZ,0ARG0tAFuYYX,0aykUK6Nq64l,0brgRTg3NfVR,0BzLTgfqx0nc,0cT99y3WZEqj,0dAwxYCM95Zd,0dHroiZNJpfs,0dUgjMocnFaj,0eUsHZ6HpKHR,0F5OlLCLqCiW,0HLum4ZH3aSg,0hOTq8HlXuEN,0ISTl7-gXu2C,0isToMhlPJI1,0kGJgxnBZP4X,0Kk-glMHSd1R,0KnKlcI6hxHk,0LJ0L8bY5Tyu,0NISbuQ3sXTq,0PTK1MRF_EaC,0QM8AFv0TpT1,0R-Nwc0bOoMS,0R1ApvaZpg7z,0SxWsPvp5Ywf,0tAmhMpQJEf-,0TBjotkl1tog,0Tmat9wVlEiR,0tus0JDDKf8z,0TvfKXpP_5G0,0u0AFJZ7TcpO,0ulnHTGTTiHb,0V8kSQnYNnHR,0VQI5O4tUwNR
+1493621471274	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=-Y9bu-RjqfD1,-ylpgZTd5FZt,-YqIV9yU-VTi,-ZOfaP_foErY,04fJ_Hjdk-Zo,04jcdTUIQ0VN,04txQm8yE0Hv,â¦
+1493621471277	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621471585	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=0VxgtdtxoXXT,0w6KGvfnR2hT,0Xd9q4-lHdAK,0xGF_8xR3tGI,0XJDO9si6FWs,0Yfi5Q8Op9Md,0yM74oQbsgSj,0__YgMUzPfHb,1-DFnRsFLCnD,10mBg6_9xvbz,10pHK0KDaoqz,12T0S2YnhOJC,13vJsy96n95r,14XPie29-_Ar,14_TFdYjemM3,159nED_KW_35,16VRJiETet3s,17dI4KglROhg,17nc6MrCxi60,19XULeT3hizm,1auOceDBzcV9,1B-ZnDh0JYMK,1bK19NHjWRJD,1Bp2jjyQHwUa,1bpr7csa8Jd6,1Desz16k2ocD,1Fa8Yr9t43iS,1glGlaS01z-B,1Huy_1QxHWSH,1HwntT9zs4rM,1Iny3jyjvh9Q,1jpV415skAwX,1jy0iy6m0Ohn,1KoetQPKn4vZ,1MJt38PxFnG6,1mU-pNEIX0eH,1ojJYNS9Kpr1,1PdkNcf5T_wo,1pl-hnscYveC,1PSNPPV7sko2,1Qo7yKwLRb_R,1S6oLxn9N7Sg,1SQSbUWBcop0,1t2gRdAHFsqW,1us7J6aK3SO_,1UxFww0qqITI,1V0KPKC75LKl,1vGTI05s0hD9,1VJCxEmF74NW,1vp1YUrbeelY
+1493621471586	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=0VxgtdtxoXXT,0w6KGvfnR2hT,0Xd9q4-lHdAK,0xGF_8xR3tGI,0XJDO9si6FWs,0Yfi5Q8Op9Md,0yM74oQbsgSj,â¦
+1493621471588	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621471908	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=1XwP7j4Ou-eb,21qCX_2qNr2b,21v7tYtuO4xn,22A-Nt97QoQW,22LjRpEuX8i8,23J0bwr9HUKS,28hrSuz0jVhv,28iAifxjVlla,28QXbFRqK99V,2AaZMfeTQCrB,2aFyEcRnIJfs,2bo3EAN1NBIa,2boXPZP-F5zx,2BZxvyqlwDni,2CYi8Ld7Eazt,2dPE6Jz7IDnA,2dQRH8gEiq9a,2DsJJL3RIS4L,2EL_l9mBBvbO,2ESvlTglMDa8,2EY8PiVlwWFC,2G8-w9REAIYk,2GZTDT2h5cX_,2h92Jt6B48aQ,2iCoLmWSkl1V,2iZ69I645H8a,2iznHqd8jR_2,2jh_Tvspi3Za,2Ji34_B8EZRO,2jPmBJNBWisa,2kIKFUKuUo1U,2MC98GBnyJqD,2mwLN0HsJhap,2mXgoeXRqn4l,2nKWM-5syxLF,2oK0p6kIRG_d,2OK0T1Rj_kkC,2QPz90t9vHEG,2Qr1QK3Qjzwr,2qYV0MxB-cXe,2sTgq0fCPI1R,2Tnr_kSJAe0P,2TTKDii6PNmD,2UdqZ5sSGE1t,2vb7-brXfTWp,2XvduJY4dgHo,2ySmwwFBBBSA,2_cx7rHh1wX1,2_KfuBQJ51n0,31J5OfIIet5q
+1493621471908	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=1XwP7j4Ou-eb,21qCX_2qNr2b,21v7tYtuO4xn,22A-Nt97QoQW,22LjRpEuX8i8,23J0bwr9HUKS,28hrSuz0jVhv,â¦
+1493621471910	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621472239	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=31TSz1XF0zk3,320rGlMsIe8F,333O0awM2TLX,338l_USc1kr1,33qj4rZPhYUA,3529TqW1ui8_,35sOMjg6_dQZ,36zn1nBnlXwN,3791NUU5rdLT,38BHPYVoz0zI,38WIdQmf9_q7,39o7WGKK531U,3B3MlutaUzy7,3b7VytR4RyMS,3c7fPbzkYG1o,3CtAMoO4UPGr,3ctwzducchI7,3dgA_xzidOQh,3Dm2r3uFqKqs,3dOm7xrbl6vX,3Eu1iaOIQeF-,3f4gGTaz73zB,3fHoqo-Viqfc,3H6gHKoo8dV2,3HZO09bSYMtu,3j-QyzAqXxUf,3JDMCdY71clI,3L4WBUX73raG,3L6CdkW47Hno,3Lts0rvCowoq,3MU-z2x_JkkW,3mXA9ZcFy9ts,3npMv3gvz1Bk,3pNRxd2qHyPK,3S0zfHSjnmQ-,3SS1mwagL5Kr,3Tg-B_lP-skd,3tRz72X1Nyew,3wql1htVsmsJ,3wSiQVhUR2fG,3XtnpIe_MXh_,3YExFAmUOgez,3Z2diIE12U3x,3ZMS5idb-xh5,41NVOmv19TVR,41yHQfm0thT_,44h7lOEcw-2A,44TZa_7PJql7,46aC0-usW0I1,4boXHlo250FX
+1493621472239	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=31TSz1XF0zk3,320rGlMsIe8F,333O0awM2TLX,338l_USc1kr1,33qj4rZPhYUA,3529TqW1ui8_,35sOMjg6_dQZ,â¦
+1493621472241	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621472657	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=4cgnMv3y5BdQ,4ctrslBWOmiH,4D4j7IQpBnVh,4Delg4O9f7BG,4DFGkpXDM4J8,4eCA0V1PJzn6,4ekWTKn6OilW,4fLJYdYsLSia,4FoIb8TPwqUp,4G3kYxVwYG8h,4HsZGiyBBm2Z,4iHwUOMTPz5A,4jGuZNevGH7_,4kpsnSEoRBop,4LwG68So6i-a,4MP5aepMywSg,4mRKKxgATuZp,4obzN0MMAIMm,4q-KzFOcQhYb,4qDWTOpgEu9k,4Qe_rBHv5tfB,4rdWeaGSJCKy,4rLhvGRtjgIQ,4saitnsaJUFh,4SqMopKGq805,4sRd8hQaW1sN,4t64ClfLFCkJ,4u23llhLy5tg,4UJ3i8C1atTv,4vOycZeThztT,4w_W-byQaN_Q,4X79v5bvGCl0,4xRpyhuGVLLG,4XWjJT1qfMrR,4zTYHW8FVQHl,4zvusuHfSOFp,4ZzcxDf_Y8ll,4_CBdxKxAPjJ,50rSbENv3IdY,52fBAvQfR9Vj,53eHXmLOBYeb,53KQHtHZIAAd,54bUWms9A3n1,552mi55g1SuX,56XAhso_oK9_,57j9fo8vbgig,5AIr23BcvgRz,5BIfHe-vdDGz,5bxcwklcqv2z,5f4JKOFC6gAv
+1493621472657	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=4cgnMv3y5BdQ,4ctrslBWOmiH,4D4j7IQpBnVh,4Delg4O9f7BG,4DFGkpXDM4J8,4eCA0V1PJzn6,4ekWTKn6OilW,â¦
+1493621472660	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621473165	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=5f9Mw-MdINSF,5fAflWpuZQ-V,5GodJ2c9TZ2v,5iLj9k8XOR5G,5LcjV02ec5Pr,5ld3P8FDd4y8,5lNIGNThBdxh,5LoRvaUfBraR,5lVVe_JtTMgA,5NLo2P76nHE4,5NlUhLD57beU,5NtSm4A4OB8q,5OxSQiXxi-2r,5Pa8EQJD3CLy,5pe8el0_r99m,5pEQaw5NhXT0,5q5l476GXW_-,5QM7RPMGkYan,5rfTsFO0W8fC,5rx1tl24XUzO,5rYAuCDKJIWA,5SV97Cx7ck2q,5T253KSWCzwD,5U3aEDdUMeP6,5U9bKLcYIZu0,5uiqhHASZ-6P,5W6AnpCMUTnJ,5xsEigr3VnhC,5ygytwyG7G_g,5z6pjrb_rqTX,61K3Bbp8vUws,63lh_3_Y8lFN,63yIE4lc14Oe,640LzelNs5og,64yGNa8hw-hU,65ye2WaiZtKq,66dEYKNTQ5td,66TjXroh34Dq,6756lsdOCThG,69s83yeLEFJR,6aSNssagmMBn,6B8PunXRvK-l,6BEEBk3Cfax6,6blV3IHTAYWJ,6bpTWbTy20P5,6BtEgqvQXmkM,6cf7T4NY3JjR,6chcCIeT00CV,6cjstLKzpgJz,6ff8dbkHiGP5
+1493621473165	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=5f9Mw-MdINSF,5fAflWpuZQ-V,5GodJ2c9TZ2v,5iLj9k8XOR5G,5LcjV02ec5Pr,5ld3P8FDd4y8,5lNIGNThBdxh,â¦
+1493621473167	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621473675	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=6FJYamtHw_1T,6fPpewcxt6z_,6FSF-wZvz3PD,6GTmGGk-rjGI,6k4ZWTPwfMVh,6kBo2um0LPD2,6kDYUhc5Au8a,6kjt1k96OrJF,6L0g7aor0VRB,6LtYHkGC6EgG,6luTGoS5tG-f,6mblbV-nrTat,6mQnUuPIf_Gm,6ms3qVHDJXzG,6MVulaSZ73Rp,6NP82b7PJ8xL,6NpZTV4Mh2ot,6NV4ZL3Cd0Tz,6NyzVpnvF47k,6O6IC-ktBKJM,6Pp9EO9K80IX,6Qez3oaPGm1V,6qhGDVS3Krlt,6Qp9iI0aDVWt,6RMXcpAT0p6Z,6sushlzvnufO,6ucaUt8ozgNi,6URlJxnveDuO,6WaEMJkcV0_T,6zyqHRruRfc2,70-5l_xreMWd,70HtXyatutDe,729XDdvR_jDa,72y_Xi51f4zM,73E5TvJWSSG0,74eWcyOeJkyf,74HqjuTJygma,76ivMqIf98L_,77FtfKvfzhbC,79gwtVe_3geY,79Jp56k_wIDw,79TPgn4b7QFT,7AJ2NSONVveS,7Az8cpUBeNsG,7bdASO5xXMu4,7D0U_L3vvypu,7dBTFW-aC1IL,7dTq8c6nV8Yb,7fROKw83mJ50,7Fr_B5kBS6JO
+1493621473675	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=6FJYamtHw_1T,6fPpewcxt6z_,6FSF-wZvz3PD,6GTmGGk-rjGI,6k4ZWTPwfMVh,6kBo2um0LPD2,6kDYUhc5Au8a,â¦
+1493621473677	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621474204	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=7fyacUiv1K8b,7GsStQaqIof9,7GtHbXkMLT0P,7h8ZjaS1fpFA,7HUD2U7qe6BP,7i0LUGD9gpZk,7JlrJ62-9-Bw,7jnTKuxTOw4M,7jWfdPFJ91tR,7knQSLwztGDQ,7kotKD10nxih,7KY-ySvcpzWA,7l6qHh6EQjJZ,7LZ-FnOZUuH8,7oCrKhpsv3Ig,7oK0O-Spaw8Q,7onZCsFj1Sn9,7OVNQ3KlckPS,7pb4ulFLrYqt,7Pcu8lTahqwc,7qW_kLJTdKLx,7qziWquuSuzP,7RFZx9fvOFdc,7T8yOM7MOM8O,7uHBNuRYmYxh,7UlDXfLSJy7H,7V0_shGKGxKz,7VqrvTMlQmTG,7XdFX5WaFruh,7xEt2fYbzJyp,7XntNnNiZ86n,7YAs0n3hIyp5,7yR4PPJzNl5A,7Z9BSr_Oa7zy,7ZhW57queWYE,80nQK406bWxl,82PjJAx5cjZL,85DsLoIqG9JS,85H40wxY-hfX,85mnwIFWS1SH,87BkmzWdaBVZ,88WfIJPoNO9g,8AM0Amic0awk,8at9qiwKXa22,8bT85sR6N5tD,8cyEhcQZu-Tn,8eXmNslpVFnO,8f55hk2CgwJU,8j7vmgH88MzM,8JH9BRyAoTmN
+1493621474204	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=7fyacUiv1K8b,7GsStQaqIof9,7GtHbXkMLT0P,7h8ZjaS1fpFA,7HUD2U7qe6BP,7i0LUGD9gpZk,7JlrJ62-9-Bw,â¦
+1493621474206	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621474522	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=8KdOm31Zz2kw,8Kw3GeAM2EMS,8nHFqMhUUyPh,8Nv2HcETcgFH,8nyq9Bn4DNct,8O1PT_XCjH20,8O332if8jTRh,8ofrZc_8jhli,8OpGi3rmmNgu,8PrxF9VS3dTG,8QasqWfpAMFs,8rIb7pxn2pF-,8rLTjAhZinlp,8rSGAga_bFue,8UNktjJ8ZdxH,8v3LC7-nS0Bi,8v9-qAyvjbJS,8W8yYxmStSRE,8wO45FnsSnv_,8xoVVNyonhbc,8y44bHWnl83W,8z6TWswupY85,8zAnSrbdVcb0,8zQdZ7Wevnhm,8_9PUmXPXKOx,9-9MFfcIefSq,92FZQyqZYZrm,94H2lMGzn68u,94lRxqVJ1VdD,96EHCdBuPMwu,96ft2aQR7sGY,96Oui1T_BS6O,97zCsyXObrJP,98DM-cgtzjp6,98wG7RsDbMn8,99bJFI2GR6db,9bCZ0EnorO3P,9egZehRAZwkd,9gC47_41wWPf,9gjHEHt4TJWy,9hH4EvteeqYC,9hkLA0UX-kVQ,9hYxw3pFXHrE,9IQnSgviZYEP,9jyw-d9b6hQd,9kwfTVFJEZe4,9n4zXplqDqm7,9plDqjzByZo9,9pXveutoJ8um,9PZaaQQRrD0o
+1493621474522	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=8KdOm31Zz2kw,8Kw3GeAM2EMS,8nHFqMhUUyPh,8Nv2HcETcgFH,8nyq9Bn4DNct,8O1PT_XCjH20,8O332if8jTRh,â¦
+1493621474524	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621474858	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=9rRovNriop1w,9rxe3Ylg1IGo,9s_zPnyty9PV,9ulA98TzrH3E,9Wc7c-q99fXr,9WqMSiES6oqq,a-Az9h_s7PDD,a-vnplbrWmDO,a-ZaRAEcPOdg,a05EAgKISOfb,A1NOvLMqgPub,A1P-rp4Mj9hF,a25SV9XWrEiJ,a41-XBhg5UsL,a7Cb-JxFI4lJ,A7lYIrax0IVB,a7YGOyw5GAqH,A8Wk4fuZcykt,A92SATcdmhK3,a9uKzZKU5f0m,AaKFBmPNxZJN,ABE-D_XsIfEL,abLmlQmSjhHM,abv8MspZpC9s,acHQQZSUwKtd,AckwrR2xu3BI,ADwazTAXXtKE,Ae-m9nZETVP2,ae1Rjn_i57FF,ae3S9Tz6ufLH,aEABSZ28bf4l,aeCLJm4didjx,AemUA-HmUX1Q,AEmV7l-iEWjh,afbAhWneJLqy,aFdmU70YDtFN,AFiAXgH7fSRd,AFwSEXONer6B,AFZmqEheoRrQ,AfZYx_d1smpQ,aGiVqyem8gV-,agTOJwHOptBu,agVJUj0U9tr7,Agzd3S8bmO5J,aH3vW0FFPxG0,ahmIb139nuD1,ahosoXuQied8,Ai6l0B6Kwn-P,AIsHB4p_cX5M,ajC-tr7xtn0e
+1493621474858	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=9rRovNriop1w,9rxe3Ylg1IGo,9s_zPnyty9PV,9ulA98TzrH3E,9Wc7c-q99fXr,9WqMSiES6oqq,a-Az9h_s7PDD,â¦
+1493621474860	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621475179	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=AJQN8k7paOjH,ajsdA1j4iFSo,aJsFMy04tId9,aK1yBDrVC4hk,AkHwl5Cjv87k,aKIRADYu4QT3,Al5Tw6SS4mKc,ALB-IkYXv8QV,Alhwz1VgMwlh,aLMLxqejK1J1,ALmPnUrkO_sT,aLnOv_s5em9P,aM5DdmR4nye1,aMKQQ0d0mYYW,AMPlfy7R7wem,AmV2wXlCQYfS,AmVT4imZ3TPM,an3gKldWyc94,ANgYlH2fjPFj,aNWk0qMTaZdR,aOMd6nqE4zzN,AoMWyu7Ht1Rm,AoTtb3qJXepd,AOVpaVKeXF_T,ApMxzUK635EQ,APObB8qjk380,AQ2ZJ2r2_Fle,aQFeyvnP9YhS,aQ_BYNyewDgy,Ar0-GC11G30y,ArCIRmngnY2T,ArcRm6mvG8V0,aRtWunRIlfZ1,ARuYz3Vo5EnA,ARXgMpII1O9y,aS6aIytVxKDC,aSdJ8d4_WMjw,asermbBGMrh9,At1JHJPeRJWZ,ATJKvMICaYtr,AuqlEnqAEG7z,aUT6Cda3gy-C,aVmIrEocLJT2,aVmYt0_ovVMI,Av_xWMpWWnm0,aw6fR1VYNjha,AW6yLx82iFkU,aWD2B8u9uYE-,AwFxGltG7p63,AwhVj6JKj150
+1493621475180	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=AJQN8k7paOjH,ajsdA1j4iFSo,aJsFMy04tId9,aK1yBDrVC4hk,AkHwl5Cjv87k,aKIRADYu4QT3,Al5Tw6SS4mKc,â¦
+1493621475181	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621475499	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=aWj8QbLlWZTo,AwJoaU4QeUuE,awK35pGFbRNl,AWOPC54MOLy0,aXht_VqwgFy7,AxtY8yFb_x8W,aYADDMVeFqeG,AyOqmeEKKOd2,aYRobOgnkiuj,AZNVpO8AqEh2,AzUZgGjUQLwz,b-HoEdjdemKZ,b-TndfuXb67n,B0zFVDwo_xxM,b127kdncIP7U,B1YlIZgMHCfn,b1YZlUj1gAGu,b23BrARUyM6n,B2CfsgEW1eLa,b2eXZwfbLcZr,B2UCQNfmVyw0,B4td262xKZXv,B4YU3Ucq2_gr,b6oENP-Ik0rw,b6zk-g6tiIlm,b7I25GsIKztz,B8NB-zgJmrqI,b8yPJDOPp7py,B9AKNCt4oIE1,B9zGcFv5PCag,baVQCzir6Zne,bbsPZCwJThwn,bCkujwlnWYNk,bCLsQaFlIgbk,BCYtVJQ2kK99,bdckIT0O1t8z,bdDNtCNcHSW5,bdhBRmYU0f6y,bdnm719dibtK,BDowb9Y_pboy,bE5O2zEZU8sE,beL8_RuWL0lk,bF5gDeoO7s5H,Bfg2xYaohYr1,bGQQemBGVpOa,BgQwFWqP5izc,BGyBFcGnYQ_S,bH4vaP1QVqMT,BhgPb2ceHIs3,bht0zo18kkej
+1493621475499	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=aWj8QbLlWZTo,AwJoaU4QeUuE,awK35pGFbRNl,AWOPC54MOLy0,aXht_VqwgFy7,AxtY8yFb_x8W,aYADDMVeFqeG,â¦
+1493621475500	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621475823	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=bhycOyZxhJAf,biby_bWw59kA,BITKszkKxq1Y,bjQ8wZ27VkC1,bjQKnbKvBatP,BjS_hBq3Xecw,BjzHBKxIG32b,BK8HI859o4aw,BKkBPoj2XpqV,bKROn_czwqO1,bKRW_x4dIlXm,blBDQWt8iJgL,bLdnYLNDi5yB,BlzAWDnzGvEL,bMJp4LK46IpY,bMnr7PD7luU8,Bmpoxvu7ka5j,bmtQGYIGr8BZ,BOj6lxnv5ZfX,bOXeg6h3ohka,Bpbez2S_EHL3,BpBSkBcNpYzV,BPdfAaKlzzeU,BpfVyrWfmyE_,BpOHdI0vMz1N,BQiaNSy7gT1I,bR3PhoMCD6pS,BR8Tl3YzWWiu,brd1gn7DEadn,BrQMIiy7-Im8,Bs-i49SJMkUy,bs-UOzcC1y-d,BS68mfQyVd8F,BSrQzW2siQ-R,BSsFyQsn08Jo,bSVat2ODAEW6,BsVfSDxBEllW,BsXYA-D1iBTS,BTdoDIyS9SJd,bTtOOeenJ6S4,bULr8ebGR0R6,BUz-rQV7zPmk,bW8X7Sh1ThEw,BwII5SlphmLQ,BxkpcSWP4kq8,BxlH6h1yfZQo,BXU6yuY_oV1C,bzA99irfHigl,bZFI5xGlqquQ,BzJ9QZyZ7Lo6
+1493621475823	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=bhycOyZxhJAf,biby_bWw59kA,BITKszkKxq1Y,bjQ8wZ27VkC1,bjQKnbKvBatP,BjS_hBq3Xecw,BjzHBKxIG32b,â¦
+1493621475825	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621476180	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=C-kd4BOXkJln,C0L-TyhdbFbN,C0M3eeG01rEs,C1r2kbKgpQV6,c1WnI0ua69Dx,C2-TGMJa6ZU2,c23Ow7ueBPaH,C2N9Pl2LDZLf,C2rLObcwqDnl,c2T29vQ_pBJf,C2TlVGwGREHI,C3KwX1Y1Gm_g,C3lONqYXZzMV,c3rNYxBkS5lv,c3YzNwoL788B,C4V8P_3JvDfs,c4YKcnkObuHR,C4zaGjMTOEAF,c5RfWBVt2EJb,C5vlHRJ_G304,c6beGB67ct6L,c6jfg-g0ulJ2,c6ZNErCp44QL,C7fudIm2Q06C,c8ls4d0n8943,CanCWoQi5uAl,CAOh8T1AMJr7,cdF2hgvvFq8t,CDZ44BnLze9c,CEd3wcu4BQoL,cEQcvCV7mKFa,CeREP86P77xJ,CeVRp_r5EaLa,CeXR_iFtZR8F,cFbHGIxbzxxM,CFBp02MSKR4D,cFd8rl64dDLi,cfH28FmV8x2B,cgQWPXrcyDxN,CGYLNVrf2Bsy,chWjDjg60TDc,CicNqZCRcGVo,cIKj_62-jPws,cixNFt4y9-pm,ciyMm4i870bv,ciymr75WnVAq,CJHjtn6EAWwM,CK5bqAweCTXA,CKjMP7jU9yKw,ckPT5FoqxaF6
+1493621476180	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=C-kd4BOXkJln,C0L-TyhdbFbN,C0M3eeG01rEs,C1r2kbKgpQV6,c1WnI0ua69Dx,C2-TGMJa6ZU2,c23Ow7ueBPaH,â¦
+1493621476181	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621476498	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=cKwRJ2k_XneG,CLcZhZuCKmdA,clL3M9NpQVV5,cLmDyRkfmcns,clNL1cAs8ISP,CLYj1wLyHLtZ,CM5Cm-GOKque,cMaVapheAs8G,CmWNFtAozKkR,Cn3WalR_fGuQ,CnECfq6X4t99,cnFlmTgYl-cU,CNHbYz-2DWjW,cnpzCNy_8jN_,CohAgnLJefjB,coN7r5bjyQlM,coqXeE-wpXVE,cOVaiFgNqEum,CpEO_AIybvXM,cPHgUcsFsz1m,Cpn2hZ2osbVp,cPqASuIOFK9Y,CRTETlRV_Z1i,CRujSxv6PLuj,Cs-cSBgW4F0Y,CSwdi-AYdFVB,cT5SyRB5odAa,ctSM6LkVYPsx,cuGZl1_iyXYw,CuOYWDdQSePV,Cv67cnuZn7rt,cvnAZQCHCOMf,CVubOxZQ5IVY,CwSn13w5hvXZ,cWzf2ZISxfuS,Cx3FttvGxjKw,cXb8k6szuhOU,cXDckmyVAr1d,cXkxXabTfJTR,CxMCpA23VX1j,cy0fbH0525YW,Cy2d5caPLW8L,cYciFt_KxWji,cyE3ViwkEg--,CYRFwDxMDoPx,cz-iwPii2kHb,c_D4dsSUmJJR,c_j_c_Fh7yhZ,c_SdQEkGfQHv,D0TvA4Hw_PY_
+1493621476498	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=cKwRJ2k_XneG,CLcZhZuCKmdA,clL3M9NpQVV5,cLmDyRkfmcns,clNL1cAs8ISP,CLYj1wLyHLtZ,CM5Cm-GOKque,â¦
+1493621476499	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621476821	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=d0VAgPigirhg,d0YCpb5MQiTu,D1zUhaRiobuF,d3i3BJJqYT_C,d3Q6CEBt6Qfa,d5NjnP22NlS9,d60jzoW1y6uK,D7fW0hkHgX8I,D7rlRf3nEdpj,D8cd62l8Wlfi,D8_1Y_XtBIE8,d8_ViS2DkiVK,D9NejzfoDu3O,D9sAIEf4UFeF,D9WOrpLOIHjP,d9YyFAuTAcKU,da27TtBBfqFz,Dat2gNtanGpI,DaYGKCxRiZWc,DAZPKB67wcGU,db2Bq_vVYxec,db5Em7NG_iDQ,dbhTEkXJJZ6c,dbjVTDWZGXK7,dBoJjygIAgqA,DCATPs0dz6m9,DcGNnnNCuacj,DClSmCZ8EGI0,dDfMEbMH-Mt3,dDWSdO_yFnS3,de7-mMu7l__X,DEPv6hfLw9_H,dESseNjHkXYq,dETemgSyLxLn,dfbiDTNVJJBf,dFLS9RBwkxnh,dfptyWt8GqeL,DfUv154BDtTR,dghzZCQpHBUS,dhfKLPyzT-0w,DhMMSbZjOzBj,dHzs0RsLW7hN,dJp8uTmLncCN,dk2xty8UOMv1,DkZD771diPsA,dlBiiEGYF6H8,DLJ-iOf-v69L,dmmuj14zytnq,DmZ4O0fdB1Xf,DoUTPRZeohEV
+1493621476821	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=d0VAgPigirhg,d0YCpb5MQiTu,D1zUhaRiobuF,d3i3BJJqYT_C,d3Q6CEBt6Qfa,d5NjnP22NlS9,d60jzoW1y6uK,â¦
+1493621476823	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621477143	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=DP6rYvxVsoXf,DpknrOxKKoyW,DPxeeK3_V0xi,DPXmXrlAhwTp,DQEc8BvWaV-T,Dr2zAhTeb1pR,dReiS5EjhXnu,drJ4gbpCbesP,DRQTiAbd-3py,Dry5QY9zdDBF,Ds7fw0Oo2mLi,dsdth7mi3Kz2,dSFk0zIiKkDr,DsJPD4K8c1eO,DSjyf1eJLJqB,DssmUc7VFdga,DSx7O9QIfIOp,dt5a27QgBqox,dtcSUpdCWofq,dtk5hQNJV1ng,DTKtowMaYmF4,DU7TzDFicllf,DuOSrLI2Mhgf,dV-tA3uUqKnf,dV5muLCi1YAk,DvehkXz4Y0p2,dvwr4Fu8Y_uv,DW54vL-xdsWt,DWerLFLtq3TJ,DwYLkmSoEDGu,dw_95eZQiIuD,DX50HjTKnARa,dxuigKB0yASJ,dxUJyHSHUaAj,dxXmHZ-uJrvb,dYD46O6aMrb9,DyI3rKwnuqqj,dyNNYq0MX4Ew,Dytxk6vdtcQl,Dz3ixf366ORA,dzILNeVDLC9l,dzzSgdXp0d5w,d_LrJm86lJf8,D_oTsEUKbPma,e--z6QS6yLDx,e-uMuoTWY-X6,E0n8IczAZMk5,E1aAnZ9yF5vR,E1d8mSD0Q4_l,E1g-F8UW4pbB
+1493621477143	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=DP6rYvxVsoXf,DpknrOxKKoyW,DPxeeK3_V0xi,DPXmXrlAhwTp,DQEc8BvWaV-T,Dr2zAhTeb1pR,dReiS5EjhXnu,â¦
+1493621477144	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621477462	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=e1U9UOO3XEs1,e34uWaHm6-2H,E50gcA-1E0dI,E51X1mGNPL__,E55DgmLM0M85,e5tTObncQoQG,E5UrSU5vw9os,e5Xr08s6UQr7,E719Jw78c7H6,E7503CZ7XXGm,e7MgykrGldBf,E8oPPWfxO98v,E9foMoRFNw0s,e9k4UkH4ogpV,EA2ozTXJNvy5,eaoPmm5P5XzI,EbOOIwkGYQPD,EBUm0UIXls-L,ebWbPiqP-h59,eC5MWor7YCn3,EcXaY5HlwE5_,eD281mulNW_k,EDGxplsJ0TRD,ediZQDdg7BKQ,EdmHv-Zv8Kai,EEAZSjBXEh5z,eepMUnz5IJ9V,EeuM5vNoDd2y,EGAOflqIhAmw,EGcDX5mLS9_G,EgdnJ43wAle6,EgQ115XkH7aC,egua4XRPynRn,EGWuJ8dzl9Zr,eGY6TVN9EXR0,EH63TYRkXVVS,eHFx5pNQVQ1v,ehI7Zq_W_fL8,Ei6BBHKdwvd2,EiaxnPZVYqdn,eiF3lPGkz0m5,eilxsbwkecb2,eIm2hvWdeqzD,eIr0DkpT4l4B,eIxWwFRKbgZn,eJ1QWiNyMpOF,Ejbc3kNmDu3X,ejZN8T4KLmzX,EkDGtkLk9QZl,EKQrAE3sqv0E
+1493621477462	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=e1U9UOO3XEs1,e34uWaHm6-2H,E50gcA-1E0dI,E51X1mGNPL__,E55DgmLM0M85,e5tTObncQoQG,E5UrSU5vw9os,â¦
+1493621477463	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621477784	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=eKQTqYTox3Z0,EKXAWO9ke4Sn,eld4QwVaVygT,elS8Wzjhys85,ElWnJt7jWfRn,em61gbpB_oHD,EM6reZcPPAjm,EMaqFQl9LCWN,eMVGgR2iDzrI,EN5l5adPfy8o,ENxEY-Vd4mjg,Ep5IDf1PtgDT,EPrdTd46OqmR,EpTKcwv8mURw,ePV-sU3ovNDq,Eq0CuGVFu7oN,EQsBUIBzfVmR,EqyNgR3GfiEr,Erx5tX62Uf5r,ES18M5DpCBHq,eS2y5p8Sat4W,ESqMs4LJAi1k,EsUvtGWk-euq,eTC37CGua07O,etsrcdRkciYC,etTzYhZh3NR3,eTUuwddexCaP,eT_ppIvgrFRD,EuHy4E3s9nkq,EuTV5jaND6pH,Ev5s1uR5OJF0,EVdw6tDHJ0rj,eVyHrqAq3S5z,ewa49UGidGAJ,EwYv3iaHyl-Y,Ex9vJsWL1WRY,EXfHHdfDJcWW,EXpzuQXVHgpW,eYtpS1S9cwMK,EYwaXZ8t3Ci8,Ez2XpjlG3Im_,eZvL3ry3G_88,E_eQsurNS3gP,E_mjVBYfG2Jv,E_obuqRGxBCX,E_PdgcZbEj3L,f-bcKKDWr5j8,F-Ns56_D1HnP,F-NTfCPCz7E3,F0Y6-b1QR5vE
+1493621477785	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=eKQTqYTox3Z0,EKXAWO9ke4Sn,eld4QwVaVygT,elS8Wzjhys85,ElWnJt7jWfRn,em61gbpB_oHD,EM6reZcPPAjm,â¦
+1493621477786	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621478112	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=f13nYbaQv3KJ,f1p2pWvRaFbd,F2klsp5K-9Ka,f3nut7KUna32,f3poALfqKMRX,F57YsuarudOf,F6iOjVFOP238,F7QRfFGRdssc,F8biBf9kdDO4,F8wvgKJWOI9a,f96PxIJtSDHH,fA2Wyd1ujOE0,faufxkdEFzo5,FB-v-1neFyNe,FB5nAkyvkf8T,FbeUYfJmTOjR,fBEZy1ox759J,fBZ8RjVNrNT5,FBzpJEpsBl8L,fC1lsQap8Tct,FczYLc8Oupb2,FD2psbtPTPyg,fdw7NgUE1UgT,FE7f3rCpM6C9,fEd3XdceIM4k,FEV07sQm0yVn,fExEexyXBedk,feykEW4rBMz2,fFDxclSEPqNs,ffmqHpogIh13,FgbxoaN1ZVKQ,fGiKeETY0cX2,fGqs1OLiJu09,fHcqvmdmFgk9,fhvKKN8of8H_,Fi6zj2mlECih,FiQlOXTf5YgO,Fj-kgRmh2Nou,fjarz2PzSU1n,fju-JEKK8sRZ,FJwjKDJJW9kY,fKbU3qtpN9Nf,FkEN91r0PV46,FKpSFR7MgOoF,fl79NvZrMCuP,fLBwB242rTk0,flMRTieuVRNL,fLuEW1ikNxHs,FlX9A7r-Krj-,fM9afby9K_8G
+1493621478112	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=f13nYbaQv3KJ,f1p2pWvRaFbd,F2klsp5K-9Ka,f3nut7KUna32,f3poALfqKMRX,F57YsuarudOf,F6iOjVFOP238,â¦
+1493621478114	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621478441	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Fmg2upPXc7_R,FmzjUlqUWplt,fNBROHw_gJzK,fo9Vy97gdxcb,fOBiG_ShrUht,FOMoqB5RiWdm,fP3qwvvueggi,fP5R1sBRw30I,fpgELREq0kVM,FphmEeVuiHhi,fPoplcU0QR4B,fpZGErCwUc6u,fQDBZ22HRi2A,fqO3tw3K-eVk,fQpCQt1ZcaJm,FQry5Z2IOZMj,FR1poILzpFLn,fRnB0VittF6F,fRxyEByWxDFX,FRXywtQnY4kT,FRzFNKQVqN2L,FSAb1R2IXioP,fsKh8pyQ_iQq,fT-I1aqWg7_u,FtC3nisX4fKH,FteBVuq7YrOL,fTepCcl5baHW,FTgWkHluWG7T,FtI9Z8nI_IYk,fU6VtdI5HxrY,fUQvROeSNJTv,FUSjwE5drTiT,fuSLnuY_rmJq,fVrzdN9bc6TH,fW2XooQX6Wgk,fw9SwwfMkLKU,fwHKoXMlAY5O,fWUhy9eYxxzl,fX5LscEoa_U3,FXl0fjUUhP3z,fxZs9XOMdB_l,Fy0wPsgSkDyO,FYaTnlT5_7ij,fYsFHCE-e2Gx,fYwI6M86qUs6,FyzJXt3ht0qq,fz3pB1bf_RdZ,fz70wE4MbXO6,FzsERMZtFS9K,f_VKv0GOcP_s
+1493621478441	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Fmg2upPXc7_R,FmzjUlqUWplt,fNBROHw_gJzK,fo9Vy97gdxcb,fOBiG_ShrUht,FOMoqB5RiWdm,fP3qwvvueggi,â¦
+1493621478442	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621478774	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=g-5NptLhAw3K,G-LYKcCUjx7b,G12iuPkaQePe,g1KNJKqTiZlY,G2qJI8xAYDaz,G3UamXtIlILW,g4T0XwflhtXo,g5hFi5szotY8,g5QAY5MzImZv,G6IeaU-Ueo0m,g6n-Xuddydal,g6T6EePstN3z,g75oGkcw9coc,g7FGA4-JLDUt,g7wfYGclCBO2,g8lbnO59ZJIg,g9JRaSLKj5Qg,g9MzodQbnTW4,G9pRL6BE2qTd,g9q7GzxaBK2j,gA3twlC1Rfnr,GaT1lWjtlv3S,Gba8gltc2wiP,gbBgE8FGJhV0,GBGSe00CNflP,gBKDdnEVoCNb,GC-Qw0MInRKo,gC48kzRhy2nG,GCphalyHfv02,gcUAnX7PRJ3z,gDj-br6fe8bX,gDuI0lElDGeD,gE-oNWj5yFdb,ge2gQIHVukmc,GE5pVxLXh5kP,GeTZEQEYThYj,GfaDyEINxwS7,GFkbmNP3Y0_Q,GG48dJ5yCscb,GGqXHoGCljbf,GGR0Yoiulwvm,ggrRAUzdq_Mp,GGsNGsISiVa-,GHb2lEyHNymE,gHj3Qoo4LuIQ,gHOwvqz3ttPL,GHY6R9rnDCPp,gi-g-sE6uhPd,gibsJOkBjaxG,GiGBWD4xiIaJ
+1493621478774	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=g-5NptLhAw3K,G-LYKcCUjx7b,G12iuPkaQePe,g1KNJKqTiZlY,G2qJI8xAYDaz,G3UamXtIlILW,g4T0XwflhtXo,â¦
+1493621478775	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621479110	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Gj89tLwBtdYn,Gj8FeX5qL6vh,GJHG-5q_0btC,Gk8EhMZaki8r,GKM6uKNsX6Df,gkUyOex2tzH_,GkvUbPd8Gu0e,gL5UVDyp2DBp,gLL7ryO_nYZl,GM4oca8tl2gV,Gm9VEpOkp1f0,GMbyEtXXhOrR,gMN6l6Zvlwvw,gMwKhvLCJRFv,GMwp7oBCVJi3,gNZxeI1aj2tM,Go8-MgQotMhv,GOMSpmhtnlPd,gopUV0RhDFbx,gO_OUW-HL4SX,GPHcJYJs9OI2,GqIBemarNXce,gQid-AZveyAw,GqO4KEBcb4PQ,gQ_OmzyN5Ch3,GR5UfkMPpyX7,GrblFGUBMl7M,GrFohn7YkKbT,gRHUPCb-_GMT,gRIcpGCRv9Hw,gRRvYfn6vPwe,grTDtbWh5DRa,gs9SeNLTOQ3g,GsF4DirvGPD1,gsgcG5-KMTcb,gsMQ96c1Aa2Z,GuBiDi_zdCb-,gUhAGLNCK7Y0,guiu1jRZphsP,GUmew3Kmcl1r,gUslUZzSBGv3,GUZ17ygekh2N,GVoxoHvf_DQI,gVTuAdncq3Vb,GvwLGgoPjgTA,gXXcChF-3Gy7,GYihcIWbhKyf,GymZI_hxmO96,GYv4ydEt5e6t,gzddONoavv-9
+1493621479110	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=Gj89tLwBtdYn,Gj8FeX5qL6vh,GJHG-5q_0btC,Gk8EhMZaki8r,GKM6uKNsX6Df,gkUyOex2tzH_,GkvUbPd8Gu0e,â¦
+1493621479111	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621479434	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=gziQdPdhm-YW,Gzpu_jZjpoAE,G_2kvhjf0VLO,H--5Tl7ZDCTp,h-6amIKeFJ3D,H-TWtv2vc8tw,H1lWU98q_oTY,H27SZ9T42hb4,h2BNQAgVNgxr,h30Vk4Aw-3fV,h3Gm2vA_qSN4,h3oRyJtqHBVo,h4tae1YLgBC5,h5dlY_uKpbM_,H61mU_8SU4tQ,H6EmqlTquFs-,H7b0lCOamBkN,h8Nxh3CEVmNT,H9KNzNfRpu1d,h9LPN135PW3d,H9mHCGW75qYN,H9MWQLwKRBvH,H9O9_gmUCKjH,hAoztPxxCBZ3,haQFv3SvZRZw,hBAICSVcVrrJ,hBGBt2ei92uD,hbWTPLKC2cVn,HBz2b1J5QlWC,hCj8_x7D6lzo,HCmw1dHHzXsO,HdbvjYc4NX4V,hDcb8HrP2qPK,HdJlGg_Fa21k,hDpzag2JKmM0,HE9kSN5uwz1K,HEBNlKTC8nQb,hESnFY7H-ihQ,hfFWcDM_5_Po,HFRr5kXXTXJT,hGIWnXocWfRe,hgmLPODE8E1B,hgnTFWsYm_Ip,hGpKfXkwvebo,HgYvX5acNMPh,hGZLFybDE8Qa,HHaOZpYtoYGe,hHH-wkgwg4L9,hHKRzrIQNXfR,hHnE4BumwGJe
+1493621479434	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=gziQdPdhm-YW,Gzpu_jZjpoAE,G_2kvhjf0VLO,H--5Tl7ZDCTp,h-6amIKeFJ3D,H-TWtv2vc8tw,H1lWU98q_oTY,â¦
+1493621479435	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621479759	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=hhVrxB7yAAx3,hhYk_pGdMLxs,hi12KzYxpP5l,hIMIXfmEcdlX,hIw2kgldMako,HIY1Wr3A69ok,Hi_scakocG51,Hj0eIfGHhjxF,HJ5MWX4pO5gA,HJAbNEcL8bcw,hJH14racFiHu,hjVsoHUCjusm,Hk5w3Usxox05,HkAW1heT9BJX,hKK-4P5U-zK9,hknXQrMebmq2,hkPvrPNJoqX-,hKsOMmAg666t,hkTux7xT-fnJ,Hlwe3shEkH7V,HMGsxmmT249b,HMPnQQte0N2-,hMvirb8vyIf8,hMYmBIpjy6Kt,HNwzdm4L40PN,HO28vQMueVQZ,Ho6-Fpv2jy8F,hoHIpWSFJsgT,hojRKwE2-vWu,HOK6I4VuXiBp,HqaadysxLuak,hqoK5LB0iZoN,Hrsbh3IqjlrE,HrvZzwj-qNcQ,hsBrchrIDryR,Hsxa-8nj0p9M,htB8chedRa2c,htCl_YbVFVYx,HtImJeD51yOX,hTQbKsUD0E5m,HTuEH7L6kC9-,HTuYAfxchxTc,hu0hFAcet2m0,HUCkLo0_QhOk,huFRkuRHV6TF,hvx-0LQpFpD7,Hw4MfFjNR-UI,HwvjqP480pPV,Hww9SezTd2dE,hxc-20r9ZYRb
+1493621479759	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=hhVrxB7yAAx3,hhYk_pGdMLxs,hi12KzYxpP5l,hIMIXfmEcdlX,hIw2kgldMako,HIY1Wr3A69ok,Hi_scakocG51,â¦
+1493621479760	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621480101	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=hxJUba8dKn1M,hxlZofApARmL,HYfI6EIjj7bb,hYz3L5RUKmOt,hzdlJHj_X0Me,hzeZAO5daXNi,hzn2EmNU3ZhY,HzyfuMSzfCIQ,H_CNd3T-apCd,I--NOQgBxCxk,i-atGk6wF7Uv,I0hUUP0jPpct,i0w4JatmFmJn,i0x_kqdHjKyI,I2C6tL3Pa3O_,I2qSDom7ICKz,I3dYJXKsi8Yj,I3F378p4SUsv,I3hX1ffR7W0T,I3I7_J-3vkFU,I4Aq6CejpYSN,i5CLUE7SEGQt,i5Id9ZXJB-K2,I5UdUM5R4H55,I6UEaQk-M8rM,i6_xkNS8Ts0g,i8i0BgITGgZ5,i9XygG6fp4ue,IaazTaBlaWW3,IaeYbQUSqYJj,iAF1LgkoR7TM,IBCYckA3EBn4,iBiXmx5SGY-X,iBKjY2b0YoPD,iBQhh4n0PfXl,ibz_65s5o3vz,IctRosRorrpK,IDGC5p_mDJAA,IdQULHXOXCW3,idv-O1Qga7C4,iE5GOfNQVe-s,iE80kS4afxtD,iEkF-QYzArTl,IeU3De316mZg,iE_ihrZw9zNt,IFE5y9VbUGf9,iFlqjNsq03Ns,IfvqElCvp0In,Ifx2bFANL2lv,iFYLR1ttk4OK
+1493621480101	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=hxJUba8dKn1M,hxlZofApARmL,HYfI6EIjj7bb,hYz3L5RUKmOt,hzdlJHj_X0Me,hzeZAO5daXNi,hzn2EmNU3ZhY,â¦
+1493621480101	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621480422	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=igBFA73hzGTA,IGOFfY_kh1Pi,ih6VM-MqWV6E,iht5zIUQsE0y,II9EKoL8MXzX,iIj55X5yrfWq,iiNYb6u-rOXf,iIrD0FWG6C1g,IIRjd0UgCk3b,IiTsPVUwzbd7,IIzH9iUg1s6J,Ijmw8tiIdNhP,ikEgaRzj8Djc,iKIdl1T0VYli,iKSUsrlJWyTQ,ikTYKNJiYR74,IL9K_PWJugCe,Ilgy46AEdkj8,ILPGZ8jwVkgn,ilR8KyVEZPNU,iLuntxzI-KWT,imOhvdA01aPF,INdf0rzr5oyX,InePQR7B67aE,inimGg9K4R9h,INxVWwQo2XrP,InYj4vwv8RdZ,Io8tpSMCkji1,iO9gKSNwmCmx,IpfDMHey4c_i,IPROvzZCaieI,iqBMsO4l2TVw,IQgQeOJZhtcN,IQP-9nF6oVIO,IqRz-Q0ykTnb,IQVkECL9z1oi,IrpSBa-N31rj,IsP_5rYEsY4z,ITWBEmTwptLW,IU6hL4O2htEj,iug691fX9x8c,iuzEJduUF9SC,iVffytwP-rpH,IvG03qV14jK4,IVtBSPFDo_OO,IWi_hl9zh3gZ,iX40fLsXzavD,iXlKW3FtZfh1,IxoqjRDC2CPy,IXreD9pp9Kiv
+1493621480422	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=igBFA73hzGTA,IGOFfY_kh1Pi,ih6VM-MqWV6E,iht5zIUQsE0y,II9EKoL8MXzX,iIj55X5yrfWq,iiNYb6u-rOXf,â¦
+1493621480423	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621480750	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=iXw577Ncg9JU,iXWLbh80pSfA,iYdEgM59VnDb,iyfDTf2t865f,IyZRYn2DW_B7,Iz4eW5z_bQ3k,iZ5wOFVJNqfp,IZaiot-08eNI,IzKgqCGtisaB,izKnliBWs9Tb,IZR5rPvyQduV,IZTEXScUxGPn,IZvsdVgLsWlS,izZiiR0XaHuR,I_fZH9rMQuU7,I_vpK7UXyUeN,I_ZeaLVvLQL3,J0Ykb5CvCBeE,J19CpgqwIxpt,j1ewv8Uc_Eas,J1vbK6LEtfSd,j1xsK5rT2DoC,J1yEhEsMXXqo,J20q27OfQbya,j26NMoIOpldj,j2iYZBt0EmFB,J3n2N8PP9L90,J3va7mhqj-RX,j4FhHiKI3e_2,j4pD8G9AvtWd,J5dSpLFwI08E,J6uMAdt3LxPe,J82X-TIbIm15,J9Te9qP5KO_T,JaJFPoDOBR0u,jawVW_nT7n9H,Jb5rCf0VXMPY,jBDPNJH2HAOD,JbEidGfPzY1I,jbFItnwVWSGY,jbFq12qy0NWT,jbIVSwXpbMjw,JcjeU-rI6yUj,jcWoQsR6aOXI,Jd5EnqOvyBWz,JDD7siHmme-5,jDdmBN6yM2CG,jdL91N4sGsnX,jDL_ieb1MUlR,JDqgcHRN2CqV
+1493621480751	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=iXw577Ncg9JU,iXWLbh80pSfA,iYdEgM59VnDb,iyfDTf2t865f,IyZRYn2DW_B7,Iz4eW5z_bQ3k,iZ5wOFVJNqfp,â¦
+1493621480751	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621480985	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=jDuJRJ-UsNz_,jduKa3VH5M_z,je4BEBku8B50,JEbyUFYaTSja,JeFZmGZ547If,JeMzXWGkbu9P,jeqlawKCESAk,JExYEBW8FcHE,jf5i8KZoMPzv,Jf9joTOY0F3c,JF9Vf7vbJclv,jfJWZkh3Xv0V,JfkNujjSP5fz,JFvDP3u4dzcn,Jfwt9D4YR8d3,JfX-BiYPpLN-,jGC6cglhko5J,jGrvvECW-1Q1,JgvfESaXkglP,Jgxpn1KHv8GH,JhaqQh7TP3iG,jHuhMLanGO9x,jHyEx-lLQEkv,JHypsnuLF-lT,jInXYUbtf5Og,JJ4DsaYhYsUa,jj8bUzoBriHs,jja38cKLVujZ,JJvzn1MDWPKD,Jkczwhd87bIF,JKtbTC_2aq14,JKtIEfDNYzjx,JkvMFpnAwShJ,jl3pD454ZyDe,jLh4lmrWCXA_,jliNhJJ-ao-E,jmlabYqOm8cG
+1493621480985	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?full=1&ids=jDuJRJ-UsNz_,jduKa3VH5M_z,je4BEBku8B50,JEbyUFYaTSja,JeFZmGZ547If,JeMzXWGkbu9P,jeqlawKCESAk,â¦
+1493621481046	Sync.Engine.History	INFO	Records: 7382 applied, 7382 successfully, 0 failed to apply, 0 newly failed to apply, 5 reconciled.
+1493621481063	Sync.Engine.History	INFO	Uploading all of 8 records
+1493621481063	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621481064	Sync.Collection	DEBUG	POST Length: 3433
+1493621481332	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history
+1493621481332	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history
+1493621481333	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1493621481333	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621481333	Sync.Synchronizer	INFO	Sync completed at 2017-05-01 16:51:21 after 37.65 secs.
+1493621481334	Sync.Declined	DEBUG	Handling remote declined: []
+1493621481334	Sync.Declined	DEBUG	Handling local declined: []
+1493621481334	Sync.Declined	DEBUG	Declined changed? false
+1493621481334	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1493621481335	browserwindow.syncui	DEBUG	observed: weave:service:sync:finish
+1493621481335	browserwindow.syncui	DEBUG	onActivityStop with numActive: 1
+1493621481336	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.

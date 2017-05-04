@@ -1,0 +1,1034 @@
+1493621145807	Sync.Service	INFO	Loading Weave 1.47.0
+1493621145808	Sync.Engine.Clients	DEBUG	Engine initialized
+1493621145809	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1493621145812	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1493621145814	Sync.Engine.Forms	DEBUG	Engine initialized
+1493621145816	Sync.Engine.History	DEBUG	Engine initialized
+1493621145818	Sync.Engine.Passwords	DEBUG	Engine initialized
+1493621145820	Sync.Engine.Prefs	DEBUG	Engine initialized
+1493621145822	Sync.Engine.Tabs	DEBUG	Engine initialized
+1493621145822	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493621145825	Sync.Engine.Addons	DEBUG	Engine initialized
+1493621145826	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+1493621145828	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621145829	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621145829	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493621145829	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621145829	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1493621145829	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1493621145830	Sync.Tracker.History	INFO	Adding Places observer.
+1493621145848	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1493621145849	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621145850	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621145851	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621145851	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493621145860	Sync.Tracker.History	WARN	Changed IDs file history contains non-object value.
+1493621149850	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621149850	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621149850	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:49
+1493621149850	Sync.Service	DEBUG	In sync: should login.
+1493621149850	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1493621149851	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621149851	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621149851	Sync.Service	INFO	Logging in the user.
+1493621149852	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1493621149852	FirefoxAccounts	DEBUG	already verified
+1493621149852	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621149853	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1493621149853	FirefoxAccounts	DEBUG	already verified
+1493621149853	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1493621149853	FirefoxAccounts	DEBUG	enter getAssertion()
+1493621149858	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621149863	FirefoxAccounts	DEBUG	got keyPair
+1493621149863	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1493621150524	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1493621150524	Sync.RESTResponse	TRACE	Processing response headers.
+1493621150524	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -524
+1493621150524	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1493621150525	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1493621150525	FirefoxAccounts	DEBUG	getAssertionFromCert
+1493621150525	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621150525	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens"]
+1493621150528	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1493621150528	Sync.BrowserIDManager	DEBUG	Getting a token
+1493621150528	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1493621150532	FirefoxAccounts	TRACE	finished write of json user data - took: 7
+1493621150532	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493621150532	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493621150536	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493621151232	Common.TokenServerClient	DEBUG	Got token response: 200
+1493621151232	Sync.RESTResponse	TRACE	Processing response headers.
+1493621151232	Common.TokenServerClient	DEBUG	Successful token response
+1493621151232	Sync.BrowserIDManager	DEBUG	Successfully got a sync token
+1493621151233	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1493621151233	Sync.BrowserIDManager	INFO	Background fetch for key bundle done
+1493621151233	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493621151233	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621151234	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493621151234	Sync.Service	INFO	User logged in successfully - verifying login.
+1493621151234	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1493621151234	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1493621151234	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621152060	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621152060	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621152060	Sync.Service	DEBUG	Fetching global metadata record
+1493621152060	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152061	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621152277	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152277	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152277	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1489644375.28
+1493621152277	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152278	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621152489	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152489	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493621152490	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621152490	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621152490	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621152490	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"tabs":1493621116.05,"clients":1493621114.59,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493621117.29,"addons":1493621131.66,"history":1493620453.69}
+1493621152490	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1493621152490	Sync.Service	INFO	collection keys reports that a key update is needed.
+1493621152490	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621152709	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621152709	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493621152709	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1493621152710	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1489644251.08.
+1493621152710	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1493621152710	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1493621152710	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1493621152710	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1493621152710	Sync.CollectionKeyManager	INFO	Bumping last modified to 1489644251.08
+1493621152710	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1493621152710	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493621152710	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621152711	browserwindow.syncui	DEBUG	observed: weave:service:login:finish
+1493621152711	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493621152711	browserwindow.syncui	DEBUG	onActivityStart with numActive: 0
+1493621152712	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621152712	Sync.Status	INFO	Resetting Status.
+1493621152712	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493621152713	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621152713	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621152713	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621152715	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621152715	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493621152925	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621152925	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493621152925	Sync.Service	DEBUG	Fetching global metadata record
+1493621152926	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493621152926	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493621152926	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493621152926	Sync.Service	INFO	Testing info/collections: {"passwords":1493620452.01,"tabs":1493621116.05,"clients":1493621114.59,"crypto":1489644251.08,"forms":1493618378.74,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493621117.29,"addons":1493621131.66,"history":1493620453.69}
+1493621152926	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493621152926	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493621152926	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1493621152926	Sync.Engine.Clients	INFO	1 outgoing items pre-reconciliation
+1493621152927	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621153144	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621153144	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493621153144	Sync.Engine.Clients	INFO	Records: 4 applied, 4 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621153145	Sync.Engine.Clients	INFO	Uploading all of 1 records
+1493621153146	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621153146	Sync.Collection	DEBUG	POST Length: 485
+1493621153394	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621153394	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493621153394	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493621153395	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493621153396	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1493621153397	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621153397	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493621153398	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621153399	Sync.Engine.Tabs	DEBUG	First sync, uploading all items
+1493621153400	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493621153400	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621153620	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium's Firefox on tux-xps
+1493621153624	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium’s Firefox on slegestor
+1493621153624	Sync.Store.Tabs	DEBUG	Adding remote tabs from APIUM's Firefox on LAPTOP-2VPN06TQ
+1493621153625	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621153625	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493621153625	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493621153628	Sync.Engine.Tabs	INFO	Uploading all of 1 records
+1493621153628	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621153629	Sync.Collection	DEBUG	POST Length: 528
+1493621153842	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621153842	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493621153846	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1493621153850	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621153926	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1493621154068	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?newer=1493621117.04&full=1&sort=index
+1493621154068	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/bookmarks?newer=1493621117.04&full=1&sort=index
+1493621154069	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621154071	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493621154071	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: loop@mozilla.org
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: keefox@chris.tomlinson
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: jid1-xUfzOsOFlzSOXg@jetpack
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: uBlock0@raymondhill.net
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: extension@one-tab.com
+1493621154078	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621154079	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621154079	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621154079	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: vimperator@mozdev.org
+1493621154079	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: gmp-gmpopenh264
+1493621154079	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493621154080	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493621154080	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493621154081	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493621154089	Sync.Store.Addons	DEBUG	loop@mozilla.org not syncable: add-on not found in add-on repository.
+1493621154089	Sync.Store.Addons	DEBUG	{972ce4c6-7e08-4474-a285-3208198ce6fd} not syncable: not installed in profile.
+1493621154089	Sync.Store.Addons	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1493621154089	Sync.Store.Addons	DEBUG	{81483a79-4662-220f-c0b3-08db1c26b031} not syncable: type not in whitelist: plugin
+1493621154089	Sync.Store.Addons	DEBUG	{d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb} not syncable: type not in whitelist: plugin
+1493621154089	Sync.Store.Addons	DEBUG	{99185ea3-8e99-964f-fdce-619e7ce2aa19} not syncable: type not in whitelist: plugin
+1493621154089	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: vimperator@mozdev.org
+1493621154090	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493621154090	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: keefox@chris.tomlinson
+1493621154090	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: jid1-xUfzOsOFlzSOXg@jetpack
+1493621154091	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: uBlock0@raymondhill.net
+1493621154091	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493621154091	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493621154092	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: extension@one-tab.com
+1493621154092	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493621154092	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493621154092	Sync.Engine.Addons	INFO	10 outgoing items pre-reconciliation
+1493621154095	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621154102	Sync.Engine.Addons	ERROR	null
+1493621154308	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?newer=1493598891.03&full=1
+1493621154308	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?newer=1493598891.03&full=1
+1493621154310	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621154398	Sync.Tracker.Passwords	DEBUG	Saving changed IDs to passwords
+1493621154846	Sync.Tracker.Bookmarks	DEBUG	Saving changed IDs to bookmarks
+1493621155093	Sync.Tracker.Addons	DEBUG	Saving changed IDs to addons
+1493621155197	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621155198	Sync.AddonUtils	INFO	Trying to install add-on from search result: jid1-BYcQOfYfmBMd9A@jetpack
+1493621155198	Sync.AddonUtils	DEBUG	Obtaining install for jid1-BYcQOfYfmBMd9A@jetpack
+1493621155198	Sync.AddonUtils	INFO	Installing jid1-BYcQOfYfmBMd9A@jetpack
+1493621155908	Sync.Store.Addons	WARN	Failed to apply incoming record VnWHwyAFLy1y
+1493621155908	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621156136	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493621156137	Sync.AddonUtils	INFO	Trying to install add-on from search result: {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621156137	Sync.AddonUtils	DEBUG	Obtaining install for {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621156137	Sync.AddonUtils	INFO	Installing {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493621156369	Sync.Store.Addons	WARN	Failed to apply incoming record {aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621156369	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493621156370	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids={aee3ac5d-6376-463d-a384-5bd1ff807e95},VnWHwyAFLy1y
+1493621156370	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids={aee3ac5d-6376-463d-a384-5bd1ff807e95},VnWHwyAFLy1y
+1493621156370	Sync.Engine.Addons	DEBUG	Records that failed to apply: VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493621156370	Sync.Engine.Addons	INFO	Records: 2 applied, 0 successfully, 2 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493621156378	Sync.Engine.Addons	ERROR	null
+1493621156382	Sync.Engine.Addons	INFO	Uploading all of 10 records
+1493621156382	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621156383	Sync.Collection	DEBUG	POST Length: 4203
+1493621156652	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons
+1493621156652	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons
+1493621156654	Sync.Engine.Forms	DEBUG	First sync, uploading all items
+1493621156666	Sync.Engine.Forms	INFO	500 outgoing items pre-reconciliation
+1493621156667	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621157174	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: XKiaAlNkQ9epoOB3 -> Eo+5hQgKSMaI49K/
+1493621157183	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.183; modified=true; exists=true
+1493621157184	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UTdlgcL2QWmatpsh -> Ypvf+xuZSwGFZ1Z+
+1493621157200	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.2; modified=true; exists=true
+1493621157201	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: k1QiLYtjQiy+Upy3 -> iWHVXtuZTbSKLgKs
+1493621157217	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.216; modified=true; exists=true
+1493621157218	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sAMOaCv9S7GxYs56 -> JM2i2JZrTWighNC7
+1493621157239	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.239; modified=true; exists=true
+1493621157240	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BRc3w1o7TfODEsms -> fPIiljbARI6cY+nq
+1493621157248	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.248; modified=true; exists=true
+1493621157252	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qqlznE++RD6BdDfT -> dAqZpemPQFeLUmR1
+1493621157269	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.269; modified=true; exists=true
+1493621157271	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zGvipP8EQ4agDUSG -> abCVe99zRtyzPz70
+1493621157285	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.285; modified=true; exists=true
+1493621157286	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sHYtMnTCQQmFXr90 -> vjAIMxmWQ9q/loGq
+1493621157302	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.302; modified=true; exists=true
+1493621157303	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aty7bi9tRfioHzeO -> 0W/5664STLyP0xUL
+1493621157310	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.31; modified=true; exists=true
+1493621157312	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kIl5FcFzS3GXCVcN -> eFyH7VFeR8qvEIAR
+1493621157326	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.326; modified=true; exists=true
+1493621157329	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: PzvW6xewTsOOKbu9 -> jk83Yq09SaaJP0GS
+1493621157346	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.346; modified=true; exists=true
+1493621157348	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: V1uIX1bKQtmV5Uu8 -> PQ/MCnOASrO86D6x
+1493621157362	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.362; modified=true; exists=true
+1493621157363	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lrZJW1M7RgyqZao7 -> Jutux3PrRSSt0t8e
+1493621157373	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.373; modified=true; exists=true
+1493621157374	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YzgyraS2QnmGprhg -> efeyx74RS42/SV/U
+1493621157383	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.383; modified=true; exists=true
+1493621157384	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mF4pEbxmQdWygtS1 -> t54jJo3qTSaiO/zb
+1493621157393	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.393; modified=true; exists=true
+1493621157394	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jLSkmwWUTre3XjMD -> Rc2Bt6GGQuKH36zD
+1493621157402	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.402; modified=true; exists=true
+1493621157403	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: FBlhbB7YQMG5RZQu -> P+OmHa3STXGobjWF
+1493621157419	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.419; modified=true; exists=true
+1493621157420	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VWRnoZFtSruprf0O -> h/wzLWp/T7a0JMfI
+1493621157435	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.435; modified=true; exists=true
+1493621157436	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aOXyvAVKTBOWNVXs -> EkHRC0VsQz++pqrx
+1493621157444	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.444; modified=true; exists=true
+1493621157446	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: H5zzesQsQC6GUAUP -> EHKsExBuQk6B9V66
+1493621157454	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.454; modified=true; exists=true
+1493621157455	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Pe9TyC6lQluVf1Ln -> cGQLTcH8S6SRG6ml
+1493621157464	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.464; modified=true; exists=true
+1493621157465	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CMo46Us6SiW3qukD -> +qcfShXrRhGCiWLl
+1493621157480	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.48; modified=true; exists=true
+1493621157481	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7xqoz941S3SkiqOE -> idqxcKWuTKqeVlX2
+1493621157489	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.488; modified=true; exists=true
+1493621157490	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WLaZO9MmTZe2TkWN -> bXP+e46BSYGWM2pp
+1493621157499	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.499; modified=true; exists=true
+1493621157500	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CJbe5FxvTMSgEt9c -> A8lmPOB3SmW0ujXX
+1493621157508	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.508; modified=true; exists=true
+1493621157509	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: IOyc4VrIQqSJPO+B -> 8c0R9yANSQa7RsMb
+1493621157520	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.52; modified=true; exists=true
+1493621157521	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: iNqRTQxTRUiGcgtS -> ah+1BPa+SPSzKZm+
+1493621157529	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.529; modified=true; exists=true
+1493621157530	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: AaSpkSrmSYSeBbWI -> 8uoubfEzQZm/2PHL
+1493621157546	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.546; modified=true; exists=true
+1493621157548	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: xjnYNGYiQ3mey0Xw -> GNR6Blj6QF6uCDa4
+1493621157556	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.556; modified=true; exists=true
+1493621157557	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +Qy2cIpGTg+6NVPt -> GiSoG0+ESvSMrZ+q
+1493621157567	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.566; modified=true; exists=true
+1493621157568	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7Ufwm9PCSoeAPzPR -> 7ro1fhTsRtubtxZA
+1493621157577	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.577; modified=true; exists=true
+1493621157579	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: d4xOfzBDSK6Px6OS -> NPcUuZJXRGO7QAIr
+1493621157594	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.594; modified=true; exists=true
+1493621157596	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ehLHXSb4S+GK4SBx -> JBpCc8ODS6OsCEeF
+1493621157605	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.605; modified=true; exists=true
+1493621157606	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: tLyuAumFSDOgfGHb -> FKO+zseRQJeKPom2
+1493621157614	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.614; modified=true; exists=true
+1493621157616	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8LmQg+aBR0Gdki70 -> EDLu3C0wSESj/+V8
+1493621157631	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.631; modified=true; exists=true
+1493621157632	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wJpA+RvFQDuYgBub -> y32RaU+SQeOR9Fr/
+1493621157640	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.64; modified=true; exists=true
+1493621157641	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: f94QpnlHRdyeVFkt -> T5Q5pg7HSF2In1li
+1493621157656	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.656; modified=true; exists=true
+1493621157657	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: pIzfNB6yTT+HFUsX -> rXlLnfs4RJ6Uhyq/
+1493621157665	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.665; modified=true; exists=true
+1493621157666	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: iFFAgUyBQHKhtFjx -> JYk/lAveTuqFQDDy
+1493621157666	Sync.Tracker.Forms	DEBUG	Saving changed IDs to forms
+1493621157679	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.679; modified=true; exists=true
+1493621157680	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: h4TY/OFzTeKhPqCi -> HiFeYTl1T/mOrhzH
+1493621157688	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.688; modified=true; exists=true
+1493621157690	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: EqeNi2/jSMeRxj2A -> DbSOHOtqT42NRG97
+1493621157699	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.699; modified=true; exists=true
+1493621157700	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OK6gK+kPSUe3B0YN -> bzJhg+eTRM2GQrxT
+1493621157714	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.714; modified=true; exists=true
+1493621157718	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wO46zKNHRzKhCyj2 -> e73urVsVTS+fN3Wj
+1493621157728	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.728; modified=true; exists=true
+1493621157729	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Vq3CygvTTD++PONO -> ZOjOHDtbSlS2QoEX
+1493621157738	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.738; modified=true; exists=true
+1493621157740	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: B8nPLoIFQsqHED0r -> xM/fIvtJTGq0jtMM
+1493621157755	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.755; modified=true; exists=true
+1493621157757	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 0WCAF8wyR/WN34ix -> wXRkhHXyQL+X7XNl
+1493621157778	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.778; modified=true; exists=true
+1493621157779	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: w++KpvsQRb+B7dOm -> wXP0Z8vGQ7a4ux5q
+1493621157788	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.788; modified=true; exists=true
+1493621157789	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: l2oIe/aRRgu6re9L -> Wooan/Z0QeKL/Sdj
+1493621157797	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.797; modified=true; exists=true
+1493621157798	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: bL2qZZp8TDeBpOZ7 -> vZvw5gqRQyau3god
+1493621157807	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.807; modified=true; exists=true
+1493621157808	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 12IF6LMuTUmAspgp -> uIgndZXAQPS2K6TA
+1493621157827	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.827; modified=true; exists=true
+1493621157829	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: /8bNlj7rRWCxi+XT -> t6uLT1KqR4O+IkkJ
+1493621157851	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.851; modified=true; exists=true
+1493621157852	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hev8E9//Rrq40iHt -> QEjEehWQTiuQOfVf
+1493621157862	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.862; modified=true; exists=true
+1493621157863	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7gSwHvDbTxy3KYa/ -> noxnvCefRS2psWiC
+1493621157876	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.876; modified=true; exists=true
+1493621157877	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ADTvCvp2RSu+QSu2 -> Nhq8i9vtTLa4/A+K
+1493621157892	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.892; modified=true; exists=true
+1493621157893	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jTSTg9hiQ6ubzAA1 -> mlWoKdsWQN2tEv/C
+1493621157907	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.907; modified=true; exists=true
+1493621157909	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1VoTW8jIS5O4u1hL -> MFg2/Ym7TdOd0FuI
+1493621157920	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.92; modified=true; exists=true
+1493621157922	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dIkOs4iqT/aJbdXB -> gY1bkzxCRNOwdT1Z
+1493621157936	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.936; modified=true; exists=true
+1493621157937	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ZALy8np8T1eADqI6 -> fkIwGuPtRGy8+OGl
+1493621157946	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.946; modified=true; exists=true
+1493621157947	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mF8KzW7xQPO4+O8d -> f1OkMYugTAWADPJS
+1493621157956	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.956; modified=true; exists=true
+1493621157957	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: XMY0zFmwQCWGd6gh -> eRHnpBBKQ3GvhIYe
+1493621157971	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.971; modified=true; exists=true
+1493621157972	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hFuIC+jERDqRnlPU -> cwCle6wKQd6jgaHB
+1493621157980	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.98; modified=true; exists=true
+1493621157982	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8j2UD70rTQ+3BtSG -> BPWAfstcT2aDARi0
+1493621157991	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621157.991; modified=true; exists=true
+1493621157993	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Ulbnb4H0RbqnxtYX -> 7yJF0z+CQEeY/lNy
+1493621158001	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.001; modified=true; exists=true
+1493621158002	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: LhWRuBuhSeCQq8IN -> 7wZxdE76RumtKvU+
+1493621158010	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.01; modified=true; exists=true
+1493621158011	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8nxQQ//FRxWPaEDD -> 5xOd/unqREuhaSpI
+1493621158021	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.02; modified=true; exists=true
+1493621158021	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dAwrzXz2TMGGB+Ad -> 3dxDVCKMTw+DqsE1
+1493621158030	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.03; modified=true; exists=true
+1493621158031	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: IsxCoo7eRfO3sU8D -> 0v9I/LoKTuCMIxXs
+1493621158046	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.046; modified=true; exists=true
+1493621158047	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: l7ApBmyZS6a4wH7X -> 09Bjwts/T2mx0RJU
+1493621158055	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.055; modified=true; exists=true
+1493621158056	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: FTjXCJoCQzWR6CAJ -> Nr6y1xTxRbedxwQU
+1493621158071	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.071; modified=true; exists=true
+1493621158072	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BP6HoSQVSk2Ktp5N -> GMSQMPElTO28ao/V
+1493621158080	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.08; modified=true; exists=true
+1493621158081	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Oitm9POBTyuotfPx -> vWzSejdTS0S1ANt9
+1493621158090	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.09; modified=true; exists=true
+1493621158091	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 4+ydtt2jR1+IqnOk -> RAbDDbZhTnKY51f4
+1493621158100	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.1; modified=true; exists=true
+1493621158101	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mttK/ZEcQx6LoxaU -> j5ffW9PFSQOpAyyp
+1493621158110	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.11; modified=true; exists=true
+1493621158111	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Ywl4qqFyRZGp33ua -> gbzIkgd/TquOiy4f
+1493621158121	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.121; modified=true; exists=true
+1493621158122	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7WUQOqkaT1a1h2ov -> rcTsqQpKTd6L3T93
+1493621158137	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.137; modified=true; exists=true
+1493621158138	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mBszPiIgRf2QafKD -> qphA5qqQQbCZruoM
+1493621158147	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.147; modified=true; exists=true
+1493621158148	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BD37pgCySyG/BuOG -> DJ3r37KYRXuENfX9
+1493621158155	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.155; modified=true; exists=true
+1493621158157	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: q+V8jYBwS1CxrK+w -> /+V+2sLKRx6iRS6f
+1493621158180	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.18; modified=true; exists=true
+1493621158182	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +QBTJx3/SQ67uPjp -> W6rHR89PT3mB/5U8
+1493621158191	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.191; modified=true; exists=true
+1493621158192	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: E3tjCh2MR0iPYeIw -> rCrRHlFcQFSKg3Ro
+1493621158201	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.201; modified=true; exists=true
+1493621158202	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2c23JGgpQYSoIg1e -> AJsplQwFSgSwJplV
+1493621158210	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.21; modified=true; exists=true
+1493621158211	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6P/EYCoXR9W8gh9/ -> YHOxKTgiQvSdTiXf
+1493621158220	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.22; modified=true; exists=true
+1493621158221	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: fN9uN5Z3Ti+ih9nQ -> UExaE4LDSES0mu10
+1493621158242	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.242; modified=true; exists=true
+1493621158243	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TyrgMkd6RXeUQVkm -> m2YSVmjAS1eQSsXD
+1493621158252	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.252; modified=true; exists=true
+1493621158253	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Esxlm6zWTWSq44wb -> JcIIXu4SQ6mfmb0+
+1493621158262	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.261; modified=true; exists=true
+1493621158262	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mGFtz6tvTdigU2/J -> IJvvOW/6QsSEDNEb
+1493621158272	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.272; modified=true; exists=true
+1493621158273	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: GkWFJQlBQgK2+kzC -> 2XHac1m6RRq6emJO
+1493621158281	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.281; modified=true; exists=true
+1493621158282	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1OQ6fmfORG29rZiG -> t0GV6ygRR/iCDg5I
+1493621158297	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.297; modified=true; exists=true
+1493621158298	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jj1+K2OIReSMomMS -> zxoFmKT2Rxi+a43t
+1493621158307	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.307; modified=true; exists=true
+1493621158308	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ap/E81ZHTv+qV7JK -> YTqgCsa4QyOM3NCb
+1493621158316	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.316; modified=true; exists=true
+1493621158320	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HUKWVtNCRwqzLqSi -> X56XlaCpS7unqio9
+1493621158329	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.329; modified=true; exists=true
+1493621158330	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lu7OSOI2RN+GShBl -> Wlx4wQxaQtiK3/TB
+1493621158339	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.339; modified=true; exists=true
+1493621158340	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: DoxNO4i+RE+2qAFK -> u0teTQvrRlqvneYJ
+1493621158354	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.354; modified=true; exists=true
+1493621158356	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 5k7dPUzURTmSIjOb -> t653IK6BTtydkql9
+1493621158382	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.382; modified=true; exists=true
+1493621158384	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: fBj8Dv79TnKzDZtD -> t0bFqO0xTGKPJQIc
+1493621158393	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.393; modified=true; exists=true
+1493621158394	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: KUvygIxGRN64irn/ -> siL/2ip7RayOs42f
+1493621158410	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.41; modified=true; exists=true
+1493621158411	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: n7z9Tx24TOW3LoKD -> RXKRZOvDSlKQHQDp
+1493621158432	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.432; modified=true; exists=true
+1493621158433	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JdJnqQ8WToSk+RuJ -> qAgFNLbIRO+GXL61
+1493621158449	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.449; modified=true; exists=true
+1493621158450	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: C3h4pKf1SiaA3V3L -> ok74bQ0CQ/KjURxs
+1493621158460	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.46; modified=true; exists=true
+1493621158461	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: O6gk5VwkQCueVzPb -> mDzxRkSFSd6b1zNX
+1493621158488	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.488; modified=true; exists=true
+1493621158489	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yYAWGOuxRie09jr4 -> lO3fAVV2SZ2xNyXD
+1493621158505	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.505; modified=true; exists=true
+1493621158506	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: og0RRahoSR2BKh4E -> L1GmgTtNTb+mERPz
+1493621158515	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.515; modified=true; exists=true
+1493621158516	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ep+un/5SSCuTI/3D -> kZbrGmwRQm+NnkyY
+1493621158524	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.524; modified=true; exists=true
+1493621158526	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: F/eiY//nRQSUiRx4 -> k8XZaQw0SQ2wxv4T
+1493621158547	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.547; modified=true; exists=true
+1493621158548	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2VfPOHNpQWyzY382 -> HrcV1DKNQu+O4sac
+1493621158555	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.555; modified=true; exists=true
+1493621158556	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: SF7fYc6zQn6+iIUT -> HlunuwJJTBmAPUeC
+1493621158566	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.565; modified=true; exists=true
+1493621158566	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: g/cWBtP/RnSSI1/4 -> DdfA7M7PRDqqp/8E
+1493621158575	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.575; modified=true; exists=true
+1493621158576	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TXxxKXfMQ7+9VZkP -> d6Ib6kqzS4KZBCjI
+1493621158592	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.592; modified=true; exists=true
+1493621158593	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 0/vZTjNrSUmEUg6Q -> BZU1fxAEQ3qxuipD
+1493621158602	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.602; modified=true; exists=true
+1493621158603	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lGdrgwNXSBaD7+ya -> Axu7KlTgQASq01w2
+1493621158618	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.618; modified=true; exists=true
+1493621158619	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WG4tpZi2SI+gIyAt -> AViURpE5Si6t6GDo
+1493621158628	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.628; modified=true; exists=true
+1493621158629	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 5td99aNRRlG7akQq -> 6ib5dr9QR+SMGCpH
+1493621158639	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.639; modified=true; exists=true
+1493621158640	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: M6j1rxgiQEuLbvkl -> 4qKH34CCT0iwyxmr
+1493621158654	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.654; modified=true; exists=true
+1493621158655	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1iproCOURY+66cQu -> 1ZeIz8CxSVulkXDj
+1493621158669	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.669; modified=true; exists=true
+1493621158670	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: q/5jJhsORYCpPGtB -> 1s59qWYyQbaIQyqH
+1493621158679	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.679; modified=true; exists=true
+1493621158680	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: P9MQgiQpQtC7EWkz -> 0m4HLJAfRbitfRMu
+1493621158694	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.694; modified=true; exists=true
+1493621158695	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WFqv3yjHQJeLMPZV -> 07cbuTjzQVOPI1be
+1493621158705	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.705; modified=true; exists=true
+1493621158705	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cSlaLvwBQ9S/eop0 -> zlSzqOuXTwiiZAnm
+1493621158714	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.714; modified=true; exists=true
+1493621158715	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: f/uENkxmRDKKxem1 -> Y3nxibjGTge9Tb4I
+1493621158726	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.726; modified=true; exists=true
+1493621158727	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jhvXsXmORgWZMh2F -> XHnF5Cx/TRuakc+/
+1493621158741	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.741; modified=true; exists=true
+1493621158742	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TSg5qo4KSt+zegxk -> VQHpgCkzQj63iIlT
+1493621158752	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.752; modified=true; exists=true
+1493621158752	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: PUwbKxwjS5qtw3vX -> VJZQYhNpQsWCWNIw
+1493621158761	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.761; modified=true; exists=true
+1493621158762	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: nP6NZJtzSM68OME9 -> Uo2NiiTeRyuW7+rO
+1493621158771	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.771; modified=true; exists=true
+1493621158772	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TKSwlAuCSi2qxjQv -> t0ubfyvfQVq/rYft
+1493621158781	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.781; modified=true; exists=true
+1493621158782	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: w21cIN1DRCSfJZLG -> Sc3YaFOYQFiOAld0
+1493621158797	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.797; modified=true; exists=true
+1493621158798	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: n9XDxIqaSDyoox4J -> rF/yu7QKTwyvYxI+
+1493621158812	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.812; modified=true; exists=true
+1493621158813	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RY3C5TrCTtiGgC47 -> RcjAZI/MS56eQO00
+1493621158822	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.822; modified=true; exists=true
+1493621158823	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: bDul3RDLS+GTqx44 -> QKk90/7eQBG4MnGb
+1493621158832	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.832; modified=true; exists=true
+1493621158834	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OFaSWfM9TEOvh2zB -> oeIOwPcqS3GxEoso
+1493621158843	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.843; modified=true; exists=true
+1493621158844	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HqdyHY/OTBiNQQYH -> OCMcKAatT+2JAY64
+1493621158854	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.854; modified=true; exists=true
+1493621158854	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ByGUMCwkR6y6bCzK -> O9JM2bhoRJqIyPQE
+1493621158862	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.862; modified=true; exists=true
+1493621158863	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kDQ4B8MFQQqk32a6 -> LSM7vz+cTUOrJgk8
+1493621158878	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.878; modified=true; exists=true
+1493621158879	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7bKvJDnZSn6HBmtG -> K79vczTKQIOalugN
+1493621158892	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.892; modified=true; exists=true
+1493621158893	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8uok/ciKRFqJQWGZ -> JtbHeJZ8Q0a0ji+3
+1493621158913	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.913; modified=true; exists=true
+1493621158980	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lgoJljFpRHa7rvVX -> G1NnOgOBQGOhq1ZJ
+1493621158990	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621158.99; modified=true; exists=true
+1493621158994	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CAhCu1oESMG9ZypD -> FleTCM/oSdGTsb5Q
+1493621159004	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.004; modified=true; exists=true
+1493621159008	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: fGy5LFhoQPy2NwrR -> FCtNlvQJRCG4ZdFu
+1493621159017	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.017; modified=true; exists=true
+1493621159020	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: f0eZScV+TvquyPPO -> e7pdn1qDTHGPa5k9
+1493621159029	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.029; modified=true; exists=true
+1493621159030	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: g6Ta6vYOQoaoRf9t -> Cqp3becUTKyxBIOw
+1493621159038	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.038; modified=true; exists=true
+1493621159040	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WlmVnZl5Q5akFPrU -> 9FPnqFrlQBedfhGN
+1493621159055	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.055; modified=true; exists=true
+1493621159056	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: w6a+zfmxR3a2jqek -> 7oP9w+SbRD2mFq9z
+1493621159071	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.071; modified=true; exists=true
+1493621159072	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VtfS+qmVQGez9wPO -> 7g3vAvqiSny5Iq2P
+1493621159081	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.081; modified=true; exists=true
+1493621159083	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 18JpBMI4TkKL/qfw -> 6G2TXPwBQSaXekzt
+1493621159105	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.105; modified=true; exists=true
+1493621159106	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: iZDfkjYHRkqNGKL5 -> 4RfwjhnIS4+WuGFm
+1493621159127	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.127; modified=true; exists=true
+1493621159130	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: bOxcF/2cT2i2rX8Q -> 4l+Cz4S7TtyqRC/V
+1493621159145	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.145; modified=true; exists=true
+1493621159146	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TW0TG3lVQDOhkqoj -> 0lOsPPpSTNuNWTPy
+1493621159154	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.154; modified=true; exists=true
+1493621159155	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1v5yffXPQbSH5aIx -> Gfbz3c/wTwmxdVZd
+1493621159170	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.17; modified=true; exists=true
+1493621159171	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 0Xeip4Y8ShiE6SCD -> 0RFEfKeFS0O/Ze4I
+1493621159199	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.199; modified=true; exists=true
+1493621159200	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YpqIsQfETkGL+/6n -> UMenH/DqQsC0QWjw
+1493621159209	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.209; modified=true; exists=true
+1493621159211	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kUTlCu3CQXutckR7 -> ZCARNe4VQByiO38P
+1493621159219	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.219; modified=true; exists=true
+1493621159220	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WqMS42tVTUm5FpPE -> qMKuai2oTFidHeiZ
+1493621159236	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.236; modified=true; exists=true
+1493621159237	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aiLvdI1ySfuNKOEq -> OxhgEtVQQfG9cLF+
+1493621159245	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.245; modified=true; exists=true
+1493621159246	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9q1yaTa3SpqXgjzy -> CNlmXDCgTvuQ7yP1
+1493621159260	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.26; modified=true; exists=true
+1493621159261	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kcgzOVRhQ8yWejHU -> BagXkRHZRbe+Wj7Y
+1493621159270	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.27; modified=true; exists=true
+1493621159271	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: loQ2ikFFTNiFBdgx -> Pshu+055QVu9RqVh
+1493621159280	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.28; modified=true; exists=true
+1493621159281	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7LIQAV+cRHGuSp2r -> pRk/dBJaT6OxLpAL
+1493621159291	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.291; modified=true; exists=true
+1493621159292	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dsMnb0cfRsiLaoHQ -> zuqaW+ixREe0Ph4t
+1493621159300	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.3; modified=true; exists=true
+1493621159301	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CKGvMx9zRA2Bzhn5 -> zSxXmQsZRfS2PAh1
+1493621159310	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.31; modified=true; exists=true
+1493621159311	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: w8dpONniTn6PBX2d -> zQqL/Q+fRLuMBTB+
+1493621159325	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.325; modified=true; exists=true
+1493621159326	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yHT3SzJKRKGMIzQ6 -> zPGDCkxBR0i0HB04
+1493621159341	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.341; modified=true; exists=true
+1493621159342	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zv2zOhYyS5aprIcs -> zIpxR9tJTVmP6uWV
+1493621159355	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.355; modified=true; exists=true
+1493621159358	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: h+pcCoT3Sw+U0qI1 -> zIkZYUfmRqmX7M5s
+1493621159372	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.371; modified=true; exists=true
+1493621159373	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JT/+6fcoTral9hKB -> zESuRJItQgK8gQvP
+1493621159381	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.381; modified=true; exists=true
+1493621159382	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: LHv/5LerQQORYk7L -> zDb4Q1oIRiOYTIBx
+1493621159396	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.396; modified=true; exists=true
+1493621159397	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: fBb9bcofQAmxD/Kj -> zCAhGpdOTY+J2DbQ
+1493621159412	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.411; modified=true; exists=true
+1493621159413	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2u1wuQIGRaWsUIyW -> za0QmMA8QiquUoHq
+1493621159420	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.42; modified=true; exists=true
+1493621159422	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kGPX6RjqTUWy+EJ4 -> z7mNzcBVRgmY8evU
+1493621159431	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.431; modified=true; exists=true
+1493621159432	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: S/6upo6MTl2/XI2k -> z4ctXW6HQPKn4gA0
+1493621159441	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.441; modified=true; exists=true
+1493621159442	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JlwbnIufS3ynoIzt -> z2nfPuazQOOcHBCE
+1493621159455	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.455; modified=true; exists=true
+1493621159456	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9i0R4W3qQyqG6+Ge -> yxeTE/HdTIK4S0K5
+1493621159464	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.464; modified=true; exists=true
+1493621159465	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: vnTUwv9NTaSNZ/pg -> yTksF73oQ0uyqfHb
+1493621159474	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.474; modified=true; exists=true
+1493621159475	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9w7wJfmxRruUa91B -> yjLwNTJ1R2eLzffy
+1493621159490	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.49; modified=true; exists=true
+1493621159491	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lspDonCjQGmx/9FJ -> yI+daoihTzihblTB
+1493621159505	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.505; modified=true; exists=true
+1493621159506	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: j7miUHFMTtGMzB3h -> yHDHaxtwQ8GJlIOq
+1493621159520	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.52; modified=true; exists=true
+1493621159521	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: EV3BeovrR1CRpISk -> yfJypaHdSvqdv/lF
+1493621159536	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.536; modified=true; exists=true
+1493621159538	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: vu+bbp+hQhOiErk8 -> yFDqVBt+SY+t1+Zu
+1493621159546	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.546; modified=true; exists=true
+1493621159547	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: S7hlPQ+MThmy+ftM -> yeV4i8mTR0CUxUAa
+1493621159561	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.561; modified=true; exists=true
+1493621159563	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WDAgFxutRqCVgNCh -> xyy+bI5nTseS1LU4
+1493621159578	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.577; modified=true; exists=true
+1493621159579	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qCMgLB8hRCKb/Q4w -> xyhYgGLkQGeacgJa
+1493621159586	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.586; modified=true; exists=true
+1493621159587	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7pPrV14ASGOGp7Jl -> xvpMxqtwRTiz/Uk5
+1493621159604	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.604; modified=true; exists=true
+1493621159605	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: AElW/PIhRx2QEEks -> xPR5aa7nSUGK9WNJ
+1493621159619	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.619; modified=true; exists=true
+1493621159621	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UKUVMuc/T42gS5MX -> xIz/Z9CrTU6XwBc6
+1493621159630	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.63; modified=true; exists=true
+1493621159631	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YPwGVWRbRpyO9RxR -> xF9zmIp8Sf6YwmYM
+1493621159638	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.638; modified=true; exists=true
+1493621159639	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: DbtkiClMR5ySqviW -> xaKm7i85T5GlgM/i
+1493621159648	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.648; modified=true; exists=true
+1493621159649	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YtFl/O1GR/+wX76X -> x33w5sEgSbuDuca/
+1493621159663	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.663; modified=true; exists=true
+1493621159664	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BojjvpxQTpKl26oZ -> wzNrBksnTUS/pafK
+1493621159680	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.68; modified=true; exists=true
+1493621159681	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: SKsOHm2uR/W7q/1L -> wz91xO/vQNqtDpIb
+1493621159695	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.695; modified=true; exists=true
+1493621159696	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6D5W74FHTp+Ui11M -> wp3FPQatR4iOsovA
+1493621159705	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.705; modified=true; exists=true
+1493621159706	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Zb/jf43JRo2DG4tS -> wL0FP1t+Qn6vqxcs
+1493621159714	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.714; modified=true; exists=true
+1493621159715	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: DOVyK/YoR/qKKlrW -> wHNzhul5T7GyVxmd
+1493621159730	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.73; modified=true; exists=true
+1493621159732	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: KsnHvBbKQQm5Tlav -> wHCygISATNOBL+4n
+1493621159752	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.752; modified=true; exists=true
+1493621159753	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JMO+89uDSGev6Ga/ -> whaMeTqjSBG+fqyx
+1493621159767	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.767; modified=true; exists=true
+1493621159768	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: vu9KJ2XXQeO2x4iD -> wf2h7d/eTKKVgMph
+1493621159785	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.785; modified=true; exists=true
+1493621159789	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yB3zR3IYQCaW1anh -> w5Fcj5ewTJOMQzzb
+1493621159809	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.809; modified=true; exists=true
+1493621159810	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: D/67baoWSkOxZxMJ -> w4LCBZAKQy2xRCFU
+1493621159825	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.825; modified=true; exists=true
+1493621159826	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9WZkako3StmWdAVg -> vVyfQQ/sQiOwvBQ6
+1493621159834	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.834; modified=true; exists=true
+1493621159835	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: NiI/k71NQwOi+ydS -> vqcgEK0fQRu2iiKy
+1493621159850	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.85; modified=true; exists=true
+1493621159851	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RgdR9mv+S5Gv2cM9 -> vhP2VoLDQ2WR1m+m
+1493621159864	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.864; modified=true; exists=true
+1493621159865	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VUaamg16SaOTwTrd -> v2Ox2VreSC6fHf9i
+1493621159875	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.875; modified=true; exists=true
+1493621159877	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: l5ic9+3fQ5aCOidK -> usLFKVWyQxS2Ichw
+1493621159886	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.886; modified=true; exists=true
+1493621159887	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aImX6V1XS8WNw9Lf -> uQZfiDnmRHGx+xbB
+1493621159899	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.899; modified=true; exists=true
+1493621159901	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cGaCot+cRz+EprXI -> uq0xFa9hRf6Wckbu
+1493621159909	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.909; modified=true; exists=true
+1493621159910	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YVJpeTkWSaSsCvVB -> uPBh6yriSXqsIS8V
+1493621159920	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.92; modified=true; exists=true
+1493621159921	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1eO15b10SwepiY/3 -> uMoc0R5iQLyyJfGD
+1493621159930	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.93; modified=true; exists=true
+1493621159931	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: jdANEDNMTsiGpqBS -> ukQyjsm4TGKbz/gF
+1493621159941	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.941; modified=true; exists=true
+1493621159942	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sVWkdQcLSS6bOuCi -> uigG+Vl4S5u4rh9g
+1493621159951	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.951; modified=true; exists=true
+1493621159952	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: F+mqQ01hQnu4gsHt -> uhhUjzn5Rx6ZI+F/
+1493621159966	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.966; modified=true; exists=true
+1493621159967	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Nm6M4GiATUeihFZb -> uFzDGDT8SvirCAET
+1493621159983	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.982; modified=true; exists=true
+1493621159985	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JjenNo4rTFaXPXIh -> uEaMS66WSYCS0Llx
+1493621159993	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621159.993; modified=true; exists=true
+1493621159995	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: v/phblXHSHqlNjDB -> tHyL8UGSQhuAGJ3F
+1493621160004	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.004; modified=true; exists=true
+1493621160005	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2n7x/P4MR/OpKwua -> tdpz3ELeQ6et44JH
+1493621160013	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.013; modified=true; exists=true
+1493621160014	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WHKBNoqXR3+dsZMq -> t5b5E1GpTx6hLX2L
+1493621160023	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.023; modified=true; exists=true
+1493621160024	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: uhRql+blTnKc3lc3 -> t2eHHOu2Snqrfy4h
+1493621160038	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.038; modified=true; exists=true
+1493621160040	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ddEfX3njTtiVtlso -> t2BI9WAJTT2KncfO
+1493621160055	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.055; modified=true; exists=true
+1493621160056	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: IRpHopW3QUawHIA/ -> t/KzdW5mQ5mvqaLZ
+1493621160064	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.064; modified=true; exists=true
+1493621160065	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VOIsXtXZRoaXUuSL -> sUeRRujkQ2W0cdQn
+1493621160074	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.074; modified=true; exists=true
+1493621160075	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: tRx6uuJlSvOCOXL6 -> stRd2O5JRxWvonQE
+1493621160084	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.084; modified=true; exists=true
+1493621160085	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: /e6AdSFjSYeh5w5L -> sqZR9Vb7Sp++Srwh
+1493621160099	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.099; modified=true; exists=true
+1493621160100	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OlISmSnbSTqeckHn -> sPaulWVVTP+8m/Y7
+1493621160115	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.115; modified=true; exists=true
+1493621160116	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: kwIq+Wx+Rg6PQNxy -> sLa4W3oIRsqwqQ2/
+1493621160130	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.13; modified=true; exists=true
+1493621160132	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Dov1644rRrm7cRyj -> sIMGckSDTD+9wg9a
+1493621160141	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.141; modified=true; exists=true
+1493621160142	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: GlswDDaKQO2O/9qd -> sECmixDwTYWrwAAI
+1493621160150	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.15; modified=true; exists=true
+1493621160151	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yFjezB98TlC8U8j6 -> s8x44+UgRO2zfxUk
+1493621160160	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.16; modified=true; exists=true
+1493621160161	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: SN7uGbyeRWa/U/c8 -> s6PLeCcfQnqLvf6h
+1493621160169	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.169; modified=true; exists=true
+1493621160171	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: tDZWQKYKSum9TmzF -> s4uPt+b5QhuYgSSs
+1493621160186	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.186; modified=true; exists=true
+1493621160187	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 36tptKTcRKe3bUBn -> rZjF5YWVRKSxdXNi
+1493621160195	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.195; modified=true; exists=true
+1493621160196	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: XZL7pqMpTiGIkxyh -> rVM2ULWpQJ25Eyvm
+1493621160208	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.208; modified=true; exists=true
+1493621160209	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Kbw255njRzyZN7X4 -> rQuIJoI5SHW0GhXI
+1493621160217	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.217; modified=true; exists=true
+1493621160218	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lo3vY3OZQTOAyQRN -> rNXeug8ATHuPuHiu
+1493621160239	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.239; modified=true; exists=true
+1493621160240	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Kl5RH+bnS6KKCRzc -> rMC143zvR3atmdpz
+1493621160248	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.248; modified=true; exists=true
+1493621160249	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: LAXlole9T3WHSdq9 -> riZozr+mQn6HoW3q
+1493621160264	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.264; modified=true; exists=true
+1493621160265	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: QI/eUFH5QiSzcWyY -> rfWkekKVRuCl3xX5
+1493621160273	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.273; modified=true; exists=true
+1493621160274	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: utH25a9MSaqNIf4q -> rFbZIVUCS9GxJKAe
+1493621160289	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.289; modified=true; exists=true
+1493621160290	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Ve6RDDXxTr2WP8Ju -> rDsKsxvlSsehmyO3
+1493621160299	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.299; modified=true; exists=true
+1493621160300	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: PZLTLeFHRtGtz+5c -> r2GwI7xQTy6Nk8n+
+1493621160308	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.308; modified=true; exists=true
+1493621160309	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6D/xZcNIR3ax29DH -> r1AA0nluQ3SdSDpw
+1493621160318	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.318; modified=true; exists=true
+1493621160319	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: gZepoREBTlCCxasK -> r0DP3yHwQV29W6n0
+1493621160335	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.335; modified=true; exists=true
+1493621160336	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 176yRntkQN6l8ZsM -> qZGpAhhUTjal/HWg
+1493621160356	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.356; modified=true; exists=true
+1493621160357	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: BO8xGJT0RCWD1l9F -> qwBUDhfzQN6a896V
+1493621160376	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.376; modified=true; exists=true
+1493621160377	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cUwffZaJQYCnTsY5 -> qVcH6nQhQo+SJOOn
+1493621160398	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.398; modified=true; exists=true
+1493621160400	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ptPAlzNpTa+nDXjF -> qU+pPtXLTqayhLl8
+1493621160414	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.414; modified=true; exists=true
+1493621160415	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: I3YtHZLkQmK6bdt4 -> qQb1nqfeR8uxV5va
+1493621160425	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.425; modified=true; exists=true
+1493621160426	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: L26fkVxCRSyeb7AT -> qoZC5wXXQLWefjXd
+1493621160441	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.441; modified=true; exists=true
+1493621160442	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OGDDP1gPTCmaZMfj -> qmDExM+PSOaP7vzc
+1493621160462	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.462; modified=true; exists=true
+1493621160463	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: i+nBp+mOS9+0JwPR -> qjgKTmuhRb2wDpEs
+1493621160471	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.471; modified=true; exists=true
+1493621160473	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cXWn7vcVTcabnpXd -> qHawQGsDTlSL99gN
+1493621160488	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.488; modified=true; exists=true
+1493621160489	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: nMamfzK6TGup4bjA -> qFQyULffSAmua+JM
+1493621160498	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.498; modified=true; exists=true
+1493621160499	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mmQ5Nho1ToKjYx6D -> qbQs8H9NQq+Mxd3L
+1493621160508	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.508; modified=true; exists=true
+1493621160509	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: SEhmiI6pS9uksaKi -> q9lAv3L5QpeJ1l5c
+1493621160518	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.518; modified=true; exists=true
+1493621160520	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UwCVH1wySXWr/hD1 -> q2eK/u4qR2OO9J6r
+1493621160529	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.529; modified=true; exists=true
+1493621160530	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ad0FHqLdQ7+F5GL4 -> q0HZvOaVRImon66P
+1493621160539	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.539; modified=true; exists=true
+1493621160540	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hg77LEcZS9q0l3e4 -> pZh7TOvZSeO7QEGP
+1493621160555	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.555; modified=true; exists=true
+1493621160556	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: nv+D62wLR366bdKi -> pXftTyPySAaFSbhV
+1493621160565	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.565; modified=true; exists=true
+1493621160566	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ia7/EDeQRtC36zoT -> pRMTuv/NTHCngPef
+1493621160575	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.575; modified=true; exists=true
+1493621160576	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WhTl1NrISdCFSR8A -> poOzb0siTo+crgcr
+1493621160586	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.586; modified=true; exists=true
+1493621160587	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dg6tmKzeTLSVV1EU -> pMz9xYVLSCiULVZd
+1493621160595	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.595; modified=true; exists=true
+1493621160599	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: h9aClbQ8SUKdb27L -> pmaQK1hPRh6MPSU7
+1493621160615	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.615; modified=true; exists=true
+1493621160619	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: CWvwU2w4R0mR0acm -> pKmTLFKxSDq0NaoZ
+1493621160638	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.638; modified=true; exists=true
+1493621160639	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hw9FWL4JQdS4KIyG -> pf2V8VYYTJ6XUn/q
+1493621160653	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.653; modified=true; exists=true
+1493621160654	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RnBDpeYqTWmtdS22 -> pDst6wZ3RXKKYfnl
+1493621160663	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.663; modified=true; exists=true
+1493621160664	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: KClMwPT3RTepdEk/ -> pdC5+hD/SKWn3dOL
+1493621160672	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.672; modified=true; exists=true
+1493621160673	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: FdW5MN/LQxiDc0Kz -> pBR1QIqOShiqU8oK
+1493621160682	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.682; modified=true; exists=true
+1493621160684	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 15ieHRcpT0CcZgXq -> pbE1XgqDTjOparfe
+1493621160692	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.692; modified=true; exists=true
+1493621160693	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ASqWsU0XQz6phbii -> pabIzEzOS5CboMnG
+1493621160708	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.708; modified=true; exists=true
+1493621160709	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zvUNlEPmQfeg/Soi -> p8xWtnhMSy2fRt7D
+1493621160717	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.717; modified=true; exists=true
+1493621160718	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Ax8hviNhQq+89fbI -> p5lmz1qgRWKGe7vy
+1493621160739	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.739; modified=true; exists=true
+1493621160740	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qBgNhjhjRkOln2Ab -> oreMTfhyT2yg+vPX
+1493621160749	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.749; modified=true; exists=true
+1493621160750	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: OYtn1oRESZ+nFqdn -> olKNFoL7QW2cApTO
+1493621160759	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.759; modified=true; exists=true
+1493621160760	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UFLwzpjgQkmyDET8 -> oK6g+elLSOuzTm86
+1493621160768	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.768; modified=true; exists=true
+1493621160769	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: aXbbvTCmTEGJtJ3X -> o6luwXNjTP2QCxmv
+1493621160778	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.778; modified=true; exists=true
+1493621160779	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: JB6pO3HzQYin6qta -> o3wnGIcbQO2h31Xi
+1493621160788	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.788; modified=true; exists=true
+1493621160789	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: oJ/3GFL3T6iCXA3F -> o21hvBRbQYi0CjmF
+1493621160799	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.799; modified=true; exists=true
+1493621160800	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: FZVdJPnASf2yw9Z8 -> nuiHO23kT/aIgc+d
+1493621160815	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.815; modified=true; exists=true
+1493621160816	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: +aIiC7RXQ+25VIQU -> nT9cv/RWTqiu3xV+
+1493621160823	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.823; modified=true; exists=true
+1493621160824	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: w1qJxyd3QyylCHbk -> nPkEqlDHSuSVmId+
+1493621160833	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.833; modified=true; exists=true
+1493621160834	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: smh2jB2+R7eqFNgP -> nMyzHBhrT1eRkWXP
+1493621160842	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.842; modified=true; exists=true
+1493621160843	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: tBnkFBhhSXC4vVNc -> nI7XskUpRlygMmfW
+1493621160859	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.859; modified=true; exists=true
+1493621160860	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: NIppgXLMQcSgfsM8 -> ncorqDsbTnqcV9gl
+1493621160868	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.868; modified=true; exists=true
+1493621160869	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: A11nGpHFQOm2B+sW -> n2hoepCyQbSD5jcJ
+1493621160896	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.896; modified=true; exists=true
+1493621160897	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HwwHygDTRLKO9sox -> mVQNBpsIR16tGLuK
+1493621160911	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.911; modified=true; exists=true
+1493621160912	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: s6pfiE2/SNurP+eU -> mO8SvwLWQECCvAGX
+1493621160920	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.92; modified=true; exists=true
+1493621160921	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 3LpZEHd7RSy7gMIy -> mLhUkPO+TsCXQVSr
+1493621160929	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.929; modified=true; exists=true
+1493621160930	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: GhmEMF45QHGM9AX6 -> mKoeLIK3Ri+QsQmt
+1493621160939	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.939; modified=true; exists=true
+1493621160940	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: szvu5PhjSGyNzi8y -> mFlFKxR3TSm02hIb
+1493621160961	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.961; modified=true; exists=true
+1493621160962	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hNkMvRtWROO0cGGn -> mElJdKOnRWmsn002
+1493621160984	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.984; modified=true; exists=true
+1493621160985	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: A3TLmfeBTb6ndfRf -> lX2nwurqQw+vrSBx
+1493621160999	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621160.999; modified=true; exists=true
+1493621161000	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UsOH7EbBQWK8GH0/ -> lRrgOG4DQpi80ihY
+1493621161020	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.02; modified=true; exists=true
+1493621161022	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: A5jhVZMIShauxhFl -> lpG/s8W+RtONtPEe
+1493621161031	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.031; modified=true; exists=true
+1493621161032	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 3CDlL8j8SmKCm31u -> lmAX4I8HQbSXtDGC
+1493621161040	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.04; modified=true; exists=true
+1493621161041	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Z2JfYNQ5T6GsQxRX -> lLS4UYOqRqOxOoLV
+1493621161055	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.055; modified=true; exists=true
+1493621161056	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cTESTvBmQh6xDNBY -> lLdyyMKITPmOFwvO
+1493621161070	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.07; modified=true; exists=true
+1493621161071	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 0t4lkhPiS7OE9Pba -> lK02rtISRRGUQmqh
+1493621161085	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.085; modified=true; exists=true
+1493621161086	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: QKuX8OxBR4mRB3La -> lhFyPY6ySeOJd94X
+1493621161094	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.094; modified=true; exists=true
+1493621161095	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: NaRItnI4Ql2nGINm -> lGaJIhwTR0GY2/Kd
+1493621161104	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.104; modified=true; exists=true
+1493621161105	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: MDgMNEMVSG621esk -> leMiePa5TWagtLq6
+1493621161113	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.113; modified=true; exists=true
+1493621161114	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: wl7s8cs7SbeiD2+Q -> l8+WLdc7QuKA/i/d
+1493621161128	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.128; modified=true; exists=true
+1493621161129	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YE5ZcAIxR2+GJAVT -> l739OHoMRROvrBPH
+1493621161138	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.138; modified=true; exists=true
+1493621161139	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RdE0qojASJqGNGzi -> l0Z+bmMiTA6P7eMQ
+1493621161147	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.147; modified=true; exists=true
+1493621161148	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: AoCxtQd7Q9WKEvTn -> kViaBiz4QUqJhYjj
+1493621161180	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.18; modified=true; exists=true
+1493621161184	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TkpjGaYKTtathwuB -> kUs3LPadSoCj3/6E
+1493621161193	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.193; modified=true; exists=true
+1493621161195	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: FTNOzSnjRAyThPjV -> kuR3Mo0mSUSP8JHU
+1493621161204	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.204; modified=true; exists=true
+1493621161205	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: lcj9IQirQTq5keTP -> kNomvtqOTtODQECl
+1493621161214	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.214; modified=true; exists=true
+1493621161215	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Yyor6yzlSdSfhrRw -> kKrAN6PWRiWFKzC1
+1493621161224	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.224; modified=true; exists=true
+1493621161226	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: TAiQJpADRyKK/KMS -> kjml/HaVSc2m5/RE
+1493621161240	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.24; modified=true; exists=true
+1493621161241	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: d/1tosJaT4qeeEwr -> kgosBL3SRD+ntHeS
+1493621161250	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.25; modified=true; exists=true
+1493621161251	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zPNUw3a0SMOSz5iG -> kfTpaBh9Q/aEDxyu
+1493621161261	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.261; modified=true; exists=true
+1493621161262	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: cj3oqhWqRn2V5Gn3 -> kFAL09B8QKOI8nEc
+1493621161271	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.271; modified=true; exists=true
+1493621161272	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 744Tcw+6TJmeR32t -> ka79ISzfSLeXt+oT
+1493621161280	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.28; modified=true; exists=true
+1493621161281	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mzAZZ4j/QX29iTC6 -> k7+k09QyRMqgHphm
+1493621161296	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.296; modified=true; exists=true
+1493621161297	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ObJFxZkRQ1O4UGVQ -> jXndBYRzRie76JZD
+1493621161311	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.311; modified=true; exists=true
+1493621161312	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dbl6/reyTh+ywnNM -> jSZh+bpGSHydoobS
+1493621161321	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.321; modified=true; exists=true
+1493621161322	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7pm+qnwzReKUJ7Xv -> jR11aVlnRkaeKqjL
+1493621161330	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.33; modified=true; exists=true
+1493621161331	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RqFcXQGxT9WJ9uh/ -> jh7Gle+IRwmwqK57
+1493621161346	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.346; modified=true; exists=true
+1493621161347	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 9W3HJ99HTuWTpajr -> jg0Vu4F/TiuM1+m2
+1493621161356	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.356; modified=true; exists=true
+1493621161357	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ROGBgUu+Q7aI1LSZ -> jG/wXOVNT2aUphvs
+1493621161365	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.365; modified=true; exists=true
+1493621161366	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: k5VOJ1WeQ92ERpwH -> jalEXlXrRqu7uSbU
+1493621161376	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.376; modified=true; exists=true
+1493621161377	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: /8aXtjvQQxC+mD2b -> j9RSYXamQFOiqMoo
+1493621161392	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.392; modified=true; exists=true
+1493621161393	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: g1VyfsziQiqzU2If -> j0izaxUgTuuLcbMA
+1493621161402	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.402; modified=true; exists=true
+1493621161403	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: oWnBnbqSSK2CgyA9 -> iwuvmr7PRcijj/78
+1493621161412	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.412; modified=true; exists=true
+1493621161414	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: x6wjAIe8T3Gntja0 -> iwHnOsKWS7iK+mXZ
+1493621161429	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.429; modified=true; exists=true
+1493621161430	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: woCoH7a/QZiZ/MsE -> iJUO1MOqTQq/0ePN
+1493621161439	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.438; modified=true; exists=true
+1493621161440	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: vsc7HoTzROy3L94F -> if7ydoR4Rm+w/RvF
+1493621161455	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.455; modified=true; exists=true
+1493621161456	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1bgfEnWjTZWvPBFs -> i0QkG3OtTHO+wAys
+1493621161465	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.465; modified=true; exists=true
+1493621161466	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: xs8x9P7HS7C3opoR -> i+4NEN0+Q4WskWHZ
+1493621161475	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.475; modified=true; exists=true
+1493621161476	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Se17zugLQ72lPxsV -> hvssE8hTTZShoERp
+1493621161485	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.485; modified=true; exists=true
+1493621161486	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: H9jeRRzqRRu93T/y -> hRbbmRY1QXyVEPFi
+1493621161501	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.501; modified=true; exists=true
+1493621161502	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Oq2zy+jxROKAt/ik -> hLGjRDjJR96iplyz
+1493621161516	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.516; modified=true; exists=true
+1493621161517	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: e8fDyqbuSg6WX3G3 -> hjRnMOaETyqqeKY1
+1493621161526	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.526; modified=true; exists=true
+1493621161527	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: rPPqbuIxR/6qHvbq -> hiyP9OLhQya56MEE
+1493621161536	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.536; modified=true; exists=true
+1493621161537	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HYg9FOFIS5GO0UCt -> hANCU2blSqOhFRuM
+1493621161552	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.552; modified=true; exists=true
+1493621161556	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ofO2Ks9BR7CHRevw -> gz3ILTVOS4q/tcRK
+1493621161576	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.576; modified=true; exists=true
+1493621161578	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Sqx8aG81TwWRSgHt -> gxs8ZFGeTwOv5SDd
+1493621161599	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.599; modified=true; exists=true
+1493621161601	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: y023g9vxTOqnkhEk -> ZZroSRfiTUCK7kyM
+1493621161615	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.615; modified=true; exists=true
+1493621161616	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mY9xyYdNTk6cx5n5 -> ZycUy3uFQoS1Guq6
+1493621161638	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.638; modified=true; exists=true
+1493621161639	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: zJ+qD/qAQrqxoMUt -> ZxbnYXOdQY+B8WWz
+1493621161655	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.655; modified=true; exists=true
+1493621161657	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yFgjMZt3R7i34Wqf -> ZT1OmG/JQJeyR8Ol
+1493621161665	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.665; modified=true; exists=true
+1493621161666	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dQhorDjfToGoslda -> ZSjDxOyXTA6TgDL1
+1493621161694	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.694; modified=true; exists=true
+1493621161695	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Q5sWIHOYTk6YCsOC -> Zs5esZd1SSeViPkx
+1493621161704	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.704; modified=true; exists=true
+1493621161705	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: n31vrCcbTxKz+01a -> ZM8w0nbqTECG6eGz
+1493621161714	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.714; modified=true; exists=true
+1493621161715	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: dSr4mMBfQ5efUuvc -> ZkzsRMKPSU2YlYpD
+1493621161724	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.724; modified=true; exists=true
+1493621161725	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RoVBaEZITP2jINn8 -> ZJQOar0HR1ar+W/V
+1493621161734	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.734; modified=true; exists=true
+1493621161736	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 1DXyV+4bT3+o2EDe -> Z0sP+widSEqTdQa3
+1493621161751	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.751; modified=true; exists=true
+1493621161752	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ppq9W+OJSIOBqSsz -> YVnihPIiQ+iJa1WA
+1493621161767	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.767; modified=true; exists=true
+1493621161768	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: XV79IuO8TfeANBwS -> YSruyuU9SV2A5Uio
+1493621161776	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.776; modified=true; exists=true
+1493621161777	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8Dd+/2kCQtOhlmJX -> YS8rJT4pSlW7Kvkj
+1493621161786	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.786; modified=true; exists=true
+1493621161787	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qx8Hy8svQC+WyCSC -> Yr+b1w8bRHWGk7JI
+1493621161796	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.796; modified=true; exists=true
+1493621161797	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: I3Gk0v37TyupUQSa -> YQQ35YdyQEatOvdJ
+1493621161816	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.816; modified=true; exists=true
+1493621161817	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VuhEkXb5TFeVFB2q -> Yp0SUDu+Si2qRyK1
+1493621161826	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.826; modified=true; exists=true
+1493621161827	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: IQOfbAkiRWafZD2E -> YJG4+ayZRICrmNMP
+1493621161842	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.842; modified=true; exists=true
+1493621161843	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VSWQwlK9Qq+HlUOH -> YgwHB+0kRnSJR/NS
+1493621161857	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.857; modified=true; exists=true
+1493621161858	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ttcbfsknQJyYrjtt -> YFH3DD+AQieEPPwQ
+1493621161872	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.872; modified=true; exists=true
+1493621161874	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UOkPBbzxRIueMP5S -> YDRpTWv6SyGGYRnh
+1493621161882	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.882; modified=true; exists=true
+1493621161883	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: MgVg4T86Sd2xOE2b -> YDcdQDwVQeSmjNmQ
+1493621161893	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.893; modified=true; exists=true
+1493621161894	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: s5eGQez2QP6kp3t3 -> Yd9F5wmKS6+3pOXx
+1493621161908	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.908; modified=true; exists=true
+1493621161910	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2ZV7ZZbETKmSFH4c -> YbJNe4AFRfGr8zHh
+1493621161925	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.925; modified=true; exists=true
+1493621161927	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 7elvBvUjREqFoo+B -> Y86cpu5dRRO2f7ic
+1493621161936	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.936; modified=true; exists=true
+1493621161937	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: oOG5CktuQhiOld0/ -> Y6tO5dNoTqGnZ2jm
+1493621161946	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.946; modified=true; exists=true
+1493621161947	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sXo+HKPNQeyk+Zcr -> XZ2egqsuRbmTArtS
+1493621161956	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.956; modified=true; exists=true
+1493621161957	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: KocW1dahT+W607fr -> XYAVhShOSBOch3d8
+1493621161966	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.966; modified=true; exists=true
+1493621161967	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: N2uXJ+OYSNWC0DM+ -> XxsT0tkEQKu7yIOj
+1493621161984	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621161.984; modified=true; exists=true
+1493621161985	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: UbrwZOmFRTGVrtQA -> XVr+oz9vTOm3IXbO
+1493621162000	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162; modified=true; exists=true
+1493621162003	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: /pIFdkzNQ2yDjifg -> XT+q7nxMSp6geKHV
+1493621162012	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.012; modified=true; exists=true
+1493621162013	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: sIU/SAbpTe2FNJFp -> XSDb8NVvTI2kThVh
+1493621162023	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.023; modified=true; exists=true
+1493621162024	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: fjc6ZrmYSgGbTNrx -> XQp4ihPSSAiJ5FX2
+1493621162033	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.033; modified=true; exists=true
+1493621162034	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: eR2uSBDnTwmNHkfg -> XQMjsqpgRLajVCwI
+1493621162043	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.043; modified=true; exists=true
+1493621162044	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: rsDoYgoLSqa2k62W -> XmfrTknpTIKFvExG
+1493621162054	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.054; modified=true; exists=true
+1493621162055	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 087SX5zlTZmuy2VS -> XgELPD7LRRO2fWIR
+1493621162064	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.064; modified=true; exists=true
+1493621162065	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qnRmBwJMQt2C9DM6 -> X9BvxXjbQXyE0Uoq
+1493621162080	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.08; modified=true; exists=true
+1493621162081	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RD8cyqMYTQSuy6Ya -> X6twdiK1RHiut3Dt
+1493621162095	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.095; modified=true; exists=true
+1493621162096	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 2URNnrKgRNCkp4xR -> gWEF1OCiTpeN18TQ
+1493621162105	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.105; modified=true; exists=true
+1493621162106	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: WV7h/FPQS8i9o7xV -> graANjmYRAuij2od
+1493621162115	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.115; modified=true; exists=true
+1493621162116	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: S7esPblQQfml1mlm -> gOoz8CsnSI2ubbcQ
+1493621162131	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.131; modified=true; exists=true
+1493621162132	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: HaHTA4AcTAWk4CXk -> gN8u0gWIShq9ej9P
+1493621162146	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.146; modified=true; exists=true
+1493621162147	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 21j6ZvlsQieza2eH -> g6mAR762SSC+OpI3
+1493621162163	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.163; modified=true; exists=true
+1493621162164	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: RVskwVhhRZG7kck/ -> g4S8jALaSIOYlnIA
+1493621162172	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.172; modified=true; exists=true
+1493621162174	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6XOJqwjPTeGidFWx -> fZtbFwfCSW2qk8zf
+1493621162188	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.188; modified=true; exists=true
+1493621162189	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: yfoBmRY4TBiFkpPf -> fY0AfCbGTNW+N/OG
+1493621162204	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.204; modified=true; exists=true
+1493621162206	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: o0Iy7R51TkuR8h6n -> fxgZZ3dkSX62KCTV
+1493621162226	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.226; modified=true; exists=true
+1493621162228	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 6nfo1VuVSzeF/crr -> fTtYnXKcRgqycDU9
+1493621162237	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.237; modified=true; exists=true
+1493621162238	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: F/SftT4iQCOyRhWw -> fTTP4I9mRM+Iq4cm
+1493621162258	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.258; modified=true; exists=true
+1493621162259	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: VP5yzvF1Tfmkr6Cg -> frPjMFhTS9qwdDyD
+1493621162276	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.276; modified=true; exists=true
+1493621162277	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: YS1MfJzMQ06ZlEhz -> fIVRlVwhRR+iKb9m
+1493621162286	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.286; modified=true; exists=true
+1493621162288	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 4cT6wr6SS5K0DcmW -> fIs/LY6KS/ig0Pms
+1493621162303	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.303; modified=true; exists=true
+1493621162304	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: qSLnad2aTQCSoHKo -> fHhjtTwaSMOF0B67
+1493621162324	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.324; modified=true; exists=true
+1493621162325	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: W0IRf74FTG2zohE0 -> f4K9/ovmSb25pZJc
+1493621162334	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.334; modified=true; exists=true
+1493621162335	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: b8//smyNTWmjq710 -> f0YBFkRiQwCfcdJA
+1493621162351	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.351; modified=true; exists=true
+1493621162352	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: mngIMDp6RJOif4uR -> eXCRzMfuTUmfaW0s
+1493621162368	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.368; modified=true; exists=true
+1493621162369	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 8CexbXK9R2id/0zc -> esgBhqbdQCyO6QgW
+1493621162378	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.378; modified=true; exists=true
+1493621162379	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: ZpOEFSxuQ+ahFlGm -> ePu4vrZtT8q/wDkP
+1493621162388	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.388; modified=true; exists=true
+1493621162389	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: hpwbbBbyTuio2QfQ -> epC58efVTwet7lWY
+1493621162399	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.399; modified=true; exists=true
+1493621162400	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 24Hf7hsDRvmDWC0l -> eOngWqLFQJ+9/Kaz
+1493621162409	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.409; modified=true; exists=true
+1493621162409	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: t2tFiQfJT7KKHCpO -> eNh0uKcTRiWNzFlI
+1493621162426	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.426; modified=true; exists=true
+1493621162427	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: o61uo8EGQNGrDEbL -> emXhBHJAQlqqK2fh
+1493621162436	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.436; modified=true; exists=true
+1493621162437	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: uE7PSDDXRjWhLvOv -> eLzIshwYT0mLfR2u
+1493621162452	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.452; modified=true; exists=true
+1493621162453	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Otp8u3NEScKNowvD -> ejlR02uHQcKZ09QY
+1493621162462	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.462; modified=true; exists=true
+1493621162463	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: Ahm1LMUsQcWzJezc -> egOKkf4KSjWC92Jg
+1493621162471	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.471; modified=true; exists=true
+1493621162472	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: 461RPVWeTQOK7zC4 -> dWgR5TT4RW+YOb3j
+1493621162482	Sync.Engine.Forms	DEBUG	Local item after duplication: age=1493621162.482; modified=true; exists=true
+1493621162483	Sync.Engine.Forms	DEBUG	Switching local ID to incoming: o3DTz1E3SNyloDSc -> dPbNzNPKSWGBpmi7
+1493621162544	Sync.Status	DEBUG	Status for engine forms: error.engine.reason.unknown_fail
+1493621162544	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1493621162545	Sync.ErrorHandler	DEBUG	forms failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < Res__request()@resource://services-sync/resource.js:408 < Res_get()@resource://services-sync/resource.js:432 < SyncEngine.prototype._processIncoming()@resource://services-sync/engines.js:1117 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1545 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493621162545	Sync.Engine.History	DEBUG	First sync, uploading all items
+1493621162546	Sync.Status	DEBUG	Status for engine history: error.engine.reason.unknown_fail
+1493621162546	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1493621162546	Sync.ErrorHandler	DEBUG	history failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < querySpinningly()@resource://services-common/async.js:212 < HistStore_getAllIDs()@resource://gre/modules/services-sync/engines/history.js:198 < SyncEngine.prototype._syncStartup()@resource://services-sync/engines.js:924 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1543 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493621162547	Sync.Synchronizer	INFO	Sync completed at 2017-05-01 16:46:02 after 9.83 secs.
+1493621162548	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493621162549	Sync.ErrorHandler	ERROR	Sync encountered an error

@@ -1,0 +1,171 @@
+1493813488213	browserwindow.syncui	DEBUG	observed: weave:ui:sync:finish
+1493813510303	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493813510304	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1493813510304	FirefoxAccounts	DEBUG	getOAuthToken enter
+1493813510305	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1493813510305	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1493813510305	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1493813510305	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1493813510305	Services.Common.RESTRequest	TRACE	HTTP Header if-none-match: "e9633bdd7218776b4e8bcfeb03971d391627496a-gzip"
+1493813510306	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493813511197	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.accounts.firefox.com/v1/profile
+1493813511198	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.accounts.firefox.com/v1/profile returned status code 0
+1493813511198	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1493813511198	Services.Common.RESTRequest	TRACE	GET body: 
+1493813511198	FirefoxAccounts	ERROR	Background refresh of profile failed, bumping _cachedAt: {"name":"FxAccountsProfileClientError","code":304,"errno":997,"error":"PARSE_ERROR","message":null}
+1493814088210	Sync.Service	DEBUG	User-Agent: Firefox/53.0 (Linux x86_64) FxSync/1.55.0.20170414022702.desktop
+1493814088210	Sync.Service	INFO	Starting sync at 2017-05-03 22:21:28
+1493814088211	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493814088211	browserwindow.syncui	DEBUG	onActivityStart
+1493814088211	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493814088211	browserwindow.syncui	DEBUG	onActivityStart
+1493814088212	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493814088212	Sync.Telemetry	TRACE	observed weave:service:sync:start 
+1493814088212	Sync.Status	INFO	Resetting Status.
+1493814088212	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493814088213	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493814088214	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814088215	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814088216	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814088218	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814089025	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493814089025	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493814089027	Sync.Service	DEBUG	Fetching server configuration: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/configuration
+1493814089027	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493814089290	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/configuration
+1493814089290	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/configuration
+1493814089291	Sync.Service	DEBUG	Fetching global metadata record
+1493814089291	Sync.Service	DEBUG	Weave Version: 1.55.0 Local Storage: 5 Remote Storage: 5
+1493814089291	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493814089291	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493814089291	Sync.Service	INFO	Testing info/collections: {"passwords":1493807153.4,"tabs":1493813487.69,"clients":1493813394.7,"crypto":1489644251.08,"forms":1493787748.78,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493813137.35,"addons":1493813395.62,"history":1493813488}
+1493814089291	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493814089291	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493814089291	Sync.Telemetry	TRACE	observed weave:engine:sync:start clients
+1493814089292	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1493814089293	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493814089554	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1&limit=1000
+1493814089554	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1&limit=1000
+1493814089558	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 4 reconciled.
+1493814089558	Sync.Telemetry	TRACE	observed weave:engine:sync:applied clients
+1493814089561	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089561	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089562	Sync.Telemetry	TRACE	observed weave:engine:sync:finish clients
+1493814089562	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493814089563	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493814089563	Sync.Telemetry	TRACE	observed weave:engine:sync:start prefs
+1493814089564	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1493814089564	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089564	Sync.Telemetry	TRACE	observed weave:engine:sync:applied prefs
+1493814089565	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089565	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089565	Sync.Telemetry	TRACE	observed weave:engine:sync:finish prefs
+1493814089565	Sync.Telemetry	TRACE	observed weave:engine:sync:start passwords
+1493814089566	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493814089567	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089567	Sync.Telemetry	TRACE	observed weave:engine:sync:applied passwords
+1493814089567	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089567	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089567	Sync.Telemetry	TRACE	observed weave:engine:sync:finish passwords
+1493814089568	Sync.Telemetry	TRACE	observed weave:engine:sync:start tabs
+1493814089568	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493814089568	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089568	Sync.Telemetry	TRACE	observed weave:engine:sync:applied tabs
+1493814089572	Sync.Engine.Tabs	INFO	Posting 1 records of 1104 bytes with batch=true
+1493814089572	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493814089573	Sync.Collection	DEBUG	POST Length: 1104
+1493814089826	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?batch=true&commit=true
+1493814089826	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?batch=true&commit=true
+1493814089826	Sync.Telemetry	TRACE	observed weave:engine:sync:uploaded tabs
+1493814089827	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089827	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089827	Sync.Telemetry	TRACE	observed weave:engine:sync:finish tabs
+1493814089827	Sync.Telemetry	TRACE	observed weave:engine:sync:start bookmarks
+1493814089828	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1493814089829	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089829	Sync.Telemetry	TRACE	observed weave:engine:sync:applied bookmarks
+1493814089830	BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"skipped":0,"updated":0,"tombstones":0}
+1493814089831	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089831	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089831	Sync.Telemetry	TRACE	observed weave:engine:sync:finish bookmarks
+1493814089832	Sync.Telemetry	TRACE	observed weave:engine:sync:start addons
+1493814089832	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493814089832	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493814089836	Sync.AddonsReconciler	DEBUG	Rectifying state for addon KeeFox (version=1.6.4, id=keefox@chris.tomlinson)
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Reddit Enhancement Suite (version=5.4.3, id=jid1-xUfzOsOFlzSOXg@jetpack)
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uBlock Origin (version=1.12.1, id=uBlock0@raymondhill.net)
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon New Tab Homepage (version=0.5.3, id={66E978CD-981F-47DF-AC42-E3CF417C1467})
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DownThemAll! (version=3.0.8, id={DDC359D1-844A-42a7-9AA1-88A850A938A8})
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OneTab (version=1.17.0, id=extension@one-tab.com)
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Imagus (version=0.9.8.50, id={00000f2a-7cde-4f20-83ed-434fcb420d71})
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon User Agent Switcher (version=0.7.3.1-signed.1-signed, id={e968fc70-8f95-4ab9-9e79-304de2a71ee1})
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Stylish (version=2.0.7, id={46551EC9-40F0-4e47-8E18-8E5CF550CFB8})
+1493814089837	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Vimperator (version=3.16.0, id=vimperator@mozdev.org)
+1493814089838	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo Plus (version=1.1.4, id=jid1-ZAdIEUB7XOzOJw@jetpack)
+1493814089838	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Application Update Service Helper (version=2.0, id=aushelper@mozilla.org)
+1493814089838	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Pocket (version=1.0.5, id=firefox@getpocket.com)
+1493814089838	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Multi-process staged rollout (version=1.14, id=e10srollout@mozilla.org)
+1493814089838	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=1.0, id=webcompat@mozilla.org)
+1493814089839	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Default (version=53.0, id={972ce4c6-7e08-4474-a285-3208198ce6fd})
+1493814089839	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Compact Light (version=, id=firefox-compact-light@mozilla.org@personas.mozilla.org)
+1493814089839	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Compact Dark (version=, id=firefox-compact-dark@mozilla.org@personas.mozilla.org)
+1493814089839	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=1.6, id=gmp-gmpopenh264)
+1493814089839	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine Content Decryption Module provided by Google Inc. (version=1.4.8.903, id=gmp-widevinecdm)
+1493814089842	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493814089846	Sync.Store.Addons	DEBUG	gmp-widevinecdm not syncable: type not in whitelist: plugin
+1493814089846	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1493814089847	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089847	Sync.Telemetry	TRACE	observed weave:engine:sync:applied addons
+1493814089848	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089848	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089848	Sync.Telemetry	TRACE	observed weave:engine:sync:finish addons
+1493814089848	Sync.Telemetry	TRACE	observed weave:engine:sync:start forms
+1493814089849	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1493814089850	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089850	Sync.Telemetry	TRACE	observed weave:engine:sync:applied forms
+1493814089850	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089850	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814089850	Sync.Telemetry	TRACE	observed weave:engine:sync:finish forms
+1493814089850	Sync.Telemetry	TRACE	observed weave:engine:sync:start history
+1493814089855	Sync.Engine.History	INFO	4 outgoing items pre-reconciliation
+1493814089856	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493814089857	Sync.Telemetry	TRACE	observed weave:engine:sync:applied history
+1493814089862	Sync.Engine.History	INFO	Posting 4 records of 1955 bytes with batch=true
+1493814089862	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493814089863	Sync.Collection	DEBUG	POST Length: 1955
+1493814090193	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?batch=true&commit=true
+1493814090193	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?batch=true&commit=true
+1493814090194	Sync.Telemetry	TRACE	observed weave:engine:sync:uploaded history
+1493814090194	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814090194	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814090194	Sync.Telemetry	TRACE	observed weave:engine:sync:finish history
+1493814090194	Sync.Telemetry	TRACE	observed weave:engine:sync:start extension-storage
+1493814090194	Sync.Engine.Extension-Storage	DEBUG	Syncing extension settings for []
+1493814090194	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814090194	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1493814090194	Sync.Telemetry	TRACE	observed weave:engine:sync:finish extension-storage
+1493814090195	Sync.Synchronizer	INFO	Skipping validation: validation or telemetry reporting is disabled
+1493814090195	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1493814090195	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493814090195	Sync.Synchronizer	INFO	Sync completed at 2017-05-03 22:21:30 after 1.98 secs.
+1493814090196	Sync.Declined	DEBUG	Handling remote declined: []
+1493814090196	Sync.Declined	DEBUG	Handling local declined: []
+1493814090196	Sync.Declined	DEBUG	Declined changed? false
+1493814090196	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1493814090196	browserwindow.syncui	DEBUG	observed: weave:service:sync:finish
+1493814090196	browserwindow.syncui	DEBUG	onActivityStop
+1493814090197	browserwindow.syncui	DEBUG	observed: weave:service:sync:finish
+1493814090197	browserwindow.syncui	DEBUG	onActivityStop
+1493814090197	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.
+1493814090198	Sync.Telemetry	TRACE	observed weave:service:sync:finish 
+1493814090203	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814090204	browserwindow.syncui	DEBUG	loginFailed has sync state=success.login
+1493814090204	Sync.ErrorHandler	DEBUG	Addons installed: 8
+1493814090204	Sync.ErrorHandler	DEBUG	 - Reddit Enhancement Suite, version 5.4.3, id jid1-xUfzOsOFlzSOXg@jetpack
+1493814090204	Sync.ErrorHandler	DEBUG	 - uBlock Origin, version 1.12.1, id uBlock0@raymondhill.net
+1493814090204	Sync.ErrorHandler	DEBUG	 - New Tab Homepage, version 0.5.3, id {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493814090204	Sync.ErrorHandler	DEBUG	 - Imagus, version 0.9.8.50, id {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493814090205	Sync.ErrorHandler	DEBUG	 - User Agent Switcher, version 0.7.3.1-signed.1-signed, id {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493814090205	Sync.ErrorHandler	DEBUG	 - Stylish, version 2.0.7, id {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493814090205	Sync.ErrorHandler	DEBUG	 - Vimperator, version 3.16.0, id vimperator@mozdev.org
+1493814090205	Sync.ErrorHandler	DEBUG	 - DuckDuckGo Plus, version 1.1.4, id jid1-ZAdIEUB7XOzOJw@jetpack

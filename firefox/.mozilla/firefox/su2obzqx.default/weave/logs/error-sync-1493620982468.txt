@@ -1,0 +1,47 @@
+1493620978407	Sync.Service	INFO	Loading Weave 1.47.0
+1493620978408	Sync.Engine.Clients	DEBUG	Engine initialized
+1493620978409	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1493620978412	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1493620978414	Sync.Engine.Forms	DEBUG	Engine initialized
+1493620978416	Sync.Engine.History	DEBUG	Engine initialized
+1493620978419	Sync.Engine.Passwords	DEBUG	Engine initialized
+1493620978421	Sync.Engine.Prefs	DEBUG	Engine initialized
+1493620978423	Sync.Engine.Tabs	DEBUG	Engine initialized
+1493620978423	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493620978426	Sync.Engine.Addons	DEBUG	Engine initialized
+1493620978426	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+1493620978429	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493620978429	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620978430	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493620978430	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620978430	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1493620978430	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1493620978430	Sync.Tracker.History	INFO	Adding Places observer.
+1493620978462	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1493620978463	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620978464	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493620978464	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493620978465	Sync.Tracker.Clients	WARN	Changed IDs file clients contains non-object value.
+1493620978468	Sync.Tracker.Bookmarks	WARN	Changed IDs file bookmarks contains non-object value.
+1493620978469	Sync.Tracker.Forms	WARN	Changed IDs file forms contains non-object value.
+1493620978469	Sync.Tracker.History	WARN	Changed IDs file history contains non-object value.
+1493620978470	Sync.Tracker.Passwords	WARN	Changed IDs file passwords contains non-object value.
+1493620978472	Sync.Tracker.Addons	WARN	Changed IDs file addons contains non-object value.
+1493620982464	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620982464	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493620982464	Sync.Service	INFO	Starting sync at 2017-05-01 16:43:02
+1493620982464	Sync.Service	DEBUG	In sync: should login.
+1493620982465	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1493620982465	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620982465	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493620982465	Sync.Service	INFO	Logging in the user.
+1493620982466	Sync.BrowserIDManager	INFO	initializeWithCurrentIdentity has no user logged in
+1493620982466	Sync.BrowserIDManager	INFO	Username changed. Removing stored credentials.
+1493620982466	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493620982466	Sync.BrowserIDManager	ERROR	Could not authenticate: no user is logged in
+1493620982467	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493620982467	browserwindow.syncui	DEBUG	observed: weave:service:login:error
+1493620982467	browserwindow.syncui	DEBUG	onLoginError: login=success.login, sync=success.sync
+1493620982467	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493620982467	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms.
+1493620982468	Sync.ErrorHandler	ERROR	Sync encountered a login error

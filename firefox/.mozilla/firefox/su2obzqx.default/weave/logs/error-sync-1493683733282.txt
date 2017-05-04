@@ -1,0 +1,238 @@
+1493683633262	Sync.Service	INFO	Loading Weave 1.47.0
+1493683633264	Sync.Engine.Clients	DEBUG	Engine initialized
+1493683633264	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1493683633267	Sync.Engine.Bookmarks	DEBUG	Engine initialized
+1493683633269	Sync.Engine.Forms	DEBUG	Engine initialized
+1493683633271	Sync.Engine.History	DEBUG	Engine initialized
+1493683633274	Sync.Engine.Passwords	DEBUG	Engine initialized
+1493683633276	Sync.Engine.Prefs	DEBUG	Engine initialized
+1493683633277	Sync.Engine.Tabs	DEBUG	Engine initialized
+1493683633278	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1493683633281	Sync.Engine.Addons	DEBUG	Engine initialized
+1493683633281	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+1493683633284	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493683633285	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683633285	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493683633285	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683633285	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1493683633285	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1493683633286	Sync.Tracker.History	INFO	Adding Places observer.
+1493683633323	browserwindow.syncui	DEBUG	observed: weave:service:ready
+1493683633325	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683633326	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683633327	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683633327	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1493683633719	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493683637325	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683637325	Sync.SyncScheduler	DEBUG	Next sync in 85675 ms.
+1493683644761	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493683655854	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493683723000	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493683723000	Sync.Service	INFO	Starting sync at 2017-05-02 10:08:43
+1493683723000	Sync.Service	DEBUG	In sync: should login.
+1493683723000	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1493683723001	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683723001	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683723001	Sync.Service	INFO	Logging in the user.
+1493683723002	Sync.BrowserIDManager	INFO	Waiting for user to be verified.
+1493683723002	FirefoxAccounts	DEBUG	already verified
+1493683723003	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683723003	Sync.BrowserIDManager	INFO	Starting fetch for key bundle.
+1493683723003	FirefoxAccounts	DEBUG	already verified
+1493683723004	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1493683723004	FirefoxAccounts	DEBUG	enter getAssertion()
+1493683723009	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683723010	FirefoxAccounts	DEBUG	got keyPair
+1493683723011	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1493683723664	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1493683723664	Sync.RESTResponse	TRACE	Processing response headers.
+1493683723665	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -665
+1493683723665	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1493683723665	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1493683723665	FirefoxAccounts	DEBUG	getAssertionFromCert
+1493683723666	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens"]
+1493683723666	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens"]
+1493683723669	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1493683723669	Sync.BrowserIDManager	DEBUG	Getting a token
+1493683723669	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1493683723672	FirefoxAccounts	TRACE	finished write of json user data - took: 5
+1493683723672	FirefoxAccounts	DEBUG	writing secure storage: ["kA","kB"]
+1493683723672	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1493683723676	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1493683724354	Common.TokenServerClient	DEBUG	Got token response: 200
+1493683724354	Sync.RESTResponse	TRACE	Processing response headers.
+1493683724354	Common.TokenServerClient	DEBUG	Successful token response
+1493683724354	Sync.BrowserIDManager	DEBUG	Successfully got a sync token
+1493683724355	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1493683724355	Sync.BrowserIDManager	INFO	Background fetch for key bundle done
+1493683724356	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493683724356	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683724356	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/
+1493683724356	Sync.Service	INFO	User logged in successfully - verifying login.
+1493683724356	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1493683724356	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1493683724357	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683725040	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493683725040	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493683725040	Sync.Service	DEBUG	Fetching global metadata record
+1493683725041	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725041	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683725252	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725252	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725252	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1489644375.28
+1493683725252	Sync.RecordManager	TRACE	Importing record: https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725253	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683725463	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725463	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/meta/global
+1493683725464	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493683725464	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493683725464	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493683725464	Sync.Service	INFO	Testing info/collections: {"passwords":1493644184.79,"tabs":1493651635.67,"clients":1493639435.79,"crypto":1489644251.08,"forms":1493650429.35,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493621117.29,"addons":1493639535.17,"history":1493651636.87}
+1493683725464	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1493683725464	Sync.Service	INFO	collection keys reports that a key update is needed.
+1493683725464	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683725686	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493683725687	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/crypto/keys
+1493683725687	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1493683725687	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1489644251.08.
+1493683725688	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1493683725688	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1493683725688	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1493683725688	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1493683725688	Sync.CollectionKeyManager	INFO	Bumping last modified to 1489644251.08
+1493683725688	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1493683725688	Sync.Status	DEBUG	Status.login: success.login => success.login
+1493683725688	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683725688	browserwindow.syncui	DEBUG	observed: weave:service:login:finish
+1493683725689	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493683725689	browserwindow.syncui	DEBUG	onActivityStart with numActive: 0
+1493683725689	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493683725690	Sync.Status	INFO	Resetting Status.
+1493683725690	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683725691	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683725691	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683725692	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683725693	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683725693	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493683725903	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections?v=1.47.0
+1493683725903	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections?v=1.47.0
+1493683725904	Sync.Service	DEBUG	Fetching global metadata record
+1493683725904	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493683725904	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493683725904	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493683725904	Sync.Service	INFO	Testing info/collections: {"passwords":1493644184.79,"tabs":1493651635.67,"clients":1493639435.79,"crypto":1489644251.08,"forms":1493650429.35,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493621117.29,"addons":1493639535.17,"history":1493651636.87}
+1493683725904	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493683725904	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493683725905	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1493683725905	Sync.Engine.Clients	INFO	1 outgoing items pre-reconciliation
+1493683725906	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683726143	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493683726143	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients?full=1
+1493683726143	Sync.Engine.Clients	INFO	Records: 4 applied, 4 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493683726145	Sync.Engine.Clients	INFO	Uploading all of 1 records
+1493683726146	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683726147	Sync.Collection	DEBUG	POST Length: 485
+1493683726403	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493683726403	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/clients
+1493683726404	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493683726405	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493683726405	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1493683726406	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493683726407	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493683726407	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683726642	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/passwords?newer=1493620452.01&full=1
+1493683726642	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/passwords?newer=1493620452.01&full=1
+1493683726642	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493683726643	Sync.Engine.Tabs	DEBUG	First sync, uploading all items
+1493683726643	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493683726644	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683726865	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium’s Firefox on slegestor
+1493683726867	Sync.Store.Tabs	DEBUG	Adding remote tabs from apium's Firefox on tux-xps
+1493683726868	Sync.Store.Tabs	DEBUG	Adding remote tabs from APIUM's Firefox on LAPTOP-2VPN06TQ
+1493683726868	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493683726868	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs?full=1
+1493683726869	Sync.Engine.Tabs	INFO	Records: 3 applied, 3 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493683726871	Sync.Engine.Tabs	INFO	Uploading all of 1 records
+1493683726872	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683726872	Sync.Collection	DEBUG	POST Length: 932
+1493683726905	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1493683727118	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493683727118	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/tabs
+1493683727122	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1493683727125	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493683727127	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493683727128	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: loop@mozilla.org
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: keefox@chris.tomlinson
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: jid1-xUfzOsOFlzSOXg@jetpack
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: uBlock0@raymondhill.net
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {66E978CD-981F-47DF-AC42-E3CF417C1467}
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {DDC359D1-844A-42a7-9AA1-88A850A938A8}
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: extension@one-tab.com
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {00000f2a-7cde-4f20-83ed-434fcb420d71}
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {e968fc70-8f95-4ab9-9e79-304de2a71ee1}
+1493683727132	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1493683727133	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: vimperator@mozdev.org
+1493683727133	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: gmp-gmpopenh264
+1493683727133	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {81483a79-4662-220f-c0b3-08db1c26b031}
+1493683727133	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {d1bc0beb-1d2a-398e-3ad0-5deb1a3058eb}
+1493683727133	Sync.AddonsReconciler	DEBUG	Rectifying state for addon: {99185ea3-8e99-964f-fdce-619e7ce2aa19}
+1493683727134	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1493683727136	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1493683727138	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683727142	Sync.Engine.Addons	ERROR	null
+1493683727353	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?newer=1493621156.5&full=1
+1493683727353	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?newer=1493621156.5&full=1
+1493683727354	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683727407	Sync.Tracker.Passwords	DEBUG	Saving changed IDs to passwords
+1493683728131	Sync.Tracker.Bookmarks	DEBUG	Saving changed IDs to bookmarks
+1493683728154	Sync.Tracker.Addons	DEBUG	Saving changed IDs to addons
+1493683728219	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.
+1493683728341	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493683728342	Sync.AddonUtils	INFO	Trying to install add-on from search result: jid1-BYcQOfYfmBMd9A@jetpack
+1493683728342	Sync.AddonUtils	DEBUG	Obtaining install for jid1-BYcQOfYfmBMd9A@jetpack
+1493683728342	Sync.AddonUtils	INFO	Installing jid1-BYcQOfYfmBMd9A@jetpack
+1493683729099	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493683729311	Sync.Store.Addons	WARN	Failed to apply incoming record VnWHwyAFLy1y
+1493683729311	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493683729540	Sync.AddonUtils	INFO	Found 1/1 add-ons during repository search.
+1493683729540	Sync.AddonUtils	INFO	Trying to install add-on from search result: {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493683729541	Sync.AddonUtils	DEBUG	Obtaining install for {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493683729541	Sync.AddonUtils	INFO	Installing {36c12be2-23a5-4986-b108-714ce28bc58d}
+1493683730370	Sync.Store.Addons	WARN	Failed to apply incoming record {aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493683730370	Sync.Store.Addons	WARN	Encountered exception: Error: 1 or more add-ons failed to install (resource://gre/modules/services-sync/addonutils.js:287:18) JS Stack trace: installCallback@addonutils.js:287:18 < installAddonFromSearchResult/onResult/listener.onDownloadFailed@addonutils.js:160:13 < AddonManagerInternal.callInstallListeners@AddonManager.jsm:1770:15 < this.AddonManagerPrivate.callInstallListeners@AddonManager.jsm:2836:1 < AddonInstall.prototype.downloadFailed@XPIProvider.jsm:5845:1 < AddonInstall.prototype.onStopRequest/<@XPIProvider.jsm:5815:11 < Handler.prototype.process@Promise-backend.js:936:21 < this.PromiseWalker.walkerLoop@Promise-backend.js:812:7 < this.PromiseWalker.scheduleWalkerLoop/<@Promise-backend.js:746:1 < waitForSyncCallback@async.js:102:7 < makeSpinningCallback/callback.wait@async.js:156:27 < create@addons.js:299:19 < Store.prototype.applyIncoming@engines.js:337:7 < applyIncoming@addons.js:281:5 < Store.prototype.applyIncomingBatch@engines.js:304:9 < doApplyBatch@engines.js:995:32 < SyncEngine.prototype._processIncoming/newitems.recordHandler@engines.js:1110:9 < Collection.prototype.recordHandler/this._onProgress@record.js:628:9 < Channel_onDataAvail@resource.js:561:7 < waitForSyncCallback@async.js:102:7 < Res__request@resource.js:408:14 < Res_get@resource.js:432:12 < SyncEngine.prototype._processIncoming@engines.js:1173:18 < SyncEngine.prototype._sync@engines.js:1545:7 < WrappedNotify@util.js:148:21 < Engine.prototype.sync@engines.js:669:5 < _syncEngine@enginesync.js:214:7 < sync@enginesync.js:164:15 < onNotify@service.js:1309:7 < WrappedNotify@util.js:148:21 < WrappedLock@util.js:103:16 < _lockedSync@service.js:1299:12 < sync/<@service.js:1291:14 < WrappedCatch@util.js:77:16 < sync@service.js:1279:5
+1493683730370	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids=VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493683730370	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/addons?full=1&ids=VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493683730370	Sync.Engine.Addons	DEBUG	Records that failed to apply: VnWHwyAFLy1y,{aee3ac5d-6376-463d-a384-5bd1ff807e95}
+1493683730371	Sync.Engine.Addons	INFO	Records: 2 applied, 0 successfully, 2 failed to apply, 0 newly failed to apply, 1 reconciled.
+1493683730371	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1493683730372	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683730377	Sync.Engine.Addons	ERROR	null
+1493683730613	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?newer=1493618378.74&full=1
+1493683730614	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/forms?newer=1493618378.74&full=1
+1493683730638	Sync.Engine.Forms	INFO	Records: 15 applied, 15 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493683730639	Sync.Engine.History	INFO	4 outgoing items pre-reconciliation
+1493683730640	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683731372	Sync.Tracker.Forms	DEBUG	Saving changed IDs to forms
+1493683731642	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493683732729	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493683732873	Sync.Collection	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?newer=1493621481.18&full=1&limit=5000
+1493683732873	Sync.Collection	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history?newer=1493621481.18&full=1&limit=5000
+1493683732877	Sync.Store.History	WARN	Encountered record with invalid visit type: 9; ignoring.
+1493683732974	Sync.Engine.History	INFO	Records: 388 applied, 388 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493683732996	Sync.Engine.History	INFO	Uploading all of 4 records
+1493683732996	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493683732997	Sync.Collection	DEBUG	POST Length: 2061
+1493683733272	Sync.Collection	DEBUG	mesg: POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history
+1493683733272	Sync.Collection	DEBUG	POST success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/storage/history
+1493683733273	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1493683733273	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493683733274	Sync.Synchronizer	INFO	Sync completed at 2017-05-02 10:08:53 after 7.58 secs.
+1493683733276	Sync.Declined	DEBUG	Handling remote declined: []
+1493683733276	Sync.Declined	DEBUG	Handling local declined: []
+1493683733277	Sync.Declined	DEBUG	Declined changed? false
+1493683733277	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1493683733279	browserwindow.syncui	DEBUG	observed: weave:service:sync:finish
+1493683733279	browserwindow.syncui	DEBUG	onActivityStop with numActive: 1
+1493683733281	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms.

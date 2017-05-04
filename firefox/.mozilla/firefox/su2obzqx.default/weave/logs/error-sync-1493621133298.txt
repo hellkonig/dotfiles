@@ -1,0 +1,12 @@
+1493621133285	Sync.LogManager	DEBUG	Flushing file log
+1493621133285	Sync.LogManager	TRACE	Beginning stream copy to error-sync-1493621133285.txt: 1493621133285
+1493621133286	Sync.Service	DEBUG	Exception: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < makeSpinningCallback/callback.wait()@resource://services-common/async.js:156 < onNotify()@resource://gre/modules/services-sync/service.js:1312 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493621133292	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493621133296	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493621133296	Sync.Service	INFO	Starting sync at 2017-05-01 16:45:33
+1493621133296	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493621133296	Sync.Status	INFO	Resetting Status.
+1493621133296	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => success.status_ok
+1493621133297	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493621133298	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms.
+1493621133298	Sync.ErrorHandler	ERROR	Sync encountered an error

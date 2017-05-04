@@ -1,0 +1,64 @@
+1493711908498	Sync.LogManager	DEBUG	Flushing file log
+1493711908498	Sync.LogManager	TRACE	Beginning stream copy to error-sync-1493711908498.txt: 1493711908498
+1493711908501	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493711908502	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493711908502	browserwindow.syncui	DEBUG	observed: weave:ui:sync:finish
+1493711908507	Sync.LogManager	TRACE	finished copy to: /home/apium/.mozilla/firefox/1kezq8go.default/weave/logs/error-sync-1493711908498.txt
+1493711908507	Sync.LogManager	TRACE	onCopyComplete: 1493711908507
+1493711908507	Sync.LogManager	TRACE	Scheduling cleanup.
+1493711908507	Sync.LogManager	DEBUG	Log cleanup threshold time: 1492847908507
+1493711908552	Sync.LogManager	DEBUG	Done deleting files.
+1493711909198	Sync.Tracker.Forms	DEBUG	Saving changed IDs to forms
+1493711909200	Sync.Tracker.History	DEBUG	Saving changed IDs to history
+1493711910547	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1493711910548	Sync.Service	DEBUG	User-Agent: Firefox/45.9.0 FxSync/1.47.0.20170419042421.
+1493711910548	Sync.Service	INFO	Starting sync at 2017-05-02 17:58:30
+1493711910548	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1493711910548	browserwindow.syncui	DEBUG	onActivityStart with numActive: 0
+1493711910549	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1493711910549	Sync.Status	INFO	Resetting Status.
+1493711910549	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1493711910550	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493711910550	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493711910551	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1493711910768	Sync.Resource	DEBUG	mesg: GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493711910768	Sync.Resource	DEBUG	GET success 200 https://sync-468-us-west-2.sync.services.mozilla.com/1.5/68409788/info/collections
+1493711910769	Sync.Service	DEBUG	Fetching global metadata record
+1493711910769	Sync.Service	DEBUG	Weave Version: 1.47.0 Local Storage: 5 Remote Storage: 5
+1493711910769	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1493711910769	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1493711910769	Sync.Service	INFO	Testing info/collections: {"passwords":1493709565.83,"tabs":1493711905.63,"clients":1493684006.97,"crypto":1489644251.08,"forms":1493710173.81,"meta":1489644375.28,"prefs":1493595892.11,"bookmarks":1493711905.89,"addons":1493639535.17,"history":1493711908.33}
+1493711910769	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1489644251.08
+1493711910769	Sync.Synchronizer	DEBUG	Refreshing client list.
+1493711910770	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1493711910771	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910771	Sync.Synchronizer	INFO	Updating enabled engines: 4 clients.
+1493711910772	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1493711910773	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1493711910773	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910775	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1493711910776	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910776	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1493711910777	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910780	Sync.Engine.Tabs	INFO	Uploading all of 1 records
+1493711910780	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1493711910781	Sync.Collection	DEBUG	POST Length: 760
+1493711910865	Sync.Status	DEBUG	Status for engine tabs: error.engine.reason.unknown_fail
+1493711910865	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1493711910865	Sync.ErrorHandler	DEBUG	tabs failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < Res__request()@resource://services-sync/resource.js:408 < Res_post()@resource://services-sync/resource.js:446 < SyncEngine.prototype._uploadOutgoing/doUpload<()@resource://services-sync/engines.js:1448 < innerBind()@resource://services-sync/util.js:525 < SyncEngine.prototype._uploadOutgoing()@resource://services-sync/engines.js:1496 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1547 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493711910866	Sync.Engine.Bookmarks	INFO	3 outgoing items pre-reconciliation
+1493711910867	Sync.Status	DEBUG	Status for engine bookmarks: error.engine.reason.unknown_fail
+1493711910867	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1493711910867	Sync.ErrorHandler	DEBUG	bookmarks failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < makeSpinningCallback/callback.wait()@resource://services-common/async.js:156 < _syncStart()@resource://gre/modules/services-sync/engines/bookmarks.js:435 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1543 < wrappedSync()@resource://gre/modules/services-sync/engines/bookmarks.js:229 < _sync()@resource://gre/modules/services-sync/engines/bookmarks.js:226 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493711910867	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1493711910867	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1493711910868	Sync.Status	DEBUG	Status for engine addons: error.engine.reason.unknown_fail
+1493711910868	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1493711910868	Sync.ErrorHandler	DEBUG	addons failed: [Exception... "App. Quitting"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "JS frame :: resource://services-common/async.js :: checkAppReady/onQuitApplication/Async.checkAppReady :: line 126"  data: no] Stack trace: checkAppReady/onQuitApplication/Async.checkAppReady()@resource://services-common/async.js:126 < waitForSyncCallback()@resource://services-common/async.js:101 < makeSpinningCallback/callback.wait()@resource://services-common/async.js:156 < _refreshReconcilerState()@resource://gre/modules/services-sync/engines/addons.js:233 < _syncStartup()@resource://gre/modules/services-sync/engines/addons.js:203 < SyncEngine.prototype._sync()@resource://services-sync/engines.js:1543 < WrappedNotify()@resource://services-sync/util.js:148 < Engine.prototype.sync()@resource://services-sync/engines.js:669 < _syncEngine()@resource://services-sync/stages/enginesync.js:214 < sync()@resource://services-sync/stages/enginesync.js:164 < onNotify()@resource://gre/modules/services-sync/service.js:1309 < WrappedNotify()@resource://services-sync/util.js:148 < WrappedLock()@resource://services-sync/util.js:103 < _lockedSync()@resource://gre/modules/services-sync/service.js:1299 < sync/<()@resource://gre/modules/services-sync/service.js:1291 < WrappedCatch()@resource://services-sync/util.js:77 < sync()@resource://gre/modules/services-sync/service.js:1279
+1493711910868	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1493711910869	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910869	Sync.Engine.History	INFO	0 outgoing items pre-reconciliation
+1493711910871	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1493711910872	Sync.Synchronizer	INFO	Sync completed at 2017-05-02 17:58:30 after 0.32 secs.
+1493711910873	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms.
+1493711910873	Sync.ErrorHandler	ERROR	Sync encountered an error
