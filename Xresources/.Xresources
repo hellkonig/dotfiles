@@ -1,4 +1,4 @@
-URxvt*font:             xft:Terminus:size=8
+URxvt*font:             xft:Terminus:size=8, xft:FontAwesome:size=8
 URxvt*scrollBar:        false
 URxvt*depth:            32
 
@@ -6,7 +6,7 @@ Xft.dpi:                128
 
 !color
 URxvt*background:       #E3D0C3
-URxvt*foreground:       #36454f 
+URxvt*foreground:       #36454f
 
 !URxvt*color0:           #000000
 !URxvt*color1:           #d70000
@@ -44,6 +44,9 @@ URxvt*foreground:       #36454f
 
 ! ! blue
  *.color4:       #0087af
+! From when I thought the server
+! colours were stuffed up, changes to a LBlue
+! *.color4:       #a2c7e5
  *.color12:      #005faf
 
 ! ! magenta -orange
@@ -56,3 +59,4 @@ URxvt*foreground:       #36454f
 ! ! white
  *.color7:       #707070
  *.color15:      #ffffff
+

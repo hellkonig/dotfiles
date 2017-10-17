@@ -1,7 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/etc/openvpn/server'
-let g:netrw_dirhist_2='/etc/openvpn'
-let g:netrw_dirhist_3='/etc'
-let g:netrw_dirhist_4='/home/apium/binary.cpp'
-let g:netrw_dirhist_5='/home/apium/builds/vim-youcompleteme-git'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/apium/.config'
+let g:netrw_dirhist_2='/home/apium/.config/darktable'
+let g:netrw_dirhist_3='/home/apium/.config'

@@ -104,29 +104,43 @@ bindsym Mod1+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym Mod1+minus scratchpad show
 
+# definitions for monitor placement
+# names are as appears in xrandr
+workspace "1" output DVI-I-1
+workspace "2" output DVI-I-1
+workspace "3" output DVI-I-1
+workspace "4" output DVI-I-1
+workspace "5" output DVI-I-1
+
+workspace "6" output HDMI-0
+workspace "7" output HDMI-0
+workspace "8" output HDMI-0
+workspace "9" output HDMI-0
+workspace "10" output HDMI-0
+
 # switch to workspace
-bindsym Mod1+1 workspace 1 www
-bindsym Mod1+2 workspace 2 thunar
-bindsym Mod1+3 workspace 3 vim
-bindsym Mod1+4 workspace 4 ssh
+bindsym Mod1+1 workspace 1
+bindsym Mod1+2 workspace 2
+bindsym Mod1+3 workspace 3
+bindsym Mod1+4 workspace 4
 bindsym Mod1+5 workspace 5
 bindsym Mod1+6 workspace 6
 bindsym Mod1+7 workspace 7
-bindsym Mod1+8 workspace 8 irc
-bindsym Mod1+9 workspace 9 mail
-bindsym Mod1+0 workspace 10 music
+bindsym Mod1+8 workspace 8
+bindsym Mod1+9 workspace 9
+bindsym Mod1+0 workspace 10
 
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace 1 www
-bindsym Mod1+Shift+2 move container to workspace 2 thunar
-bindsym Mod1+Shift+3 move container to workspace 3 vim
-bindsym Mod1+Shift+4 move container to workspace 4 ssh
+bindsym Mod1+Shift+1 move container to workspace 1
+bindsym Mod1+Shift+2 move container to workspace 2
+bindsym Mod1+Shift+3 move container to workspace 3
+bindsym Mod1+Shift+4 move container to workspace 4
 bindsym Mod1+Shift+5 move container to workspace 5
 bindsym Mod1+Shift+6 move container to workspace 6
 bindsym Mod1+Shift+7 move container to workspace 7
-bindsym Mod1+Shift+8 move container to workspace 8 irc
-bindsym Mod1+Shift+9 move container to workspace 9 mail
-bindsym Mod1+Shift+0 move container to workspace 10 music
+bindsym Mod1+Shift+8 move container to workspace 8
+bindsym Mod1+Shift+9 move container to workspace 9
+bindsym Mod1+Shift+0 move container to workspace 10
 
 # I've turned this off when not using i3-bar, it's far too confusing and annoying. 
 # force a window on a named workspace
@@ -186,6 +200,14 @@ bindsym Mod1+r mode "resize"
 
 bar {
         status_command i3blocks
+        i3bar_command i3bar -t
+
+        height 30
+        position bottom
+        font xft:terminus, FontAwesome 7
+        colors {
+            background #1d2021B0
+        }
 }
 
 # my own stuff
@@ -212,10 +234,9 @@ bindsym XF86AudioLowerVolume exec pamixer --decrease 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
-
 # stuff to exec on startup?
 exec "bash /home/apium/Documents/qnixandsony.sh" 
-exec "feh --bg-scale --randomize ~/Pictures/walls/"
+exec "feh --bg-scale --randomize ~/Pictures/Wallpapers/"
 bindsym Mod1+Escape exec i3lock -i ~/Pictures/other/cloud.png
 exec "compton -c -b"
 
