@@ -198,17 +198,17 @@ bindsym Mod1+r mode "resize"
 #        workspace_buttons       yes 
 #}
 
-bar {
-        status_command i3blocks
-        i3bar_command i3bar -t
-
-        height 30
-        position bottom
-        font xft:terminus, FontAwesome 7
-        colors {
-            background #1d2021B0
-        }
-}
+#bar {
+#        status_command i3blocks
+#        i3bar_command i3bar -t
+#
+#        height 30
+#        position bottom
+#        font xft:terminus, FontAwesome 7
+#        colors {
+#            background #1d2021B0
+#        }
+#}
 
 # my own stuff
 # set borders to 0 px
