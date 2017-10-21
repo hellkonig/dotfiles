@@ -26,10 +26,10 @@
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up l
+set $up j
 set $down k
-set $left j
-set $right semicolon
+set $left h
+set $right l
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -72,7 +72,7 @@ bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+h split h
+bindsym Mod1+b split h
 
 # split in vertical orientation
 bindsym Mod1+v split v
@@ -217,7 +217,7 @@ for_window [class="^.*"] border pixel 0
 
 # gaps config
 gaps inner 30
-gaps outer 30 
+gaps outer 15
 
 # extra user-installed keybinds
 
@@ -236,9 +236,11 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
 # stuff to exec on startup?
 exec "bash /home/apium/Documents/qnixandsony.sh" 
-exec "feh --bg-scale --randomize ~/Pictures/Wallpapers/"
+exec_always "wal -i ~/Pictures/Wallpapers"
 bindsym Mod1+Escape exec i3lock -i ~/Pictures/other/cloud.png
 exec "compton -c -b"
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 
 # for lemonbar
 # bindsym Mod1+p exec "bash ~/lemonbar/dylan-clock.sh"

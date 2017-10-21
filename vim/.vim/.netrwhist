@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/apium/.config'
 let g:netrw_dirhist_2='/home/apium/.config/darktable'
 let g:netrw_dirhist_3='/home/apium/.config'
+let g:netrw_dirhist_4='/home/apium/.vimperator'
+let g:netrw_dirhist_5='/home/apium/.vimperator/info'
+let g:netrw_dirhist_6='/home/apium/.vimperator/info/default-1507984901378'
+let g:netrw_dirhist_7='/home/apium/.vimperator/info'
+let g:netrw_dirhist_8='/home/apium/.vimperator'
+let g:netrw_dirhist_9='/home/apium'

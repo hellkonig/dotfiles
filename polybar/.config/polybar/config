@@ -3,29 +3,51 @@
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
 ;
-;   The README contains alot of information
+;   APIUM's Polybar config, bask in the weak glow - it's
+;   all I've got. 
 ;
 ;=====================================================
 
+;----------------------------------------------------------
+;			C O L O R S
+;----------------------------------------------------------
+
 [colors]
-;background = ${xrdb:color5:#222}
-background = #222
+background = ${colors.xcolor0}
 ; The colour used as an alternate, not a backup
-background-alt = #444
-;foreground = ${xrdb:color7:#222}
+background-alt = ${colors.xcolor1}
+
 ; Text colour
-foreground = #dfdfdf
+foreground = ${colors.xcolor6}
 foreground-alt = #555
-primary = #ffb52a
+primary = ${colors.xcolor0}
 secondary = #e60053
 alert = #bd2c40
 
+xcolor0 = ${xrdb:color0}
+xcolor1 = ${xrdb:color1}
+xcolor2 = ${xrdb:color2}
+xcolor3 = ${xrdb:color3}
+xcolor4 = ${xrdb:color4}
+xcolor5 = ${xrdb:color5}
+xcolor6 = ${xrdb:color6}
+xcolor7 = ${xrdb:color7}
+xcolor8 = ${xrdb:color8}
+xcolor9 = ${xrdb:color9}
+xcolor10 = ${xrdb:color10}
+xcolor11 = ${xrdb:color11}
+xcolor12 = ${xrdb:color12}
+xcolor13 = ${xrdb:color13}
+xcolor14 = ${xrdb:color14}
+xcolor15 = ${xrdb:color15}
+
+
 [bar/example]
 monitor = ${env:MONITOR:DVI-I-1}
-width = 96%
+width = 86%
 height = 40
-offset-x = 2%
-;offset-y = 1%
+offset-x = 7%
+offset-y = 1%
 radius = 6.0
 fixed-center = false
 
@@ -39,27 +61,21 @@ border-size = 4
 border-color = #00000000
 
 padding-left = 1
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Siji:pixelsize=10;1
-font-3 = FontAwesome:size=7
-
 modules-left = i3
-modules-center = 
-modules-right = filesystem memory cpu eth temperature date
+modules-center =  
+modules-right = filesystem cmus memory cpu eth temperature pkg date powermenu
 
 tray-position = right
 tray-padding = 0
 ;tray-transparent = true
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 override-redirect = true
 
@@ -71,6 +87,19 @@ scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+bottom = false
+
+;----------------------------------------------------------
+;			F O N T S
+;----------------------------------------------------------
+
+font-0 = fixed:pixelsize=10;1
+font-1 = Material\ Design\ Icons:size=13;2
+font-2 = FontAwesome:size=7
+font-3 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-4 = Wuncon\ Siji:size=20;1
+
 
 [module/xwindow]
 type = internal/xwindow
@@ -131,7 +160,7 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
@@ -193,7 +222,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -201,7 +230,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -234,7 +263,7 @@ interface = enp0s25
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -254,7 +283,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
@@ -329,9 +358,9 @@ label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
@@ -341,7 +370,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -353,15 +382,41 @@ menu-0-0-exec = menu-open-1
 menu-0-1 = power off
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-0 = confrim
+menu-1-0-exec = reboot
+menu-1-1 = cancel
+menu-1-1-exec = menu-open-0
 
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
+menu-2-0 = confirm
+menu-2-0-exec = poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/pkg]
+type = custom/script
+interval = 1200
+format = <label>
+format-underline = #dc322f
+label = "%output:0:30%"
+exec = bash /home/apium/.config/polybar/pkg.sh
+exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+
+[module/cmus]
+type = custom/script
+
+exec = sh ~/.config/polybar/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+
+click-left = cmus-remote --next 
+click-right = cmus-remote --prev
+click-middle = cmus-remote --pause
+
+format-underline = #DAC188
+format-prefix = " "
+
+scroll-down = cmus-remote --seek +5
+scroll-up = cmus-remote --seek -5
 
 [settings]
 screenchange-reload = true
@@ -369,6 +424,10 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
+
+;----------------------------------------------------------
+;			G L O B A L
+;----------------------------------------------------------
 
 [global/wm]
 margin-top = 5

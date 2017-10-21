@@ -1,17 +1,21 @@
-@import "file:///home/apium/scripts/colors/colors.css";
+@import url('file:///home/apium/.cache/wal/colors.css');
 
-/*  Dylan's Firefox css */
+/*  apium's Firefox css */
 
 @namespace html url(http://www.w3.org/1999/xhtml);
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* COLOURS */
+
+
 
 /* VARIABLES {{{ */
 
 :root {
     /* Tabs */
-    --tab-height: 30px;
-    --tab-fonts: roboto;
-    --tab-font-size: 12px;
+    --tab-height: 40px;
+    --tab-fonts: xft:Terminus;
+    --tab-font-size: 14px;
 
     /* Url Bar */
     --url-height: 30px;
@@ -61,22 +65,21 @@
 
     /* Unselected Tabs */
     #TabsToolbar .tabbrowser-tab {
-       # background: var(--black) !important;
-        background: #E3D0C3 !important;
+        -moz-box-flex: 1 !important;
+        text-align: center !important;
+        vertical-align: center !important;
+        background: var(--color0) !important;
         border: none !important;
-        color: var(--gray) !important;
+        color: var(--color1) !important;
         font-family: var(--tab-fonts) !important;
         font-size: var(--tab-font-size) !important;
-        margin: 0 50px 0 0;
-        text-align: center !important;
+        display: inline-block !important;
+        padding-top: 10px !important;
     }
 
     /* Selected Tab */
     #TabsToolbar .tabbrowser-tab[selected] {
-# background: var(--black) !important;
-        background: #E3D0C3 !important;
-#        color: var(--white) !important;
-        color: var(--black) !important;
+        font-weight: bold !important;
 
     }
 
@@ -119,8 +122,7 @@
     }
 
     #TabsToolbar > * {
-        # background-color: var(--black) !important;
-        background-color: #E3D0C3 !important;
+        background-color: var(--color0) !important;
     }
 
 
@@ -128,11 +130,8 @@
 
 /* NAVBAR/URLBAR {{{ */
 
-#nav-bar { display: none !important; }
-
     #nav-bar {
-#background: var(--black) !important;
-        background: #E3D0C3 !important;
+        background: var(--color0) !important;
         border: none !important;
         box-shadow: none !important;
         height: var(--url-height) !important;
@@ -141,10 +140,9 @@
     }
 
     #urlbar {
-#      background: var(--black) !important;
-        background: #E3D0C3 !important;
+        background: var(--color0) !important;
         box-shadow: none !important;
-        color: var(--gray) !important;
+        color: var(--color8) !important;
         font-family: var(--url-fonts) !important;
         font-size: var(--url-font-size) !important;
         margin: 0 !important;
@@ -187,4 +185,3 @@
 /* }}} */
 
 }
-

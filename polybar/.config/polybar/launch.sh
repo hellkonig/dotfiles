@@ -1,4 +1,4 @@
-#!/usr/vin/env sh
+#!/bin/bash
 
 # Terminate already running bar instances
 killall -q polybar
@@ -8,5 +8,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
 polybar example &
+
+pkill lemonbar
+lemonbar -g 2560x30
 
 echo "Bars launched..."
